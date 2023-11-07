@@ -17,12 +17,15 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { clearTraceData } from "./trace-list";
+import { SidebarFilter } from "./sidebar-filter";
 
 type SidebarHeaderProps = {
   isFullWidth: boolean;
   isFullWidthDisabled: boolean;
   toggleSidebarWidth: () => void;
   numNewTraces: number;
+  filterValue: string;
+  setFilterValue: (value: string) => void;
 };
 
 export function SidebarHeader(props: SidebarHeaderProps) {
@@ -79,6 +82,17 @@ export function SidebarHeader(props: SidebarHeaderProps) {
             icon={<ArrowLeftIcon />}
             marginEnd="10px"
             onClick={toggleSidebarWidth}
+          />
+        </Flex>
+        <Flex
+          justifyContent="flex-start"
+          alignItems="center"
+          height="50px"
+          padding="2"
+        >
+          <SidebarFilter
+            value={props.filterValue}
+            setValue={props.setFilterValue}
           />
         </Flex>
         <Flex

@@ -6,6 +6,7 @@ import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 
 import MainView, { mainLoader } from "./routes/main-view";
 import TraceView, { traceLoader } from "./routes/trace-view";
+import { FILTER_PARAM } from "./utils/use-filter";
 import ErrorPage from "./error-page";
 
 const config: ThemeConfig = {

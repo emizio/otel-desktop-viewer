@@ -13,6 +13,8 @@ type SidebarProps = {
   toggleSidebarWidth: () => void;
   traceSummaries: TraceSummaryWithUIData[];
   numNewTraces: number;
+  filterValue: string;
+  setFilterValue: (value: string) => void;
 };
 
 export function Sidebar(props: SidebarProps) {
@@ -34,6 +36,8 @@ export function Sidebar(props: SidebarProps) {
           toggleSidebarWidth={toggleSidebarWidth}
           isFullWidthDisabled={false}
           numNewTraces={numNewTraces}
+          filterValue={props.filterValue}
+          setFilterValue={props.setFilterValue}
         />
         <TraceList traceSummaries={traceSummaries} />
       </Flex>
@@ -54,6 +58,8 @@ export function Sidebar(props: SidebarProps) {
         isFullWidthDisabled={isFullWidthDisabled}
         toggleSidebarWidth={toggleSidebarWidth}
         numNewTraces={0}
+        filterValue={props.filterValue}
+        setFilterValue={props.setFilterValue}
       />
     </Flex>
   );

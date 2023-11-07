@@ -516,7 +516,7 @@
             var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
             return newElement;
           }
-          function cloneElement7(element, config3, children) {
+          function cloneElement8(element, config3, children) {
             if (element === null || element === void 0) {
               throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
             }
@@ -1001,7 +1001,7 @@
             }
             return dispatcher.useContext(Context);
           }
-          function useState28(initialState2) {
+          function useState30(initialState2) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useState(initialState2);
           }
@@ -1025,7 +1025,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useLayoutEffect(create, deps);
           }
-          function useCallback20(callback, deps) {
+          function useCallback21(callback, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useCallback(callback, deps);
           }
@@ -1051,7 +1051,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useDeferredValue(value);
           }
-          function useId10() {
+          function useId11() {
             var dispatcher = resolveDispatcher();
             return dispatcher.useId();
           }
@@ -1563,7 +1563,7 @@
             return validatedFactory;
           }
           function cloneElementWithValidation(element, props, children) {
-            var newElement = cloneElement7.apply(this, arguments);
+            var newElement = cloneElement8.apply(this, arguments);
             for (var i = 2; i < arguments.length; i++) {
               validateChildKeys(arguments[i], newElement.type);
             }
@@ -1789,19 +1789,19 @@
           exports.memo = memo2;
           exports.startTransition = startTransition2;
           exports.unstable_act = act;
-          exports.useCallback = useCallback20;
+          exports.useCallback = useCallback21;
           exports.useContext = useContext16;
           exports.useDebugValue = useDebugValue2;
           exports.useDeferredValue = useDeferredValue;
           exports.useEffect = useEffect47;
-          exports.useId = useId10;
+          exports.useId = useId11;
           exports.useImperativeHandle = useImperativeHandle;
           exports.useInsertionEffect = useInsertionEffect2;
           exports.useLayoutEffect = useLayoutEffect9;
           exports.useMemo = useMemo21;
           exports.useReducer = useReducer;
           exports.useRef = useRef33;
-          exports.useState = useState28;
+          exports.useState = useState30;
           exports.useSyncExternalStore = useSyncExternalStore3;
           exports.useTransition = useTransition;
           exports.version = ReactVersion;
@@ -2297,9 +2297,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React66 = require_react();
+          var React69 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React66.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React69.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3820,7 +3820,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React66.Children.forEach(props.children, function(child) {
+                  React69.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -11981,7 +11981,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React66.Component().refs;
+          var emptyRefsObject = new React69.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -25638,7 +25638,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     "node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.cjs.dev.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
-      var React66 = require_react();
+      var React69 = require_react();
       function _interopNamespace(e) {
         if (e && e.__esModule)
           return e;
@@ -25659,14 +25659,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         n["default"] = e;
         return Object.freeze(n);
       }
-      var React__namespace = /* @__PURE__ */ _interopNamespace(React66);
+      var React__namespace = /* @__PURE__ */ _interopNamespace(React69);
       var isBrowser4 = typeof document !== "undefined";
       var syncFallback = function syncFallback2(create) {
         return create();
       };
       var useInsertionEffect2 = React__namespace["useInsertionEffect"] ? React__namespace["useInsertionEffect"] : false;
       var useInsertionEffectAlwaysWithSyncFallback = !isBrowser4 ? syncFallback : useInsertionEffect2 || syncFallback;
-      var useInsertionEffectWithLayoutFallback = useInsertionEffect2 || React66.useLayoutEffect;
+      var useInsertionEffectWithLayoutFallback = useInsertionEffect2 || React69.useLayoutEffect;
       exports.useInsertionEffectAlwaysWithSyncFallback = useInsertionEffectAlwaysWithSyncFallback;
       exports.useInsertionEffectWithLayoutFallback = useInsertionEffectWithLayoutFallback;
     }
@@ -25688,7 +25688,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
     "node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js"(exports) {
       "use strict";
-      var React66 = require_react();
+      var React69 = require_react();
       var createCache = require_emotion_cache_cjs();
       var _extends5 = require_extends();
       var weakMemoize = require_emotion_weak_memoize_cjs();
@@ -25703,7 +25703,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       var weakMemoize__default = /* @__PURE__ */ _interopDefault(weakMemoize);
       var isBrowser4 = typeof document !== "undefined";
       var hasOwnProperty = {}.hasOwnProperty;
-      var EmotionCacheContext = /* @__PURE__ */ React66.createContext(
+      var EmotionCacheContext = /* @__PURE__ */ React69.createContext(
         typeof HTMLElement !== "undefined" ? /* @__PURE__ */ createCache__default["default"]({
           key: "css"
         }) : null
@@ -25713,23 +25713,23 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
       var CacheProvider = EmotionCacheContext.Provider;
       var __unsafe_useEmotionCache = function useEmotionCache() {
-        return React66.useContext(EmotionCacheContext);
+        return React69.useContext(EmotionCacheContext);
       };
       exports.withEmotionCache = function withEmotionCache(func2) {
-        return /* @__PURE__ */ React66.forwardRef(function(props, ref) {
-          var cache = React66.useContext(EmotionCacheContext);
+        return /* @__PURE__ */ React69.forwardRef(function(props, ref) {
+          var cache = React69.useContext(EmotionCacheContext);
           return func2(props, cache, ref);
         });
       };
       if (!isBrowser4) {
         exports.withEmotionCache = function withEmotionCache(func2) {
           return function(props) {
-            var cache = React66.useContext(EmotionCacheContext);
+            var cache = React69.useContext(EmotionCacheContext);
             if (cache === null) {
               cache = createCache__default["default"]({
                 key: "css"
               });
-              return /* @__PURE__ */ React66.createElement(EmotionCacheContext.Provider, {
+              return /* @__PURE__ */ React69.createElement(EmotionCacheContext.Provider, {
                 value: cache
               }, func2(props, cache));
             } else {
@@ -25738,12 +25738,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           };
         };
       }
-      var ThemeContext2 = /* @__PURE__ */ React66.createContext({});
+      var ThemeContext2 = /* @__PURE__ */ React69.createContext({});
       if (true) {
         ThemeContext2.displayName = "EmotionThemeContext";
       }
       var useTheme2 = function useTheme3() {
-        return React66.useContext(ThemeContext2);
+        return React69.useContext(ThemeContext2);
       };
       var getTheme2 = function getTheme3(outerTheme, theme3) {
         if (typeof theme3 === "function") {
@@ -25764,24 +25764,24 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         });
       });
       var ThemeProvider2 = function ThemeProvider3(props) {
-        var theme3 = React66.useContext(ThemeContext2);
+        var theme3 = React69.useContext(ThemeContext2);
         if (props.theme !== theme3) {
           theme3 = createCacheWithTheme(theme3)(props.theme);
         }
-        return /* @__PURE__ */ React66.createElement(ThemeContext2.Provider, {
+        return /* @__PURE__ */ React69.createElement(ThemeContext2.Provider, {
           value: theme3
         }, props.children);
       };
       function withTheme(Component3) {
         var componentName = Component3.displayName || Component3.name || "Component";
         var render = function render2(props, ref) {
-          var theme3 = React66.useContext(ThemeContext2);
-          return /* @__PURE__ */ React66.createElement(Component3, _extends5({
+          var theme3 = React69.useContext(ThemeContext2);
+          return /* @__PURE__ */ React69.createElement(Component3, _extends5({
             theme: theme3,
             ref
           }, props));
         };
-        var WithTheme = /* @__PURE__ */ React66.forwardRef(render);
+        var WithTheme = /* @__PURE__ */ React69.forwardRef(render);
         WithTheme.displayName = "WithTheme(" + componentName + ")";
         return _isolatedHnrs_dist_emotionReact_isolatedHnrs["default"](WithTheme, Component3);
       }
@@ -25851,7 +25851,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
             serializedNames += " " + next.name;
             next = next.next;
           }
-          return /* @__PURE__ */ React66.createElement("style", (_ref22 = {}, _ref22["data-emotion"] = cache.key + " " + serializedNames, _ref22.dangerouslySetInnerHTML = {
+          return /* @__PURE__ */ React69.createElement("style", (_ref22 = {}, _ref22["data-emotion"] = cache.key + " " + serializedNames, _ref22.dangerouslySetInnerHTML = {
             __html: rules
           }, _ref22.nonce = cache.sheet.nonce, _ref22));
         }
@@ -25870,7 +25870,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         } else if (props.className != null) {
           className = props.className + " ";
         }
-        var serialized = serialize.serializeStyles(registeredStyles, void 0, React66.useContext(ThemeContext2));
+        var serialized = serialize.serializeStyles(registeredStyles, void 0, React69.useContext(ThemeContext2));
         if (serialized.name.indexOf("-") === -1) {
           var labelFromStack = props[labelPropName];
           if (labelFromStack) {
@@ -25886,11 +25886,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
         newProps.ref = ref;
         newProps.className = className;
-        return /* @__PURE__ */ React66.createElement(React66.Fragment, null, /* @__PURE__ */ React66.createElement(Insertion, {
+        return /* @__PURE__ */ React69.createElement(React69.Fragment, null, /* @__PURE__ */ React69.createElement(Insertion, {
           cache,
           serialized,
           isStringTag: typeof WrappedComponent === "string"
-        }), /* @__PURE__ */ React66.createElement(WrappedComponent, newProps));
+        }), /* @__PURE__ */ React69.createElement(WrappedComponent, newProps));
       });
       if (true) {
         Emotion.displayName = "EmotionCssPropInternal";
@@ -25913,7 +25913,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     "node_modules/@emotion/react/dist/emotion-react.cjs.dev.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
-      var React66 = require_react();
+      var React69 = require_react();
       require_emotion_cache_cjs();
       var emotionElement = require_emotion_element_b63ca7c6_cjs_dev();
       require_extends();
@@ -26048,7 +26048,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       var jsx = function jsx2(type, props) {
         var args = arguments;
         if (props == null || !emotionElement.hasOwnProperty.call(props, "css")) {
-          return React66.createElement.apply(void 0, args);
+          return React69.createElement.apply(void 0, args);
         }
         var argsLength = args.length;
         var createElementArgArray = new Array(argsLength);
@@ -26057,7 +26057,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         for (var i = 2; i < argsLength; i++) {
           createElementArgArray[i] = args[i];
         }
-        return React66.createElement.apply(null, createElementArgArray);
+        return React69.createElement.apply(null, createElementArgArray);
       };
       var warnedAboutCssPropForGlobal = false;
       var Global3 = /* @__PURE__ */ emotionElement.withEmotionCache(function(props, cache) {
@@ -26066,7 +26066,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           warnedAboutCssPropForGlobal = true;
         }
         var styles2 = props.styles;
-        var serialized = serialize.serializeStyles([styles2], void 0, React66.useContext(emotionElement.ThemeContext));
+        var serialized = serialize.serializeStyles([styles2], void 0, React69.useContext(emotionElement.ThemeContext));
         if (!emotionElement.isBrowser) {
           var _ref2;
           var serializedNames = serialized.name;
@@ -26085,11 +26085,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           if (shouldCache) {
             return null;
           }
-          return /* @__PURE__ */ React66.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + "-global " + serializedNames, _ref2.dangerouslySetInnerHTML = {
+          return /* @__PURE__ */ React69.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + "-global " + serializedNames, _ref2.dangerouslySetInnerHTML = {
             __html: rules
           }, _ref2.nonce = cache.sheet.nonce, _ref2));
         }
-        var sheetRef = React66.useRef();
+        var sheetRef = React69.useRef();
         useInsertionEffectWithFallbacks.useInsertionEffectWithLayoutFallback(function() {
           var key = cache.key + "-global";
           var sheet = new cache.sheet.constructor({
@@ -26217,7 +26217,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         });
         if (!emotionElement.isBrowser && rules.length !== 0) {
           var _ref22;
-          return /* @__PURE__ */ React66.createElement("style", (_ref22 = {}, _ref22["data-emotion"] = cache.key + " " + serializedArr.map(function(serialized) {
+          return /* @__PURE__ */ React69.createElement("style", (_ref22 = {}, _ref22["data-emotion"] = cache.key + " " + serializedArr.map(function(serialized) {
             return serialized.name;
           }).join(" "), _ref22.dangerouslySetInnerHTML = {
             __html: rules
@@ -26240,7 +26240,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           utils.registerStyles(cache, serialized, false);
           return cache.key + "-" + serialized.name;
         };
-        var cx11 = function cx12() {
+        var cx12 = function cx13() {
           if (hasRendered && true) {
             throw new Error("cx can only be used during render");
           }
@@ -26251,12 +26251,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         };
         var content = {
           css: css3,
-          cx: cx11,
-          theme: React66.useContext(emotionElement.ThemeContext)
+          cx: cx12,
+          theme: React69.useContext(emotionElement.ThemeContext)
         };
         var ele = props.children(content);
         hasRendered = true;
-        return /* @__PURE__ */ React66.createElement(React66.Fragment, null, /* @__PURE__ */ React66.createElement(Insertion, {
+        return /* @__PURE__ */ React69.createElement(React69.Fragment, null, /* @__PURE__ */ React69.createElement(Insertion, {
           cache,
           serializedArr
         }), ele);
@@ -26351,7 +26351,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var _extends5 = require_extends();
-      var React66 = require_react();
+      var React69 = require_react();
       var isPropValid = require_emotion_is_prop_valid_cjs();
       var react = require_emotion_react_cjs();
       var utils = require_emotion_utils_cjs();
@@ -26400,7 +26400,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
             serializedNames += " " + next.name;
             next = next.next;
           }
-          return /* @__PURE__ */ React66.createElement("style", (_ref22 = {}, _ref22["data-emotion"] = cache.key + " " + serializedNames, _ref22.dangerouslySetInnerHTML = {
+          return /* @__PURE__ */ React69.createElement("style", (_ref22 = {}, _ref22["data-emotion"] = cache.key + " " + serializedNames, _ref22.dangerouslySetInnerHTML = {
             __html: rules
           }, _ref22.nonce = cache.sheet.nonce, _ref22));
         }
@@ -26455,7 +26455,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
               for (var key in props) {
                 mergedProps[key] = props[key];
               }
-              mergedProps.theme = React66.useContext(react.ThemeContext);
+              mergedProps.theme = React69.useContext(react.ThemeContext);
             }
             if (typeof props.className === "string") {
               className = utils.getRegisteredStyles(cache.registered, classInterpolations, props.className);
@@ -26478,11 +26478,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
             }
             newProps.className = className;
             newProps.ref = ref;
-            return /* @__PURE__ */ React66.createElement(React66.Fragment, null, /* @__PURE__ */ React66.createElement(Insertion, {
+            return /* @__PURE__ */ React69.createElement(React69.Fragment, null, /* @__PURE__ */ React69.createElement(Insertion, {
               cache,
               serialized,
               isStringTag: typeof FinalTag === "string"
-            }), /* @__PURE__ */ React66.createElement(FinalTag, newProps));
+            }), /* @__PURE__ */ React69.createElement(FinalTag, newProps));
           });
           Styled.displayName = identifierName !== void 0 ? identifierName : "Styled(" + (typeof baseTag === "string" ? baseTag : baseTag.displayName || baseTag.name || "Component") + ")";
           Styled.defaultProps = tag.defaultProps;
@@ -28765,11 +28765,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
 
   // app/main.tsx
-  var import_react193 = __toESM(require_react());
+  var import_react200 = __toESM(require_react());
   var import_client = __toESM(require_client());
 
   // node_modules/@chakra-ui/react/dist/index.esm.js
-  var import_react150 = __toESM(require_react());
+  var import_react154 = __toESM(require_react());
 
   // node_modules/@chakra-ui/accordion/dist/index.esm.js
   var import_react62 = __toESM(require_react());
@@ -43681,12 +43681,272 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     });
   });
 
-  // node_modules/@chakra-ui/react-use-update-effect/dist/index.esm.js
+  // node_modules/@chakra-ui/form-control/dist/index.esm.js
   var import_react79 = __toESM(require_react());
+  var import_react80 = __toESM(require_react());
+  var cx8 = (...classNames2) => classNames2.filter(Boolean).join(" ");
+  var dataAttr2 = (condition) => condition ? "" : void 0;
+  var ariaAttr = (condition) => condition ? true : void 0;
+  function callAllHandlers3(...fns) {
+    return function func2(event) {
+      fns.some((fn2) => {
+        fn2 == null ? void 0 : fn2(event);
+        return event == null ? void 0 : event.defaultPrevented;
+      });
+    };
+  }
+  var [FormControlStylesProvider, useFormControlStyles] = createContext3({
+    name: `FormControlStylesContext`,
+    errorMessage: `useFormControlStyles returned is 'undefined'. Seems you forgot to wrap the components in "<FormControl />" `
+  });
+  var [FormControlProvider, useFormControlContext] = createContext3({
+    strict: false,
+    name: "FormControlContext"
+  });
+  function useFormControlProvider(props) {
+    const {
+      id: idProp,
+      isRequired,
+      isInvalid,
+      isDisabled: isDisabled2,
+      isReadOnly,
+      ...htmlProps
+    } = props;
+    const uuid = (0, import_react80.useId)();
+    const id3 = idProp || `field-${uuid}`;
+    const labelId = `${id3}-label`;
+    const feedbackId = `${id3}-feedback`;
+    const helpTextId = `${id3}-helptext`;
+    const [hasFeedbackText, setHasFeedbackText] = (0, import_react80.useState)(false);
+    const [hasHelpText, setHasHelpText] = (0, import_react80.useState)(false);
+    const [isFocused, setFocus2] = (0, import_react80.useState)(false);
+    const getHelpTextProps = (0, import_react80.useCallback)((props2 = {}, forwardedRef = null) => ({
+      id: helpTextId,
+      ...props2,
+      ref: mergeRefs(forwardedRef, (node2) => {
+        if (!node2)
+          return;
+        setHasHelpText(true);
+      })
+    }), [helpTextId]);
+    const getLabelProps = (0, import_react80.useCallback)((props2 = {}, forwardedRef = null) => ({
+      ...props2,
+      ref: forwardedRef,
+      "data-focus": dataAttr2(isFocused),
+      "data-disabled": dataAttr2(isDisabled2),
+      "data-invalid": dataAttr2(isInvalid),
+      "data-readonly": dataAttr2(isReadOnly),
+      id: props2.id ?? labelId,
+      htmlFor: props2.htmlFor ?? id3
+    }), [id3, isDisabled2, isFocused, isInvalid, isReadOnly, labelId]);
+    const getErrorMessageProps = (0, import_react80.useCallback)((props2 = {}, forwardedRef = null) => ({
+      id: feedbackId,
+      ...props2,
+      ref: mergeRefs(forwardedRef, (node2) => {
+        if (!node2)
+          return;
+        setHasFeedbackText(true);
+      }),
+      "aria-live": "polite"
+    }), [feedbackId]);
+    const getRootProps = (0, import_react80.useCallback)((props2 = {}, forwardedRef = null) => ({
+      ...props2,
+      ...htmlProps,
+      ref: forwardedRef,
+      role: "group"
+    }), [htmlProps]);
+    const getRequiredIndicatorProps = (0, import_react80.useCallback)((props2 = {}, forwardedRef = null) => ({
+      ...props2,
+      ref: forwardedRef,
+      role: "presentation",
+      "aria-hidden": true,
+      children: props2.children || "*"
+    }), []);
+    return {
+      isRequired: !!isRequired,
+      isInvalid: !!isInvalid,
+      isReadOnly: !!isReadOnly,
+      isDisabled: !!isDisabled2,
+      isFocused: !!isFocused,
+      onFocus: () => setFocus2(true),
+      onBlur: () => setFocus2(false),
+      hasFeedbackText,
+      setHasFeedbackText,
+      hasHelpText,
+      setHasHelpText,
+      id: id3,
+      labelId,
+      feedbackId,
+      helpTextId,
+      htmlProps,
+      getHelpTextProps,
+      getErrorMessageProps,
+      getRootProps,
+      getLabelProps,
+      getRequiredIndicatorProps
+    };
+  }
+  var FormControl = forwardRef(function FormControl2(props, ref) {
+    const styles2 = useMultiStyleConfig("Form", props);
+    const ownProps = omitThemingProps(props);
+    const {
+      getRootProps,
+      htmlProps: _,
+      ...context
+    } = useFormControlProvider(ownProps);
+    const className = cx8("chakra-form-control", props.className);
+    return /* @__PURE__ */ import_react79.default.createElement(FormControlProvider, {
+      value: context
+    }, /* @__PURE__ */ import_react79.default.createElement(FormControlStylesProvider, {
+      value: styles2
+    }, /* @__PURE__ */ import_react79.default.createElement(chakra.div, {
+      ...getRootProps({}, ref),
+      className,
+      __css: styles2["container"]
+    })));
+  });
+  FormControl.displayName = "FormControl";
+  var FormHelperText = forwardRef(function FormHelperText2(props, ref) {
+    const field = useFormControlContext();
+    const styles2 = useFormControlStyles();
+    const className = cx8("chakra-form__helper-text", props.className);
+    return /* @__PURE__ */ import_react79.default.createElement(chakra.div, {
+      ...field == null ? void 0 : field.getHelpTextProps(props, ref),
+      __css: styles2.helperText,
+      className
+    });
+  });
+  FormHelperText.displayName = "FormHelperText";
+  function useFormControl(props) {
+    const { isDisabled: isDisabled2, isInvalid, isReadOnly, isRequired, ...rest } = useFormControlProps(props);
+    return {
+      ...rest,
+      disabled: isDisabled2,
+      readOnly: isReadOnly,
+      required: isRequired,
+      "aria-invalid": ariaAttr(isInvalid),
+      "aria-required": ariaAttr(isRequired),
+      "aria-readonly": ariaAttr(isReadOnly)
+    };
+  }
+  function useFormControlProps(props) {
+    const field = useFormControlContext();
+    const {
+      id: id3,
+      disabled,
+      readOnly,
+      required,
+      isRequired,
+      isInvalid,
+      isReadOnly,
+      isDisabled: isDisabled2,
+      onFocus: onFocus3,
+      onBlur: onBlur3,
+      ...rest
+    } = props;
+    const labelIds = props["aria-describedby"] ? [props["aria-describedby"]] : [];
+    if ((field == null ? void 0 : field.hasFeedbackText) && (field == null ? void 0 : field.isInvalid)) {
+      labelIds.push(field.feedbackId);
+    }
+    if (field == null ? void 0 : field.hasHelpText) {
+      labelIds.push(field.helpTextId);
+    }
+    return {
+      ...rest,
+      "aria-describedby": labelIds.join(" ") || void 0,
+      id: id3 ?? (field == null ? void 0 : field.id),
+      isDisabled: disabled ?? isDisabled2 ?? (field == null ? void 0 : field.isDisabled),
+      isReadOnly: readOnly ?? isReadOnly ?? (field == null ? void 0 : field.isReadOnly),
+      isRequired: required ?? isRequired ?? (field == null ? void 0 : field.isRequired),
+      isInvalid: isInvalid ?? (field == null ? void 0 : field.isInvalid),
+      onFocus: callAllHandlers3(field == null ? void 0 : field.onFocus, onFocus3),
+      onBlur: callAllHandlers3(field == null ? void 0 : field.onBlur, onBlur3)
+    };
+  }
+  var [FormErrorStylesProvider, useFormErrorStyles] = createContext3({
+    name: `FormErrorStylesContext`,
+    errorMessage: `useFormErrorStyles returned is 'undefined'. Seems you forgot to wrap the components in "<FormError />" `
+  });
+  var FormErrorMessage = forwardRef((props, ref) => {
+    const styles2 = useMultiStyleConfig("FormError", props);
+    const ownProps = omitThemingProps(props);
+    const field = useFormControlContext();
+    if (!(field == null ? void 0 : field.isInvalid))
+      return null;
+    return /* @__PURE__ */ import_react79.default.createElement(FormErrorStylesProvider, {
+      value: styles2
+    }, /* @__PURE__ */ import_react79.default.createElement(chakra.div, {
+      ...field == null ? void 0 : field.getErrorMessageProps(ownProps, ref),
+      className: cx8("chakra-form__error-message", props.className),
+      __css: {
+        display: "flex",
+        alignItems: "center",
+        ...styles2.text
+      }
+    }));
+  });
+  FormErrorMessage.displayName = "FormErrorMessage";
+  var FormErrorIcon = forwardRef((props, ref) => {
+    const styles2 = useFormErrorStyles();
+    const field = useFormControlContext();
+    if (!(field == null ? void 0 : field.isInvalid))
+      return null;
+    const _className = cx8("chakra-form__error-icon", props.className);
+    return /* @__PURE__ */ import_react79.default.createElement(Icon, {
+      ref,
+      "aria-hidden": true,
+      ...props,
+      __css: styles2.icon,
+      className: _className
+    }, /* @__PURE__ */ import_react79.default.createElement("path", {
+      fill: "currentColor",
+      d: "M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+    }));
+  });
+  FormErrorIcon.displayName = "FormErrorIcon";
+  var FormLabel = forwardRef(function FormLabel2(passedProps, ref) {
+    const styles2 = useStyleConfig("FormLabel", passedProps);
+    const props = omitThemingProps(passedProps);
+    const {
+      className,
+      children,
+      requiredIndicator = /* @__PURE__ */ import_react79.default.createElement(RequiredIndicator, null),
+      optionalIndicator = null,
+      ...rest
+    } = props;
+    const field = useFormControlContext();
+    const ownProps = (field == null ? void 0 : field.getLabelProps(rest, ref)) ?? { ref, ...rest };
+    return /* @__PURE__ */ import_react79.default.createElement(chakra.label, {
+      ...ownProps,
+      className: cx8("chakra-form__label", props.className),
+      __css: {
+        display: "block",
+        textAlign: "start",
+        ...styles2
+      }
+    }, children, (field == null ? void 0 : field.isRequired) ? requiredIndicator : optionalIndicator);
+  });
+  FormLabel.displayName = "FormLabel";
+  var RequiredIndicator = forwardRef(function RequiredIndicator2(props, ref) {
+    const field = useFormControlContext();
+    const styles2 = useFormControlStyles();
+    if (!(field == null ? void 0 : field.isRequired))
+      return null;
+    const className = cx8("chakra-form__required-indicator", props.className);
+    return /* @__PURE__ */ import_react79.default.createElement(chakra.span, {
+      ...field == null ? void 0 : field.getRequiredIndicatorProps(props, ref),
+      __css: styles2.requiredIndicator,
+      className
+    });
+  });
+  RequiredIndicator.displayName = "RequiredIndicator";
+
+  // node_modules/@chakra-ui/react-use-update-effect/dist/index.esm.js
+  var import_react81 = __toESM(require_react());
   function useUpdateEffect(callback, deps) {
-    const renderCycleRef = (0, import_react79.useRef)(false);
-    const effectCycleRef = (0, import_react79.useRef)(false);
-    (0, import_react79.useEffect)(() => {
+    const renderCycleRef = (0, import_react81.useRef)(false);
+    const effectCycleRef = (0, import_react81.useRef)(false);
+    (0, import_react81.useEffect)(() => {
       const mounted = renderCycleRef.current;
       const run = mounted && effectCycleRef.current;
       if (run) {
@@ -43694,7 +43954,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
       effectCycleRef.current = true;
     }, deps);
-    (0, import_react79.useEffect)(() => {
+    (0, import_react81.useEffect)(() => {
       renderCycleRef.current = true;
       return () => {
         renderCycleRef.current = false;
@@ -43703,13 +43963,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/close-button/dist/index.esm.js
-  var import_react80 = __toESM(require_react());
+  var import_react82 = __toESM(require_react());
   function CloseIcon(props) {
-    return /* @__PURE__ */ import_react80.default.createElement(Icon, {
+    return /* @__PURE__ */ import_react82.default.createElement(Icon, {
       focusable: "false",
       "aria-hidden": true,
       ...props
-    }, /* @__PURE__ */ import_react80.default.createElement("path", {
+    }, /* @__PURE__ */ import_react82.default.createElement("path", {
       fill: "currentColor",
       d: "M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
     }));
@@ -43724,7 +43984,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       justifyContent: "center",
       flexShrink: 0
     };
-    return /* @__PURE__ */ import_react80.default.createElement(chakra.button, {
+    return /* @__PURE__ */ import_react82.default.createElement(chakra.button, {
       type: "button",
       "aria-label": "Close",
       ref,
@@ -43735,7 +43995,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         ...__css
       },
       ...rest
-    }, children || /* @__PURE__ */ import_react80.default.createElement(CloseIcon, {
+    }, children || /* @__PURE__ */ import_react82.default.createElement(CloseIcon, {
       width: "1em",
       height: "1em"
     }));
@@ -43743,8 +44003,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   CloseButton.displayName = "CloseButton";
 
   // node_modules/@chakra-ui/css-reset/dist/index.esm.js
-  var import_react81 = __toESM(require_react());
-  var import_react82 = __toESM(require_emotion_react_cjs());
+  var import_react83 = __toESM(require_react());
+  var import_react84 = __toESM(require_emotion_react_cjs());
   var vhPolyfill = `
   :root {
     --chakra-vh: 100vh;
@@ -43768,10 +44028,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }
   }
 `;
-  var CSSPolyfill = () => /* @__PURE__ */ import_react81.default.createElement(import_react82.Global, {
+  var CSSPolyfill = () => /* @__PURE__ */ import_react83.default.createElement(import_react84.Global, {
     styles: vhPolyfill
   });
-  var CSSReset = () => /* @__PURE__ */ import_react81.default.createElement(import_react82.Global, {
+  var CSSReset = () => /* @__PURE__ */ import_react83.default.createElement(import_react84.Global, {
     styles: `
       html {
         line-height: 1.5;
@@ -44054,10 +44314,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
 
   // node_modules/@chakra-ui/react-use-event-listener/dist/index.esm.js
-  var import_react83 = __toESM(require_react());
+  var import_react85 = __toESM(require_react());
   function useEventListener(target, event, handler, options) {
     const listener = useCallbackRef(handler);
-    (0, import_react83.useEffect)(() => {
+    (0, import_react85.useEffect)(() => {
       const node2 = typeof target === "function" ? target() : target ?? document;
       if (!handler || !node2)
         return;
@@ -44073,15 +44333,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/hooks/dist/index.esm.js
-  var import_react84 = __toESM(require_react());
-  var import_react85 = __toESM(require_react());
   var import_react86 = __toESM(require_react());
   var import_react87 = __toESM(require_react());
   var import_react88 = __toESM(require_react());
   var import_react89 = __toESM(require_react());
-  var import_copy_to_clipboard = __toESM(require_copy_to_clipboard());
   var import_react90 = __toESM(require_react());
   var import_react91 = __toESM(require_react());
+  var import_copy_to_clipboard = __toESM(require_copy_to_clipboard());
   var import_react92 = __toESM(require_react());
   var import_react93 = __toESM(require_react());
   var import_react94 = __toESM(require_react());
@@ -44100,20 +44358,22 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var import_react107 = __toESM(require_react());
   var import_react108 = __toESM(require_react());
   var import_react109 = __toESM(require_react());
-  var useSafeLayoutEffect3 = isBrowser ? import_react87.useLayoutEffect : import_react87.useEffect;
+  var import_react110 = __toESM(require_react());
+  var import_react111 = __toESM(require_react());
+  var useSafeLayoutEffect3 = isBrowser ? import_react89.useLayoutEffect : import_react89.useEffect;
   function useCallbackRef2(fn2, deps = []) {
-    const ref = (0, import_react86.useRef)(fn2);
+    const ref = (0, import_react88.useRef)(fn2);
     useSafeLayoutEffect3(() => {
       ref.current = fn2;
     });
-    return (0, import_react86.useCallback)((...args) => {
+    return (0, import_react88.useCallback)((...args) => {
       var _a8;
       return (_a8 = ref.current) == null ? void 0 : _a8.call(ref, ...args);
     }, deps);
   }
   function useBoolean(initialState2 = false) {
-    const [value, setValue] = (0, import_react88.useState)(initialState2);
-    const callbacks = (0, import_react88.useMemo)(() => ({
+    const [value, setValue] = (0, import_react90.useState)(initialState2);
+    const callbacks = (0, import_react90.useMemo)(() => ({
       on: () => setValue(true),
       off: () => setValue(false),
       toggle: () => setValue((prev) => !prev)
@@ -44125,9 +44385,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const value = isControlled && typeof prop !== "undefined" ? prop : state2;
     return [isControlled, value];
   }
-  function useId5(idProp, prefix) {
-    const id3 = (0, import_react93.useId)();
-    return (0, import_react93.useMemo)(() => idProp || [prefix, id3].filter(Boolean).join("-"), [idProp, prefix, id3]);
+  function useId6(idProp, prefix) {
+    const id3 = (0, import_react95.useId)();
+    return (0, import_react95.useMemo)(() => idProp || [prefix, id3].filter(Boolean).join("-"), [idProp, prefix, id3]);
   }
   function useDisclosure(props = {}) {
     const {
@@ -44138,22 +44398,22 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     } = props;
     const onOpenPropCallbackRef = useCallbackRef2(onOpenProp);
     const onClosePropCallbackRef = useCallbackRef2(onCloseProp);
-    const [isOpenState, setIsOpen] = (0, import_react94.useState)(props.defaultIsOpen || false);
+    const [isOpenState, setIsOpen] = (0, import_react96.useState)(props.defaultIsOpen || false);
     const [isControlled, isOpen] = useControllableProp(isOpenProp, isOpenState);
-    const id3 = useId5(idProp, "disclosure");
-    const onClose = (0, import_react94.useCallback)(() => {
+    const id3 = useId6(idProp, "disclosure");
+    const onClose = (0, import_react96.useCallback)(() => {
       if (!isControlled) {
         setIsOpen(false);
       }
       onClosePropCallbackRef == null ? void 0 : onClosePropCallbackRef();
     }, [isControlled, onClosePropCallbackRef]);
-    const onOpen = (0, import_react94.useCallback)(() => {
+    const onOpen = (0, import_react96.useCallback)(() => {
       if (!isControlled) {
         setIsOpen(true);
       }
       onOpenPropCallbackRef == null ? void 0 : onOpenPropCallbackRef();
     }, [isControlled, onOpenPropCallbackRef]);
-    const onToggle = (0, import_react94.useCallback)(() => {
+    const onToggle = (0, import_react96.useCallback)(() => {
       const action = isOpen ? onClose : onOpen;
       action();
     }, [isOpen, onOpen, onClose]);
@@ -44178,7 +44438,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
   function useInterval(callback, delay2) {
     const fn2 = useCallbackRef2(callback);
-    (0, import_react100.useEffect)(() => {
+    (0, import_react102.useEffect)(() => {
       let intervalId = null;
       const tick = () => fn2();
       if (delay2 !== null) {
@@ -44192,6 +44452,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }, [delay2, fn2]);
   }
 
+  // node_modules/@chakra-ui/input/dist/index.esm.js
+  var import_react112 = __toESM(require_react());
+
   // node_modules/@chakra-ui/object-utils/dist/index.esm.js
   function compact(object2) {
     const clone = Object.assign({}, object2);
@@ -44202,8 +44465,185 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     return clone;
   }
 
+  // node_modules/@chakra-ui/input/dist/index.esm.js
+  var import_react113 = __toESM(require_react());
+  var Input = forwardRef(function Input2(props, ref) {
+    const { htmlSize, ...rest } = props;
+    const styles2 = useMultiStyleConfig("Input", rest);
+    const ownProps = omitThemingProps(rest);
+    const input = useFormControl(ownProps);
+    const _className = cx("chakra-input", props.className);
+    return /* @__PURE__ */ import_react112.default.createElement(chakra.input, {
+      size: htmlSize,
+      ...input,
+      __css: styles2.field,
+      ref,
+      className: _className
+    });
+  });
+  Input.displayName = "Input";
+  Input.id = "Input";
+  var [InputGroupStylesProvider, useInputGroupStyles] = createContext3({
+    name: `InputGroupStylesContext`,
+    errorMessage: `useInputGroupStyles returned is 'undefined'. Seems you forgot to wrap the components in "<InputGroup />" `
+  });
+  var InputGroup = forwardRef(function InputGroup2(props, ref) {
+    const styles2 = useMultiStyleConfig("Input", props);
+    const { children, className, ...rest } = omitThemingProps(props);
+    const _className = cx("chakra-input__group", className);
+    const groupStyles = {};
+    const validChildren = getValidChildren(children);
+    const input = styles2.field;
+    validChildren.forEach((child) => {
+      if (!styles2)
+        return;
+      if (input && child.type.id === "InputLeftElement") {
+        groupStyles.paddingStart = input.height ?? input.h;
+      }
+      if (input && child.type.id === "InputRightElement") {
+        groupStyles.paddingEnd = input.height ?? input.h;
+      }
+      if (child.type.id === "InputRightAddon") {
+        groupStyles.borderEndRadius = 0;
+      }
+      if (child.type.id === "InputLeftAddon") {
+        groupStyles.borderStartRadius = 0;
+      }
+    });
+    const clones = validChildren.map((child) => {
+      var _a8, _b3;
+      const theming = compact({
+        size: ((_a8 = child.props) == null ? void 0 : _a8.size) || props.size,
+        variant: ((_b3 = child.props) == null ? void 0 : _b3.variant) || props.variant
+      });
+      return child.type.id !== "Input" ? (0, import_react113.cloneElement)(child, theming) : (0, import_react113.cloneElement)(child, Object.assign(theming, groupStyles, child.props));
+    });
+    return /* @__PURE__ */ import_react112.default.createElement(chakra.div, {
+      className: _className,
+      ref,
+      __css: {
+        width: "100%",
+        display: "flex",
+        position: "relative"
+      },
+      ...rest
+    }, /* @__PURE__ */ import_react112.default.createElement(InputGroupStylesProvider, {
+      value: styles2
+    }, clones));
+  });
+  InputGroup.displayName = "InputGroup";
+  var placements = {
+    left: {
+      marginEnd: "-1px",
+      borderEndRadius: 0,
+      borderEndColor: "transparent"
+    },
+    right: {
+      marginStart: "-1px",
+      borderStartRadius: 0,
+      borderStartColor: "transparent"
+    }
+  };
+  var StyledAddon = chakra("div", {
+    baseStyle: {
+      flex: "0 0 auto",
+      width: "auto",
+      display: "flex",
+      alignItems: "center",
+      whiteSpace: "nowrap"
+    }
+  });
+  var InputAddon = forwardRef(function InputAddon2(props, ref) {
+    const { placement = "left", ...rest } = props;
+    const placementStyles = placements[placement] ?? {};
+    const styles2 = useInputGroupStyles();
+    return /* @__PURE__ */ import_react112.default.createElement(StyledAddon, {
+      ref,
+      ...rest,
+      __css: {
+        ...styles2.addon,
+        ...placementStyles
+      }
+    });
+  });
+  InputAddon.displayName = "InputAddon";
+  var InputLeftAddon = forwardRef(function InputLeftAddon2(props, ref) {
+    return /* @__PURE__ */ import_react112.default.createElement(InputAddon, {
+      ref,
+      placement: "left",
+      ...props,
+      className: cx("chakra-input__left-addon", props.className)
+    });
+  });
+  InputLeftAddon.displayName = "InputLeftAddon";
+  InputLeftAddon.id = "InputLeftAddon";
+  var InputRightAddon = forwardRef(function InputRightAddon2(props, ref) {
+    return /* @__PURE__ */ import_react112.default.createElement(InputAddon, {
+      ref,
+      placement: "right",
+      ...props,
+      className: cx("chakra-input__right-addon", props.className)
+    });
+  });
+  InputRightAddon.displayName = "InputRightAddon";
+  InputRightAddon.id = "InputRightAddon";
+  var StyledInputElement = chakra("div", {
+    baseStyle: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      position: "absolute",
+      top: "0",
+      zIndex: 2
+    }
+  });
+  var InputElement = forwardRef(function InputElement2(props, ref) {
+    const { placement = "left", ...rest } = props;
+    const styles2 = useInputGroupStyles();
+    const input = styles2.field;
+    const attr = placement === "left" ? "insetStart" : "insetEnd";
+    const elementStyles = {
+      [attr]: "0",
+      width: (input == null ? void 0 : input.height) ?? (input == null ? void 0 : input.h),
+      height: (input == null ? void 0 : input.height) ?? (input == null ? void 0 : input.h),
+      fontSize: input == null ? void 0 : input.fontSize,
+      ...styles2.element
+    };
+    return /* @__PURE__ */ import_react112.default.createElement(StyledInputElement, {
+      ref,
+      __css: elementStyles,
+      ...rest
+    });
+  });
+  InputElement.id = "InputElement";
+  InputElement.displayName = "InputElement";
+  var InputLeftElement = forwardRef(function InputLeftElement2(props, ref) {
+    const { className, ...rest } = props;
+    const _className = cx("chakra-input__left-element", className);
+    return /* @__PURE__ */ import_react112.default.createElement(InputElement, {
+      ref,
+      placement: "left",
+      className: _className,
+      ...rest
+    });
+  });
+  InputLeftElement.id = "InputLeftElement";
+  InputLeftElement.displayName = "InputLeftElement";
+  var InputRightElement = forwardRef(function InputRightElement2(props, ref) {
+    const { className, ...rest } = props;
+    const _className = cx("chakra-input__right-element", className);
+    return /* @__PURE__ */ import_react112.default.createElement(InputElement, {
+      ref,
+      placement: "right",
+      className: _className,
+      ...rest
+    });
+  });
+  InputRightElement.id = "InputRightElement";
+  InputRightElement.displayName = "InputRightElement";
+
   // node_modules/@chakra-ui/layout/dist/index.esm.js
-  var import_react110 = __toESM(require_react());
+  var import_react114 = __toESM(require_react());
 
   // node_modules/@chakra-ui/breakpoint-utils/dist/index.esm.js
   function isObject4(value) {
@@ -44235,15 +44675,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/layout/dist/index.esm.js
-  var import_react111 = __toESM(require_react());
-  var import_react112 = __toESM(require_react());
-  var import_react113 = __toESM(require_react());
-  var import_react114 = __toESM(require_react());
+  var import_react115 = __toESM(require_react());
+  var import_react116 = __toESM(require_react());
+  var import_react117 = __toESM(require_react());
+  var import_react118 = __toESM(require_react());
   var AspectRatio = forwardRef(function(props, ref) {
     const { ratio = 4 / 3, children, className, ...rest } = props;
-    const child = import_react111.Children.only(children);
+    const child = import_react115.Children.only(children);
     const _className = cx("chakra-aspect-ratio", className);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       position: "relative",
       className: _className,
@@ -44278,7 +44718,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Badge = forwardRef(function Badge2(props, ref) {
     const styles2 = useStyleConfig("Badge", props);
     const { className, ...rest } = omitThemingProps(props);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.span, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.span, {
       ref,
       className: cx("chakra-badge", props.className),
       ...rest,
@@ -44296,7 +44736,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Square = forwardRef(function Square2(props, ref) {
     const { size: size3, centerContent = true, ...rest } = props;
     const styles2 = centerContent ? { display: "flex", alignItems: "center", justifyContent: "center" } : {};
-    return /* @__PURE__ */ import_react110.default.createElement(Box, {
+    return /* @__PURE__ */ import_react114.default.createElement(Box, {
       ref,
       boxSize: size3,
       __css: {
@@ -44310,7 +44750,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   Square.displayName = "Square";
   var Circle = forwardRef(function Circle2(props, ref) {
     const { size: size3, ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(Square, {
+    return /* @__PURE__ */ import_react114.default.createElement(Square, {
       size: size3,
       ref,
       borderRadius: "9999px",
@@ -44343,7 +44783,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
   var AbsoluteCenter = forwardRef(function AbsoluteCenter2(props, ref) {
     const { axis = "both", ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       __css: centerStyles[axis],
       ...rest,
@@ -44353,7 +44793,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Code = forwardRef(function Code2(props, ref) {
     const styles2 = useStyleConfig("Code", props);
     const { className, ...rest } = omitThemingProps(props);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.code, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.code, {
       ref,
       className: cx("chakra-code", props.className),
       ...rest,
@@ -44367,7 +44807,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Container = forwardRef(function Container2(props, ref) {
     const { className, centerContent, ...rest } = omitThemingProps(props);
     const styles2 = useStyleConfig("Container", props);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       className: cx("chakra-container", className),
       ...rest,
@@ -44409,7 +44849,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         width: "100%"
       }
     };
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.hr, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.hr, {
       ref,
       "aria-orientation": orientation,
       ...rest,
@@ -44437,7 +44877,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       flexGrow: grow,
       flexShrink: shrink
     };
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       __css: styles2,
       ...rest
@@ -44473,7 +44913,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       gridTemplateRows: templateRows,
       gridTemplateColumns: templateColumns
     };
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       __css: styles2,
       ...rest
@@ -44503,7 +44943,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       gridRowStart: rowStart,
       gridRowEnd: rowEnd
     });
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       __css: styles2,
       ...rest
@@ -44513,7 +44953,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Heading = forwardRef(function Heading2(props, ref) {
     const styles2 = useStyleConfig("Heading", props);
     const { className, ...rest } = omitThemingProps(props);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.h2, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.h2, {
       ref,
       className: cx("chakra-heading", props.className),
       ...rest,
@@ -44524,7 +44964,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Mark = forwardRef(function Mark2(props, ref) {
     const styles2 = useStyleConfig("Mark", props);
     const ownProps = omitThemingProps(props);
-    return /* @__PURE__ */ import_react110.default.createElement(Box, {
+    return /* @__PURE__ */ import_react114.default.createElement(Box, {
       ref,
       ...ownProps,
       as: "mark",
@@ -44534,7 +44974,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Kbd = forwardRef(function Kbd2(props, ref) {
     const styles2 = useStyleConfig("Kbd", props);
     const { className, ...rest } = omitThemingProps(props);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.kbd, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.kbd, {
       ref,
       className: cx("chakra-kbd", className),
       ...rest,
@@ -44548,7 +44988,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Link = forwardRef(function Link2(props, ref) {
     const styles2 = useStyleConfig("Link", props);
     const { className, isExternal, ...rest } = omitThemingProps(props);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.a, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.a, {
       target: isExternal ? "_blank" : void 0,
       rel: isExternal ? "noopener" : void 0,
       ref,
@@ -44560,7 +45000,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   Link.displayName = "Link";
   var LinkOverlay = forwardRef(function LinkOverlay2(props, ref) {
     const { isExternal, target, rel, className, ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.a, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.a, {
       ...rest,
       ref,
       className: cx("chakra-linkbox__overlay", className),
@@ -44584,7 +45024,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var LinkBox = forwardRef(function LinkBox2(props, ref) {
     const { className, ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       position: "relative",
       ...rest,
@@ -44613,9 +45053,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const validChildren = getValidChildren(children);
     const selector2 = "& > *:not(style) ~ *:not(style)";
     const spacingStyle = spacing2 ? { [selector2]: { mt: spacing2 } } : {};
-    return /* @__PURE__ */ import_react110.default.createElement(ListStylesProvider, {
+    return /* @__PURE__ */ import_react114.default.createElement(ListStylesProvider, {
       value: styles2
-    }, /* @__PURE__ */ import_react110.default.createElement(chakra.ul, {
+    }, /* @__PURE__ */ import_react114.default.createElement(chakra.ul, {
       ref,
       listStyleType: styleType,
       listStylePosition: stylePosition,
@@ -44627,7 +45067,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   List.displayName = "List";
   var OrderedList = forwardRef((props, ref) => {
     const { as, ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(List, {
+    return /* @__PURE__ */ import_react114.default.createElement(List, {
       ref,
       as: "ol",
       styleType: "decimal",
@@ -44638,7 +45078,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   OrderedList.displayName = "OrderedList";
   var UnorderedList = forwardRef(function UnorderedList2(props, ref) {
     const { as, ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(List, {
+    return /* @__PURE__ */ import_react114.default.createElement(List, {
       ref,
       as: "ul",
       styleType: "initial",
@@ -44649,7 +45089,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   UnorderedList.displayName = "UnorderedList";
   var ListItem = forwardRef(function ListItem2(props, ref) {
     const styles2 = useListStyles();
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.li, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.li, {
       ref,
       ...props,
       __css: styles2.item
@@ -44658,7 +45098,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   ListItem.displayName = "ListItem";
   var ListIcon = forwardRef(function ListIcon2(props, ref) {
     const styles2 = useListStyles();
-    return /* @__PURE__ */ import_react110.default.createElement(Icon, {
+    return /* @__PURE__ */ import_react114.default.createElement(Icon, {
       ref,
       role: "presentation",
       ...props,
@@ -44670,7 +45110,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { columns, spacingX, spacingY, spacing: spacing2, minChildWidth, ...rest } = props;
     const theme3 = useTheme();
     const templateColumns = minChildWidth ? widthToColumns(minChildWidth, theme3) : countToColumns(columns);
-    return /* @__PURE__ */ import_react110.default.createElement(Grid, {
+    return /* @__PURE__ */ import_react114.default.createElement(Grid, {
       ref,
       gap: spacing2,
       columnGap: spacingX,
@@ -44761,7 +45201,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       "&": mapResponsive(direction2, (value) => dividerStyles[value])
     };
   }
-  var StackItem = (props) => /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+  var StackItem = (props) => /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
     className: "chakra-stack__item",
     ...props,
     __css: {
@@ -44787,26 +45227,26 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...rest
     } = props;
     const direction2 = isInline ? "row" : directionProp ?? "column";
-    const styles2 = (0, import_react113.useMemo)(() => getStackStyles({ direction: direction2, spacing: spacing2 }), [direction2, spacing2]);
-    const dividerStyle = (0, import_react113.useMemo)(() => getDividerStyles({ spacing: spacing2, direction: direction2 }), [spacing2, direction2]);
+    const styles2 = (0, import_react117.useMemo)(() => getStackStyles({ direction: direction2, spacing: spacing2 }), [direction2, spacing2]);
+    const dividerStyle = (0, import_react117.useMemo)(() => getDividerStyles({ spacing: spacing2, direction: direction2 }), [spacing2, direction2]);
     const hasDivider = !!divider;
     const shouldUseChildren = !shouldWrapChildren && !hasDivider;
-    const clones = (0, import_react113.useMemo)(() => {
+    const clones = (0, import_react117.useMemo)(() => {
       const validChildren = getValidChildren(children);
       return shouldUseChildren ? validChildren : validChildren.map((child, index) => {
         const key = typeof child.key !== "undefined" ? child.key : index;
         const isLast = index + 1 === validChildren.length;
-        const wrappedChild = /* @__PURE__ */ import_react110.default.createElement(StackItem, {
+        const wrappedChild = /* @__PURE__ */ import_react114.default.createElement(StackItem, {
           key
         }, child);
         const _child = shouldWrapChildren ? wrappedChild : child;
         if (!hasDivider)
           return _child;
-        const clonedDivider = (0, import_react113.cloneElement)(divider, {
+        const clonedDivider = (0, import_react117.cloneElement)(divider, {
           __css: dividerStyle
         });
         const _divider = isLast ? null : clonedDivider;
-        return /* @__PURE__ */ import_react110.default.createElement(import_react113.Fragment, {
+        return /* @__PURE__ */ import_react114.default.createElement(import_react117.Fragment, {
           key
         }, _child, _divider);
       });
@@ -44819,7 +45259,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       children
     ]);
     const _className = cx("chakra-stack", className);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       display: "flex",
       alignItems: align,
@@ -44832,14 +45272,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }, clones);
   });
   Stack.displayName = "Stack";
-  var HStack = forwardRef((props, ref) => /* @__PURE__ */ import_react110.default.createElement(Stack, {
+  var HStack = forwardRef((props, ref) => /* @__PURE__ */ import_react114.default.createElement(Stack, {
     align: "center",
     ...props,
     direction: "row",
     ref
   }));
   HStack.displayName = "HStack";
-  var StackDivider = (props) => /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+  var StackDivider = (props) => /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
     className: "chakra-stack__divider",
     ...props,
     __css: {
@@ -44852,7 +45292,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }
   });
   StackDivider.displayName = "StackDivider";
-  var VStack = forwardRef((props, ref) => /* @__PURE__ */ import_react110.default.createElement(Stack, {
+  var VStack = forwardRef((props, ref) => /* @__PURE__ */ import_react114.default.createElement(Stack, {
     align: "center",
     ...props,
     direction: "column",
@@ -44867,7 +45307,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       textDecoration: props.decoration,
       textTransform: props.casing
     });
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.p, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.p, {
       ref,
       className: cx("chakra-text", props.className),
       ...aliasedProps,
@@ -44892,7 +45332,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       shouldWrapChildren,
       ...rest
     } = props;
-    const styles2 = (0, import_react114.useMemo)(() => {
+    const styles2 = (0, import_react118.useMemo)(() => {
       const { spacingX: x = spacing2, spacingY: y = spacing2 } = {
         spacingX,
         spacingY
@@ -44915,15 +45355,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
       };
     }, [spacing2, spacingX, spacingY, justify, align, direction2]);
-    const childrenToRender = (0, import_react114.useMemo)(() => shouldWrapChildren ? import_react114.Children.map(children, (child, index) => /* @__PURE__ */ import_react110.default.createElement(WrapItem, {
+    const childrenToRender = (0, import_react118.useMemo)(() => shouldWrapChildren ? import_react118.Children.map(children, (child, index) => /* @__PURE__ */ import_react114.default.createElement(WrapItem, {
       key: index
     }, child)) : children, [children, shouldWrapChildren]);
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.div, {
       ref,
       className: cx("chakra-wrap", className),
       overflow: "hidden",
       ...rest
-    }, /* @__PURE__ */ import_react110.default.createElement(chakra.ul, {
+    }, /* @__PURE__ */ import_react114.default.createElement(chakra.ul, {
       className: "chakra-wrap__list",
       __css: styles2
     }, childrenToRender));
@@ -44931,7 +45371,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   Wrap.displayName = "Wrap";
   var WrapItem = forwardRef(function WrapItem2(props, ref) {
     const { className, ...rest } = props;
-    return /* @__PURE__ */ import_react110.default.createElement(chakra.li, {
+    return /* @__PURE__ */ import_react114.default.createElement(chakra.li, {
       ref,
       __css: { display: "flex", alignItems: "flex-start" },
       className: cx("chakra-wrap__listitem", className),
@@ -44941,8 +45381,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   WrapItem.displayName = "WrapItem";
 
   // node_modules/@chakra-ui/react-env/dist/index.esm.js
-  var import_react115 = __toESM(require_react());
-  var import_react116 = __toESM(require_react());
+  var import_react119 = __toESM(require_react());
+  var import_react120 = __toESM(require_react());
   var doc = {
     body: {
       classList: {
@@ -45039,14 +45479,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     document: ssrDocument
   };
   var defaultEnv = typeof window !== "undefined" ? { window, document } : mockEnv;
-  var EnvironmentContext = (0, import_react116.createContext)(defaultEnv);
+  var EnvironmentContext = (0, import_react120.createContext)(defaultEnv);
   EnvironmentContext.displayName = "EnvironmentContext";
   function EnvironmentProvider(props) {
     const { children, environment: environmentProp } = props;
-    const [node2, setNode] = (0, import_react116.useState)(null);
-    const [mounted, setMounted] = (0, import_react116.useState)(false);
-    (0, import_react116.useEffect)(() => setMounted(true), []);
-    const context = (0, import_react116.useMemo)(() => {
+    const [node2, setNode] = (0, import_react120.useState)(null);
+    const [mounted, setMounted] = (0, import_react120.useState)(false);
+    (0, import_react120.useEffect)(() => setMounted(true), []);
+    const context = (0, import_react120.useMemo)(() => {
       if (environmentProp) {
         return environmentProp;
       }
@@ -45055,13 +45495,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       const env2 = doc2 ? { document: doc2, window: win2 } : defaultEnv;
       return env2;
     }, [node2, environmentProp]);
-    return /* @__PURE__ */ import_react115.default.createElement(EnvironmentContext.Provider, {
+    return /* @__PURE__ */ import_react119.default.createElement(EnvironmentContext.Provider, {
       value: context
-    }, children, !environmentProp && mounted && /* @__PURE__ */ import_react115.default.createElement("span", {
+    }, children, !environmentProp && mounted && /* @__PURE__ */ import_react119.default.createElement("span", {
       id: "__chakra_env",
       hidden: true,
       ref: (el) => {
-        (0, import_react116.startTransition)(() => {
+        (0, import_react120.startTransition)(() => {
           if (el)
             setNode(el);
         });
@@ -45071,21 +45511,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   EnvironmentProvider.displayName = "EnvironmentProvider";
 
   // node_modules/@chakra-ui/clickable/dist/index.esm.js
-  var import_react117 = __toESM(require_react());
-  var import_react118 = __toESM(require_react());
-  var dataAttr2 = (condition) => condition ? "" : void 0;
+  var import_react121 = __toESM(require_react());
+  var import_react122 = __toESM(require_react());
+  var dataAttr3 = (condition) => condition ? "" : void 0;
   function useEventListeners() {
-    const listeners = (0, import_react117.useRef)(/* @__PURE__ */ new Map());
+    const listeners = (0, import_react121.useRef)(/* @__PURE__ */ new Map());
     const currentListeners = listeners.current;
-    const add3 = (0, import_react117.useCallback)((el, type, listener, options) => {
+    const add3 = (0, import_react121.useCallback)((el, type, listener, options) => {
       listeners.current.set(listener, { type, el, options });
       el.addEventListener(type, listener, options);
     }, []);
-    const remove = (0, import_react117.useCallback)((el, type, listener, options) => {
+    const remove = (0, import_react121.useCallback)((el, type, listener, options) => {
       el.removeEventListener(type, listener, options);
       listeners.current.delete(listener);
     }, []);
-    (0, import_react117.useEffect)(() => () => {
+    (0, import_react121.useEffect)(() => () => {
       currentListeners.forEach((value, key) => {
         remove(value.el, value.type, key, value.options);
       });
@@ -45114,8 +45554,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       onMouseLeave,
       ...htmlProps
     } = props;
-    const [isButton, setIsButton] = (0, import_react118.useState)(true);
-    const [isPressed, setIsPressed] = (0, import_react118.useState)(false);
+    const [isButton, setIsButton] = (0, import_react122.useState)(true);
+    const [isPressed, setIsPressed] = (0, import_react122.useState)(false);
     const listeners = useEventListeners();
     const refCallback = (node2) => {
       if (!node2)
@@ -45126,7 +45566,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     };
     const tabIndex = isButton ? tabIndexProp : tabIndexProp || 0;
     const trulyDisabled = isDisabled2 && !isFocusable2;
-    const handleClick = (0, import_react118.useCallback)((event) => {
+    const handleClick = (0, import_react122.useCallback)((event) => {
       if (isDisabled2) {
         event.stopPropagation();
         event.preventDefault();
@@ -45136,7 +45576,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       self2.focus();
       onClick == null ? void 0 : onClick(event);
     }, [isDisabled2, onClick]);
-    const onDocumentKeyUp = (0, import_react118.useCallback)((e) => {
+    const onDocumentKeyUp = (0, import_react122.useCallback)((e) => {
       if (isPressed && isValidElement5(e)) {
         e.preventDefault();
         e.stopPropagation();
@@ -45144,7 +45584,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         listeners.remove(document, "keyup", onDocumentKeyUp, false);
       }
     }, [isPressed, listeners]);
-    const handleKeyDown = (0, import_react118.useCallback)((event) => {
+    const handleKeyDown = (0, import_react122.useCallback)((event) => {
       onKeyDown == null ? void 0 : onKeyDown(event);
       if (isDisabled2 || event.defaultPrevented || event.metaKey) {
         return;
@@ -45172,7 +45612,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       listeners,
       onDocumentKeyUp
     ]);
-    const handleKeyUp = (0, import_react118.useCallback)((event) => {
+    const handleKeyUp = (0, import_react122.useCallback)((event) => {
       onKeyUp == null ? void 0 : onKeyUp(event);
       if (isDisabled2 || event.defaultPrevented || event.metaKey)
         return;
@@ -45186,13 +45626,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         self2.click();
       }
     }, [clickOnSpace, isButton, isDisabled2, onKeyUp]);
-    const onDocumentMouseUp = (0, import_react118.useCallback)((event) => {
+    const onDocumentMouseUp = (0, import_react122.useCallback)((event) => {
       if (event.button !== 0)
         return;
       setIsPressed(false);
       listeners.remove(document, "mouseup", onDocumentMouseUp, false);
     }, [listeners]);
-    const handleMouseDown = (0, import_react118.useCallback)((event) => {
+    const handleMouseDown = (0, import_react122.useCallback)((event) => {
       if (event.button !== 0)
         return;
       if (isDisabled2) {
@@ -45208,7 +45648,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       listeners.add(document, "mouseup", onDocumentMouseUp, false);
       onMouseDown == null ? void 0 : onMouseDown(event);
     }, [isDisabled2, isButton, onMouseDown, listeners, onDocumentMouseUp]);
-    const handleMouseUp = (0, import_react118.useCallback)((event) => {
+    const handleMouseUp = (0, import_react122.useCallback)((event) => {
       if (event.button !== 0)
         return;
       if (!isButton) {
@@ -45216,14 +45656,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
       onMouseUp == null ? void 0 : onMouseUp(event);
     }, [onMouseUp, isButton]);
-    const handleMouseOver = (0, import_react118.useCallback)((event) => {
+    const handleMouseOver = (0, import_react122.useCallback)((event) => {
       if (isDisabled2) {
         event.preventDefault();
         return;
       }
       onMouseOver == null ? void 0 : onMouseOver(event);
     }, [isDisabled2, onMouseOver]);
-    const handleMouseLeave = (0, import_react118.useCallback)((event) => {
+    const handleMouseLeave = (0, import_react122.useCallback)((event) => {
       if (isPressed) {
         event.preventDefault();
         setIsPressed(false);
@@ -45251,7 +45691,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...htmlProps,
       ref,
       role: "button",
-      "data-active": dataAttr2(isPressed),
+      "data-active": dataAttr3(isPressed),
       "aria-disabled": isDisabled2 ? "true" : void 0,
       tabIndex: trulyDisabled ? void 0 : tabIndex,
       onClick: handleClick,
@@ -45347,7 +45787,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var variationPlacements = /* @__PURE__ */ basePlacements.reduce(function(acc, placement) {
     return acc.concat([placement + "-" + start, placement + "-" + end]);
   }, []);
-  var placements = /* @__PURE__ */ [].concat(basePlacements, [auto2]).reduce(function(acc, placement) {
+  var placements2 = /* @__PURE__ */ [].concat(basePlacements, [auto2]).reduce(function(acc, placement) {
     return acc.concat([placement, placement + "-" + start, placement + "-" + end]);
   }, []);
   var beforeRead = "beforeRead";
@@ -46169,16 +46609,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     if (options === void 0) {
       options = {};
     }
-    var _options = options, placement = _options.placement, boundary = _options.boundary, rootBoundary = _options.rootBoundary, padding = _options.padding, flipVariations = _options.flipVariations, _options$allowedAutoP = _options.allowedAutoPlacements, allowedAutoPlacements = _options$allowedAutoP === void 0 ? placements : _options$allowedAutoP;
+    var _options = options, placement = _options.placement, boundary = _options.boundary, rootBoundary = _options.rootBoundary, padding = _options.padding, flipVariations = _options.flipVariations, _options$allowedAutoP = _options.allowedAutoPlacements, allowedAutoPlacements = _options$allowedAutoP === void 0 ? placements2 : _options$allowedAutoP;
     var variation = getVariation(placement);
-    var placements2 = variation ? flipVariations ? variationPlacements : variationPlacements.filter(function(placement2) {
+    var placements3 = variation ? flipVariations ? variationPlacements : variationPlacements.filter(function(placement2) {
       return getVariation(placement2) === variation;
     }) : basePlacements;
-    var allowedPlacements = placements2.filter(function(placement2) {
+    var allowedPlacements = placements3.filter(function(placement2) {
       return allowedAutoPlacements.indexOf(placement2) >= 0;
     });
     if (allowedPlacements.length === 0) {
-      allowedPlacements = placements2;
+      allowedPlacements = placements3;
       if (true) {
         console.error(["Popper: The `allowedAutoPlacements` option did not allow any", "placements. Ensure the `placement` option matches the variation", "of the allowed placements.", 'For example, "auto" cannot be used to allow "bottom-start".', 'Use "auto-start" instead.'].join(" "));
       }
@@ -46215,7 +46655,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     var basePlacement = getBasePlacement(preferredPlacement);
     var isBasePlacement = basePlacement === preferredPlacement;
     var fallbackPlacements = specifiedFallbackPlacements || (isBasePlacement || !flipVariations ? [getOppositePlacement(preferredPlacement)] : getExpandedFallbackPlacements(preferredPlacement));
-    var placements2 = [preferredPlacement].concat(fallbackPlacements).reduce(function(acc, placement2) {
+    var placements3 = [preferredPlacement].concat(fallbackPlacements).reduce(function(acc, placement2) {
       return acc.concat(getBasePlacement(placement2) === auto2 ? computeAutoPlacement(state2, {
         placement: placement2,
         boundary,
@@ -46229,9 +46669,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     var popperRect = state2.rects.popper;
     var checksMap = /* @__PURE__ */ new Map();
     var makeFallbackChecks = true;
-    var firstFittingPlacement = placements2[0];
-    for (var i = 0; i < placements2.length; i++) {
-      var placement = placements2[i];
+    var firstFittingPlacement = placements3[0];
+    for (var i = 0; i < placements3.length; i++) {
+      var placement = placements3[i];
       var _basePlacement = getBasePlacement(placement);
       var isStartVariation = getVariation(placement) === start;
       var isVertical = [top, bottom].indexOf(_basePlacement) >= 0;
@@ -46267,7 +46707,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     if (makeFallbackChecks) {
       var numberOfChecks = flipVariations ? 3 : 1;
       var _loop = function _loop2(_i2) {
-        var fittingPlacement = placements2.find(function(placement2) {
+        var fittingPlacement = placements3.find(function(placement2) {
           var checks2 = checksMap.get(placement2);
           if (checks2) {
             return checks2.slice(0, _i2).every(function(check) {
@@ -46377,7 +46817,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   function offset(_ref2) {
     var state2 = _ref2.state, options = _ref2.options, name = _ref2.name;
     var _options$offset = options.offset, offset2 = _options$offset === void 0 ? [0, 0] : _options$offset;
-    var data = placements.reduce(function(acc, placement) {
+    var data = placements2.reduce(function(acc, placement) {
       acc[placement] = distanceAndSkiddingToXY(placement, state2.rects, offset2);
       return acc;
     }, {});
@@ -46904,7 +47344,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
 
   // node_modules/@chakra-ui/popper/dist/index.esm.js
-  var import_react119 = __toESM(require_react());
+  var import_react123 = __toESM(require_react());
   var toVar2 = (value, fallback) => ({
     var: value,
     varRef: fallback ? `var(${value}, ${fallback})` : `var(${value})`
@@ -47100,13 +47540,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       matchWidth: matchWidth2,
       direction: direction2 = "ltr"
     } = props;
-    const reference2 = (0, import_react119.useRef)(null);
-    const popper2 = (0, import_react119.useRef)(null);
-    const instance = (0, import_react119.useRef)(null);
+    const reference2 = (0, import_react123.useRef)(null);
+    const popper2 = (0, import_react123.useRef)(null);
+    const instance = (0, import_react123.useRef)(null);
     const placement = getPopperPlacement(placementProp, direction2);
-    const cleanup = (0, import_react119.useRef)(() => {
+    const cleanup = (0, import_react123.useRef)(() => {
     });
-    const setupPopper = (0, import_react119.useCallback)(() => {
+    const setupPopper = (0, import_react123.useCallback)(() => {
       var _a8;
       if (!enabled || !reference2.current || !popper2.current)
         return;
@@ -47165,7 +47605,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       boundary,
       strategy
     ]);
-    (0, import_react119.useEffect)(() => {
+    (0, import_react123.useEffect)(() => {
       return () => {
         var _a8;
         if (!reference2.current && !popper2.current) {
@@ -47174,19 +47614,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
       };
     }, []);
-    const referenceRef = (0, import_react119.useCallback)((node2) => {
+    const referenceRef = (0, import_react123.useCallback)((node2) => {
       reference2.current = node2;
       setupPopper();
     }, [setupPopper]);
-    const getReferenceProps = (0, import_react119.useCallback)((props2 = {}, ref = null) => ({
+    const getReferenceProps = (0, import_react123.useCallback)((props2 = {}, ref = null) => ({
       ...props2,
       ref: mergeRefs(referenceRef, ref)
     }), [referenceRef]);
-    const popperRef = (0, import_react119.useCallback)((node2) => {
+    const popperRef = (0, import_react123.useCallback)((node2) => {
       popper2.current = node2;
       setupPopper();
     }, [setupPopper]);
-    const getPopperProps = (0, import_react119.useCallback)((props2 = {}, ref = null) => ({
+    const getPopperProps = (0, import_react123.useCallback)((props2 = {}, ref = null) => ({
       ...props2,
       ref: mergeRefs(popperRef, ref),
       style: {
@@ -47196,7 +47636,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         inset: "0 auto auto 0"
       }
     }), [strategy, popperRef, matchWidth2]);
-    const getArrowProps = (0, import_react119.useCallback)((props2 = {}, ref = null) => {
+    const getArrowProps = (0, import_react123.useCallback)((props2 = {}, ref = null) => {
       const { size: size3, shadowColor, bg, style, ...rest } = props2;
       return {
         ...rest,
@@ -47205,7 +47645,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         style: getArrowStyle2(props2)
       };
     }, []);
-    const getArrowInnerProps = (0, import_react119.useCallback)((props2 = {}, ref = null) => ({
+    const getArrowInnerProps = (0, import_react123.useCallback)((props2 = {}, ref = null) => ({
       ...props2,
       ref,
       "data-popper-arrow-inner": ""
@@ -47244,7 +47684,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/react-use-disclosure/dist/index.esm.js
-  var import_react120 = __toESM(require_react());
+  var import_react124 = __toESM(require_react());
   function useDisclosure2(props = {}) {
     const {
       onClose: onCloseProp,
@@ -47254,24 +47694,24 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     } = props;
     const handleOpen = useCallbackRef(onOpenProp);
     const handleClose = useCallbackRef(onCloseProp);
-    const [isOpenState, setIsOpen] = (0, import_react120.useState)(props.defaultIsOpen || false);
+    const [isOpenState, setIsOpen] = (0, import_react124.useState)(props.defaultIsOpen || false);
     const isOpen = isOpenProp !== void 0 ? isOpenProp : isOpenState;
     const isControlled = isOpenProp !== void 0;
-    const uid = (0, import_react120.useId)();
+    const uid = (0, import_react124.useId)();
     const id3 = idProp ?? `disclosure-${uid}`;
-    const onClose = (0, import_react120.useCallback)(() => {
+    const onClose = (0, import_react124.useCallback)(() => {
       if (!isControlled) {
         setIsOpen(false);
       }
       handleClose == null ? void 0 : handleClose();
     }, [isControlled, handleClose]);
-    const onOpen = (0, import_react120.useCallback)(() => {
+    const onOpen = (0, import_react124.useCallback)(() => {
       if (!isControlled) {
         setIsOpen(true);
       }
       handleOpen == null ? void 0 : handleOpen();
     }, [isControlled, handleOpen]);
-    const onToggle = (0, import_react120.useCallback)(() => {
+    const onToggle = (0, import_react124.useCallback)(() => {
       if (isOpen) {
         onClose();
       } else {
@@ -47321,19 +47761,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/modal/dist/index.esm.js
-  var import_react128 = __toESM(require_react());
+  var import_react132 = __toESM(require_react());
 
   // node_modules/@chakra-ui/portal/dist/index.esm.js
-  var import_react121 = __toESM(require_react());
+  var import_react125 = __toESM(require_react());
   var import_react_dom = __toESM(require_react_dom());
-  var import_react122 = __toESM(require_react());
+  var import_react126 = __toESM(require_react());
   var [PortalManagerContextProvider, usePortalManager] = createContext3({
     strict: false,
     name: "PortalManagerContext"
   });
   function PortalManager(props) {
     const { children, zIndex } = props;
-    return /* @__PURE__ */ import_react121.default.createElement(PortalManagerContextProvider, {
+    return /* @__PURE__ */ import_react125.default.createElement(PortalManagerContextProvider, {
       value: { zIndex }
     }, children);
   }
@@ -47344,7 +47784,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var PORTAL_CLASSNAME = "chakra-portal";
   var PORTAL_SELECTOR = `.chakra-portal`;
-  var Container3 = (props) => /* @__PURE__ */ import_react121.default.createElement("div", {
+  var Container3 = (props) => /* @__PURE__ */ import_react125.default.createElement("div", {
     className: "chakra-portal-zIndex",
     style: {
       position: "absolute",
@@ -47356,10 +47796,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }, props.children);
   var DefaultPortal = (props) => {
     const { appendToParentPortal, children } = props;
-    const [tempNode, setTempNode] = (0, import_react122.useState)(null);
-    const portal = (0, import_react122.useRef)(null);
-    const [, forceUpdate] = (0, import_react122.useState)({});
-    (0, import_react122.useEffect)(() => forceUpdate({}), []);
+    const [tempNode, setTempNode] = (0, import_react126.useState)(null);
+    const portal = (0, import_react126.useRef)(null);
+    const [, forceUpdate] = (0, import_react126.useState)({});
+    (0, import_react126.useEffect)(() => forceUpdate({}), []);
     const parentPortal = usePortalContext();
     const manager2 = usePortalManager();
     useSafeLayoutEffect(() => {
@@ -47380,12 +47820,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
       };
     }, [tempNode]);
-    const _children = (manager2 == null ? void 0 : manager2.zIndex) ? /* @__PURE__ */ import_react121.default.createElement(Container3, {
+    const _children = (manager2 == null ? void 0 : manager2.zIndex) ? /* @__PURE__ */ import_react125.default.createElement(Container3, {
       zIndex: manager2 == null ? void 0 : manager2.zIndex
     }, children) : children;
-    return portal.current ? (0, import_react_dom.createPortal)(/* @__PURE__ */ import_react121.default.createElement(PortalContextProvider, {
+    return portal.current ? (0, import_react_dom.createPortal)(/* @__PURE__ */ import_react125.default.createElement(PortalContextProvider, {
       value: portal.current
-    }, _children), portal.current) : /* @__PURE__ */ import_react121.default.createElement("span", {
+    }, _children), portal.current) : /* @__PURE__ */ import_react125.default.createElement("span", {
       ref: (el) => {
         if (el)
           setTempNode(el);
@@ -47396,13 +47836,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { children, containerRef, appendToParentPortal } = props;
     const containerEl = containerRef.current;
     const host = containerEl ?? (typeof window !== "undefined" ? document.body : void 0);
-    const portal = (0, import_react122.useMemo)(() => {
+    const portal = (0, import_react126.useMemo)(() => {
       const node2 = containerEl == null ? void 0 : containerEl.ownerDocument.createElement("div");
       if (node2)
         node2.className = PORTAL_CLASSNAME;
       return node2;
     }, [containerEl]);
-    const [, forceUpdate] = (0, import_react122.useState)({});
+    const [, forceUpdate] = (0, import_react126.useState)({});
     useSafeLayoutEffect(() => forceUpdate({}), []);
     useSafeLayoutEffect(() => {
       if (!portal || !host)
@@ -47413,7 +47853,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       };
     }, [portal, host]);
     if (host && portal) {
-      return (0, import_react_dom.createPortal)(/* @__PURE__ */ import_react121.default.createElement(PortalContextProvider, {
+      return (0, import_react_dom.createPortal)(/* @__PURE__ */ import_react125.default.createElement(PortalContextProvider, {
         value: appendToParentPortal ? portal : null
       }, children), portal);
     }
@@ -47421,10 +47861,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
   function Portal(props) {
     const { containerRef, ...rest } = props;
-    return containerRef ? /* @__PURE__ */ import_react121.default.createElement(ContainerPortal, {
+    return containerRef ? /* @__PURE__ */ import_react125.default.createElement(ContainerPortal, {
       containerRef,
       ...rest
-    }) : /* @__PURE__ */ import_react121.default.createElement(DefaultPortal, {
+    }) : /* @__PURE__ */ import_react125.default.createElement(DefaultPortal, {
       ...rest
     });
   }
@@ -47553,12 +47993,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
 
   // node_modules/@chakra-ui/modal/dist/index.esm.js
-  var import_react129 = __toESM(require_react());
-  var import_react130 = __toESM(require_react());
-  var import_react131 = __toESM(require_react());
+  var import_react133 = __toESM(require_react());
+  var import_react134 = __toESM(require_react());
+  var import_react135 = __toESM(require_react());
 
   // node_modules/@chakra-ui/focus-lock/dist/index.esm.js
-  var import_react126 = __toESM(require_react());
+  var import_react130 = __toESM(require_react());
 
   // node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
   function _objectWithoutPropertiesLoose(source, excluded) {
@@ -47593,10 +48033,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/react-focus-lock/dist/es2015/Combination.js
-  var React26 = __toESM(require_react());
+  var React28 = __toESM(require_react());
 
   // node_modules/react-focus-lock/dist/es2015/Lock.js
-  var React23 = __toESM(require_react());
+  var React25 = __toESM(require_react());
   var import_prop_types2 = __toESM(require_prop_types());
 
   // node_modules/focus-lock/dist/es2015/constants.js
@@ -47617,9 +48057,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/use-callback-ref/dist/es2015/useRef.js
-  var import_react123 = __toESM(require_react());
+  var import_react127 = __toESM(require_react());
   function useCallbackRef3(initialValue, callback) {
-    var ref = (0, import_react123.useState)(function() {
+    var ref = (0, import_react127.useState)(function() {
       return {
         value: initialValue,
         callback,
@@ -47651,10 +48091,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/react-focus-lock/dist/es2015/Lock.js
-  var import_react124 = __toESM(require_react());
+  var import_react128 = __toESM(require_react());
 
   // node_modules/react-focus-lock/dist/es2015/FocusGuard.js
-  var React20 = __toESM(require_react());
+  var React23 = __toESM(require_react());
   var import_prop_types = __toESM(require_prop_types());
   var hiddenGuard = {
     width: "1px",
@@ -47667,12 +48107,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
   var InFocusGuard = function InFocusGuard2(_ref2) {
     var children = _ref2.children;
-    return /* @__PURE__ */ React20.createElement(React20.Fragment, null, /* @__PURE__ */ React20.createElement("div", {
+    return /* @__PURE__ */ React23.createElement(React23.Fragment, null, /* @__PURE__ */ React23.createElement("div", {
       key: "guard-first",
       "data-focus-guard": true,
       "data-focus-auto-guard": true,
       style: hiddenGuard
-    }), children, children && /* @__PURE__ */ React20.createElement("div", {
+    }), children, children && /* @__PURE__ */ React23.createElement("div", {
       key: "guard-last",
       "data-focus-guard": true,
       "data-focus-auto-guard": true,
@@ -47779,7 +48219,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/use-sidecar/dist/es2015/exports.js
-  var React21 = __toESM(require_react());
+  var React24 = __toESM(require_react());
   var SideCar = function(_a8) {
     var sideCar2 = _a8.sideCar, rest = __rest2(_a8, ["sideCar"]);
     if (!sideCar2) {
@@ -47789,7 +48229,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     if (!Target) {
       throw new Error("Sidecar medium not found");
     }
-    return React21.createElement(Target, __assign2({}, rest));
+    return React24.createElement(Target, __assign2({}, rest));
   };
   SideCar.isSideCarExport = true;
   function exportSidecar(medium, exported) {
@@ -47813,33 +48253,33 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
 
   // node_modules/react-focus-lock/dist/es2015/Lock.js
   var emptyArray = [];
-  var FocusLock = /* @__PURE__ */ React23.forwardRef(function FocusLockUI(props, parentRef) {
+  var FocusLock = /* @__PURE__ */ React25.forwardRef(function FocusLockUI(props, parentRef) {
     var _extends22;
-    var _React$useState = React23.useState(), realObserved = _React$useState[0], setObserved = _React$useState[1];
-    var observed = React23.useRef();
-    var isActive = React23.useRef(false);
-    var originalFocusedElement = React23.useRef(null);
+    var _React$useState = React25.useState(), realObserved = _React$useState[0], setObserved = _React$useState[1];
+    var observed = React25.useRef();
+    var isActive = React25.useRef(false);
+    var originalFocusedElement = React25.useRef(null);
     var children = props.children, disabled = props.disabled, noFocusGuards = props.noFocusGuards, persistentFocus = props.persistentFocus, crossFrame = props.crossFrame, autoFocus = props.autoFocus, allowTextSelection = props.allowTextSelection, group = props.group, className = props.className, whiteList = props.whiteList, hasPositiveIndices = props.hasPositiveIndices, _props$shards = props.shards, shards = _props$shards === void 0 ? emptyArray : _props$shards, _props$as = props.as, Container4 = _props$as === void 0 ? "div" : _props$as, _props$lockProps = props.lockProps, containerProps = _props$lockProps === void 0 ? {} : _props$lockProps, SideCar2 = props.sideCar, shouldReturnFocus = props.returnFocus, focusOptions = props.focusOptions, onActivationCallback = props.onActivation, onDeactivationCallback = props.onDeactivation;
-    var _React$useState2 = React23.useState({}), id3 = _React$useState2[0];
-    var onActivation = React23.useCallback(function() {
+    var _React$useState2 = React25.useState({}), id3 = _React$useState2[0];
+    var onActivation = React25.useCallback(function() {
       originalFocusedElement.current = originalFocusedElement.current || document && document.activeElement;
       if (observed.current && onActivationCallback) {
         onActivationCallback(observed.current);
       }
       isActive.current = true;
     }, [onActivationCallback]);
-    var onDeactivation = React23.useCallback(function() {
+    var onDeactivation = React25.useCallback(function() {
       isActive.current = false;
       if (onDeactivationCallback) {
         onDeactivationCallback(observed.current);
       }
     }, [onDeactivationCallback]);
-    (0, import_react124.useEffect)(function() {
+    (0, import_react128.useEffect)(function() {
       if (!disabled) {
         originalFocusedElement.current = null;
       }
     }, []);
-    var returnFocus = React23.useCallback(function(allowDefer) {
+    var returnFocus = React25.useCallback(function(allowDefer) {
       var returnFocusTo = originalFocusedElement.current;
       if (returnFocusTo && returnFocusTo.focus) {
         var howToReturnFocus = typeof shouldReturnFocus === "function" ? shouldReturnFocus(returnFocusTo) : shouldReturnFocus;
@@ -47856,13 +48296,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
       }
     }, [shouldReturnFocus]);
-    var onFocus3 = React23.useCallback(function(event) {
+    var onFocus3 = React25.useCallback(function(event) {
       if (isActive.current) {
         mediumFocus.useMedium(event);
       }
     }, []);
     var onBlur3 = mediumBlur.useMedium;
-    var setObserveNode = React23.useCallback(function(newObserved) {
+    var setObserveNode = React25.useCallback(function(newObserved) {
       if (observed.current !== newObserved) {
         observed.current = newObserved;
         setObserved(newObserved);
@@ -47872,7 +48312,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       if (typeof allowTextSelection !== "undefined") {
         console.warn("React-Focus-Lock: allowTextSelection is deprecated and enabled by default");
       }
-      React23.useEffect(function() {
+      React25.useEffect(function() {
         if (!observed.current && typeof Container4 !== "string") {
           console.error("FocusLock: could not obtain ref to internal node");
         }
@@ -47882,20 +48322,20 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     var hasLeadingGuards = noFocusGuards !== true;
     var hasTailingGuards = hasLeadingGuards && noFocusGuards !== "tail";
     var mergedRef = useMergeRefs2([parentRef, setObserveNode]);
-    return /* @__PURE__ */ React23.createElement(React23.Fragment, null, hasLeadingGuards && [
-      /* @__PURE__ */ React23.createElement("div", {
+    return /* @__PURE__ */ React25.createElement(React25.Fragment, null, hasLeadingGuards && [
+      /* @__PURE__ */ React25.createElement("div", {
         key: "guard-first",
         "data-focus-guard": true,
         tabIndex: disabled ? -1 : 0,
         style: hiddenGuard
       }),
-      hasPositiveIndices ? /* @__PURE__ */ React23.createElement("div", {
+      hasPositiveIndices ? /* @__PURE__ */ React25.createElement("div", {
         key: "guard-nearest",
         "data-focus-guard": true,
         tabIndex: disabled ? -1 : 1,
         style: hiddenGuard
       }) : null
-    ], !disabled && /* @__PURE__ */ React23.createElement(SideCar2, {
+    ], !disabled && /* @__PURE__ */ React25.createElement(SideCar2, {
       id: id3,
       sideCar: mediumSidecar,
       observed: realObserved,
@@ -47909,13 +48349,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       onDeactivation,
       returnFocus,
       focusOptions
-    }), /* @__PURE__ */ React23.createElement(Container4, _extends({
+    }), /* @__PURE__ */ React25.createElement(Container4, _extends({
       ref: mergedRef
     }, lockProps, {
       className,
       onBlur: onBlur3,
       onFocus: onFocus3
-    }), children), hasTailingGuards && /* @__PURE__ */ React23.createElement("div", {
+    }), children), hasTailingGuards && /* @__PURE__ */ React25.createElement("div", {
       "data-focus-guard": true,
       tabIndex: disabled ? -1 : 0,
       style: hiddenGuard
@@ -47965,7 +48405,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Lock_default = FocusLock;
 
   // node_modules/react-focus-lock/dist/es2015/Trap.js
-  var React25 = __toESM(require_react());
+  var React27 = __toESM(require_react());
   var import_prop_types3 = __toESM(require_prop_types());
 
   // node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
@@ -48000,7 +48440,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/react-clientside-effect/lib/index.es.js
-  var import_react125 = __toESM(require_react());
+  var import_react129 = __toESM(require_react());
   function withSideEffect(reducePropsToState2, handleStateChangeOnClient2) {
     if (true) {
       if (typeof reducePropsToState2 !== "function") {
@@ -48049,10 +48489,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           emitChange();
         };
         _proto.render = function render() {
-          return /* @__PURE__ */ import_react125.default.createElement(WrappedComponent, this.props);
+          return /* @__PURE__ */ import_react129.default.createElement(WrappedComponent, this.props);
         };
         return SideEffect2;
-      }(import_react125.PureComponent);
+      }(import_react129.PureComponent);
       _defineProperty(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
       return SideEffect;
     };
@@ -48737,7 +49177,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
   var FocusTrap = function FocusTrap2(_ref4) {
     var children = _ref4.children;
-    return /* @__PURE__ */ React25.createElement("div", {
+    return /* @__PURE__ */ React27.createElement("div", {
       onBlur,
       onFocus
     }, children);
@@ -48807,8 +49247,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Trap_default = index_es_default(reducePropsToState, handleStateChangeOnClient)(FocusWatcher);
 
   // node_modules/react-focus-lock/dist/es2015/Combination.js
-  var FocusLockCombination = /* @__PURE__ */ React26.forwardRef(function FocusLockUICombination(props, ref) {
-    return /* @__PURE__ */ React26.createElement(Lock_default, _extends({
+  var FocusLockCombination = /* @__PURE__ */ React28.forwardRef(function FocusLockUICombination(props, ref) {
+    return /* @__PURE__ */ React28.createElement(Lock_default, _extends({
       sideCar: Trap_default,
       ref
     }, props));
@@ -48823,7 +49263,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var es2015_default2 = Combination_default;
 
   // node_modules/@chakra-ui/focus-lock/dist/index.esm.js
-  var import_react127 = __toESM(require_react());
+  var import_react131 = __toESM(require_react());
   var FocusLock2 = (props) => {
     const {
       initialFocusRef,
@@ -48836,7 +49276,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       persistentFocus,
       lockFocusAcrossFrames
     } = props;
-    const onActivation = (0, import_react127.useCallback)(() => {
+    const onActivation = (0, import_react131.useCallback)(() => {
       if (initialFocusRef == null ? void 0 : initialFocusRef.current) {
         initialFocusRef.current.focus();
       } else if (contentRef == null ? void 0 : contentRef.current) {
@@ -48849,12 +49289,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
       }
     }, [initialFocusRef, contentRef]);
-    const onDeactivation = (0, import_react127.useCallback)(() => {
+    const onDeactivation = (0, import_react131.useCallback)(() => {
       var _a8;
       (_a8 = finalFocusRef == null ? void 0 : finalFocusRef.current) == null ? void 0 : _a8.focus();
     }, [finalFocusRef]);
     const returnFocus = restoreFocus && !finalFocusRef;
-    return /* @__PURE__ */ import_react126.default.createElement(es2015_default2, {
+    return /* @__PURE__ */ import_react130.default.createElement(es2015_default2, {
       crossFrame: lockFocusAcrossFrames,
       persistentFocus,
       autoFocus,
@@ -48867,13 +49307,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   FocusLock2.displayName = "FocusLock";
 
   // node_modules/@chakra-ui/modal/dist/index.esm.js
-  var import_react132 = __toESM(require_react());
+  var import_react136 = __toESM(require_react());
 
   // node_modules/react-remove-scroll/dist/es2015/Combination.js
-  var React32 = __toESM(require_react());
+  var React34 = __toESM(require_react());
 
   // node_modules/react-remove-scroll/dist/es2015/UI.js
-  var React28 = __toESM(require_react());
+  var React30 = __toESM(require_react());
 
   // node_modules/react-remove-scroll-bar/dist/es2015/constants.js
   var zeroRightClassName = "right-scroll-bar-position";
@@ -48888,9 +49328,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var nothing = function() {
     return;
   };
-  var RemoveScroll = React28.forwardRef(function(props, parentRef) {
-    var ref = React28.useRef(null);
-    var _a8 = React28.useState({
+  var RemoveScroll = React30.forwardRef(function(props, parentRef) {
+    var ref = React30.useRef(null);
+    var _a8 = React30.useState({
       onScrollCapture: nothing,
       onWheelCapture: nothing,
       onTouchMoveCapture: nothing
@@ -48899,11 +49339,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     var SideCar2 = sideCar2;
     var containerRef = useMergeRefs2([ref, parentRef]);
     var containerProps = __assign2(__assign2({}, rest), callbacks);
-    return React28.createElement(
-      React28.Fragment,
+    return React30.createElement(
+      React30.Fragment,
       null,
-      enabled && React28.createElement(SideCar2, { sideCar: effectCar, removeScrollBar, shards, noIsolation, inert, setCallbacks, allowPinchZoom: !!allowPinchZoom, lockRef: ref }),
-      forwardProps ? React28.cloneElement(React28.Children.only(children), __assign2(__assign2({}, containerProps), { ref: containerRef })) : React28.createElement(Container4, __assign2({}, containerProps, { className, ref: containerRef }), children)
+      enabled && React30.createElement(SideCar2, { sideCar: effectCar, removeScrollBar, shards, noIsolation, inert, setCallbacks, allowPinchZoom: !!allowPinchZoom, lockRef: ref }),
+      forwardProps ? React30.cloneElement(React30.Children.only(children), __assign2(__assign2({}, containerProps), { ref: containerRef })) : React30.createElement(Container4, __assign2({}, containerProps, { className, ref: containerRef }), children)
     );
   });
   RemoveScroll.defaultProps = {
@@ -48917,13 +49357,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
 
   // node_modules/react-remove-scroll/dist/es2015/SideEffect.js
-  var React31 = __toESM(require_react());
+  var React33 = __toESM(require_react());
 
   // node_modules/react-remove-scroll-bar/dist/es2015/component.js
-  var React30 = __toESM(require_react());
+  var React32 = __toESM(require_react());
 
   // node_modules/react-style-singleton/dist/es2015/hook.js
-  var React29 = __toESM(require_react());
+  var React31 = __toESM(require_react());
 
   // node_modules/get-nonce/dist/es2015/index.js
   var currentNonce;
@@ -48987,7 +49427,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var styleHookSingleton = function() {
     var sheet = stylesheetSingleton();
     return function(styles2, isDynamic) {
-      React29.useEffect(function() {
+      React31.useEffect(function() {
         sheet.add(styles2);
         return function() {
           sheet.remove();
@@ -49057,10 +49497,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
   var RemoveScrollBar = function(props) {
     var noRelative = props.noRelative, noImportant = props.noImportant, _a8 = props.gapMode, gapMode = _a8 === void 0 ? "margin" : _a8;
-    var gap = React30.useMemo(function() {
+    var gap = React32.useMemo(function() {
       return getGapWidth(gapMode);
     }, [gapMode]);
-    return React30.createElement(Style, { styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : "") });
+    return React32.createElement(Style, { styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : "") });
   };
 
   // node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
@@ -49185,18 +49625,18 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var idCounter = 0;
   var lockStack = [];
   function RemoveScrollSideCar(props) {
-    var shouldPreventQueue = React31.useRef([]);
-    var touchStartRef = React31.useRef([0, 0]);
-    var activeAxis = React31.useRef();
-    var id3 = React31.useState(idCounter++)[0];
-    var Style2 = React31.useState(function() {
+    var shouldPreventQueue = React33.useRef([]);
+    var touchStartRef = React33.useRef([0, 0]);
+    var activeAxis = React33.useRef();
+    var id3 = React33.useState(idCounter++)[0];
+    var Style2 = React33.useState(function() {
       return styleSingleton();
     })[0];
-    var lastProps = React31.useRef(props);
-    React31.useEffect(function() {
+    var lastProps = React33.useRef(props);
+    React33.useEffect(function() {
       lastProps.current = props;
     }, [props]);
-    React31.useEffect(function() {
+    React33.useEffect(function() {
       if (props.inert) {
         document.body.classList.add("block-interactivity-".concat(id3));
         var allow_1 = __spreadArray2([props.lockRef.current], (props.shards || []).map(extractRef3), true).filter(Boolean);
@@ -49212,7 +49652,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
       return;
     }, [props.inert, props.lockRef.current, props.shards]);
-    var shouldCancelEvent = React31.useCallback(function(event, parent) {
+    var shouldCancelEvent = React33.useCallback(function(event, parent) {
       if ("touches" in event && event.touches.length === 2) {
         return !lastProps.current.allowPinchZoom;
       }
@@ -49248,7 +49688,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       var cancelingAxis = activeAxis.current || currentAxis;
       return handleScroll(cancelingAxis, parent, event, cancelingAxis === "h" ? deltaX : deltaY, true);
     }, []);
-    var shouldPrevent = React31.useCallback(function(_event) {
+    var shouldPrevent = React33.useCallback(function(_event) {
       var event = _event;
       if (!lockStack.length || lockStack[lockStack.length - 1] !== Style2) {
         return;
@@ -49275,7 +49715,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         }
       }
     }, []);
-    var shouldCancel = React31.useCallback(function(name, delta, target, should) {
+    var shouldCancel = React33.useCallback(function(name, delta, target, should) {
       var event = { name, delta, target, should };
       shouldPreventQueue.current.push(event);
       setTimeout(function() {
@@ -49284,17 +49724,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         });
       }, 1);
     }, []);
-    var scrollTouchStart = React31.useCallback(function(event) {
+    var scrollTouchStart = React33.useCallback(function(event) {
       touchStartRef.current = getTouchXY(event);
       activeAxis.current = void 0;
     }, []);
-    var scrollWheel = React31.useCallback(function(event) {
+    var scrollWheel = React33.useCallback(function(event) {
       shouldCancel(event.type, getDeltaXY(event), event.target, shouldCancelEvent(event, props.lockRef.current));
     }, []);
-    var scrollTouchMove = React31.useCallback(function(event) {
+    var scrollTouchMove = React33.useCallback(function(event) {
       shouldCancel(event.type, getTouchXY(event), event.target, shouldCancelEvent(event, props.lockRef.current));
     }, []);
-    React31.useEffect(function() {
+    React33.useEffect(function() {
       lockStack.push(Style2);
       props.setCallbacks({
         onScrollCapture: scrollWheel,
@@ -49314,11 +49754,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       };
     }, []);
     var removeScrollBar = props.removeScrollBar, inert = props.inert;
-    return React31.createElement(
-      React31.Fragment,
+    return React33.createElement(
+      React33.Fragment,
       null,
-      inert ? React31.createElement(Style2, { styles: generateStyle(id3) }) : null,
-      removeScrollBar ? React31.createElement(RemoveScrollBar, { gapMode: "margin" }) : null
+      inert ? React33.createElement(Style2, { styles: generateStyle(id3) }) : null,
+      removeScrollBar ? React33.createElement(RemoveScrollBar, { gapMode: "margin" }) : null
     );
   }
 
@@ -49326,17 +49766,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var sidecar_default = exportSidecar(effectCar, RemoveScrollSideCar);
 
   // node_modules/react-remove-scroll/dist/es2015/Combination.js
-  var ReactRemoveScroll = React32.forwardRef(function(props, ref) {
-    return React32.createElement(RemoveScroll, __assign2({}, props, { ref, sideCar: sidecar_default }));
+  var ReactRemoveScroll = React34.forwardRef(function(props, ref) {
+    return React34.createElement(RemoveScroll, __assign2({}, props, { ref, sideCar: sidecar_default }));
   });
   ReactRemoveScroll.classNames = RemoveScroll.classNames;
   var Combination_default2 = ReactRemoveScroll;
 
   // node_modules/@chakra-ui/modal/dist/index.esm.js
-  var import_react133 = __toESM(require_react());
-  var import_react134 = __toESM(require_react());
-  var cx8 = (...classNames2) => classNames2.filter(Boolean).join(" ");
-  function callAllHandlers3(...fns) {
+  var import_react137 = __toESM(require_react());
+  var import_react138 = __toESM(require_react());
+  var cx9 = (...classNames2) => classNames2.filter(Boolean).join(" ");
+  function callAllHandlers4(...fns) {
     return function func2(event) {
       fns.some((fn2) => {
         fn2 == null ? void 0 : fn2(event);
@@ -49362,7 +49802,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
   var manager = new ModalManager();
   function useModalManager(ref, isOpen) {
-    (0, import_react130.useEffect)(() => {
+    (0, import_react134.useEffect)(() => {
       if (isOpen) {
         manager.add(ref);
       }
@@ -49382,16 +49822,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       onOverlayClick: onOverlayClickProp,
       onEsc
     } = props;
-    const dialogRef = (0, import_react129.useRef)(null);
-    const overlayRef = (0, import_react129.useRef)(null);
+    const dialogRef = (0, import_react133.useRef)(null);
+    const overlayRef = (0, import_react133.useRef)(null);
     const [dialogId, headerId, bodyId] = useIds(id3, `chakra-modal`, `chakra-modal--header`, `chakra-modal--body`);
     useAriaHidden(dialogRef, isOpen && useInert);
     useModalManager(dialogRef, isOpen);
-    const mouseDownTarget = (0, import_react129.useRef)(null);
-    const onMouseDown = (0, import_react129.useCallback)((event) => {
+    const mouseDownTarget = (0, import_react133.useRef)(null);
+    const onMouseDown = (0, import_react133.useCallback)((event) => {
       mouseDownTarget.current = event.target;
     }, []);
-    const onKeyDown = (0, import_react129.useCallback)((event) => {
+    const onKeyDown = (0, import_react133.useCallback)((event) => {
       if (event.key === "Escape") {
         event.stopPropagation();
         if (closeOnEsc) {
@@ -49400,9 +49840,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         onEsc == null ? void 0 : onEsc();
       }
     }, [closeOnEsc, onClose, onEsc]);
-    const [headerMounted, setHeaderMounted] = (0, import_react129.useState)(false);
-    const [bodyMounted, setBodyMounted] = (0, import_react129.useState)(false);
-    const getDialogProps = (0, import_react129.useCallback)((props2 = {}, ref = null) => ({
+    const [headerMounted, setHeaderMounted] = (0, import_react133.useState)(false);
+    const [bodyMounted, setBodyMounted] = (0, import_react133.useState)(false);
+    const getDialogProps = (0, import_react133.useCallback)((props2 = {}, ref = null) => ({
       role: "dialog",
       ...props2,
       ref: mergeRefs(ref, dialogRef),
@@ -49411,9 +49851,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       "aria-modal": true,
       "aria-labelledby": headerMounted ? headerId : void 0,
       "aria-describedby": bodyMounted ? bodyId : void 0,
-      onClick: callAllHandlers3(props2.onClick, (event) => event.stopPropagation())
+      onClick: callAllHandlers4(props2.onClick, (event) => event.stopPropagation())
     }), [bodyId, bodyMounted, dialogId, headerId, headerMounted]);
-    const onOverlayClick = (0, import_react129.useCallback)((event) => {
+    const onOverlayClick = (0, import_react133.useCallback)((event) => {
       event.stopPropagation();
       if (mouseDownTarget.current !== event.target)
         return;
@@ -49424,12 +49864,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
       onOverlayClickProp == null ? void 0 : onOverlayClickProp();
     }, [onClose, closeOnOverlayClick, onOverlayClickProp]);
-    const getDialogContainerProps = (0, import_react129.useCallback)((props2 = {}, ref = null) => ({
+    const getDialogContainerProps = (0, import_react133.useCallback)((props2 = {}, ref = null) => ({
       ...props2,
       ref: mergeRefs(ref, overlayRef),
-      onClick: callAllHandlers3(props2.onClick, onOverlayClick),
-      onKeyDown: callAllHandlers3(props2.onKeyDown, onKeyDown),
-      onMouseDown: callAllHandlers3(props2.onMouseDown, onMouseDown)
+      onClick: callAllHandlers4(props2.onClick, onOverlayClick),
+      onKeyDown: callAllHandlers4(props2.onKeyDown, onKeyDown),
+      onMouseDown: callAllHandlers4(props2.onMouseDown, onMouseDown)
     }), [onKeyDown, onMouseDown, onOverlayClick]);
     return {
       isOpen,
@@ -49446,16 +49886,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
   function useAriaHidden(ref, shouldHide) {
     const currentElement = ref.current;
-    (0, import_react129.useEffect)(() => {
+    (0, import_react133.useEffect)(() => {
       if (!ref.current || !shouldHide)
         return void 0;
       return hideOthers(ref.current);
     }, [shouldHide, ref, currentElement]);
   }
   function useIds(idProp, ...prefixes) {
-    const reactId = (0, import_react129.useId)();
+    const reactId = (0, import_react133.useId)();
     const id3 = idProp || reactId;
-    return (0, import_react129.useMemo)(() => {
+    return (0, import_react133.useMemo)(() => {
       return prefixes.map((prefix) => `${prefix}-${id3}`);
     }, [id3, prefixes]);
   }
@@ -49499,13 +49939,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       motionPreset,
       lockFocusAcrossFrames
     };
-    return /* @__PURE__ */ import_react128.default.createElement(ModalContextProvider, {
+    return /* @__PURE__ */ import_react132.default.createElement(ModalContextProvider, {
       value: context
-    }, /* @__PURE__ */ import_react128.default.createElement(ModalStylesProvider, {
+    }, /* @__PURE__ */ import_react132.default.createElement(ModalStylesProvider, {
       value: styles2
-    }, /* @__PURE__ */ import_react128.default.createElement(AnimatePresence, {
+    }, /* @__PURE__ */ import_react132.default.createElement(AnimatePresence, {
       onExitComplete: onCloseComplete
-    }, context.isOpen && /* @__PURE__ */ import_react128.default.createElement(Portal, {
+    }, context.isOpen && /* @__PURE__ */ import_react132.default.createElement(Portal, {
       ...portalProps
     }, children))));
   };
@@ -49523,13 +49963,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var ModalBody = forwardRef((props, ref) => {
     const { className, ...rest } = props;
     const { bodyId, setBodyMounted } = useModalContext();
-    (0, import_react131.useEffect)(() => {
+    (0, import_react135.useEffect)(() => {
       setBodyMounted(true);
       return () => setBodyMounted(false);
     }, [setBodyMounted]);
-    const _className = cx8("chakra-modal__body", className);
+    const _className = cx9("chakra-modal__body", className);
     const styles2 = useModalStyles();
-    return /* @__PURE__ */ import_react128.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react132.default.createElement(chakra.div, {
       ref,
       className: _className,
       id: bodyId,
@@ -49541,13 +49981,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var ModalCloseButton = forwardRef((props, ref) => {
     const { onClick, className, ...rest } = props;
     const { onClose } = useModalContext();
-    const _className = cx8("chakra-modal__close-btn", className);
+    const _className = cx9("chakra-modal__close-btn", className);
     const styles2 = useModalStyles();
-    return /* @__PURE__ */ import_react128.default.createElement(CloseButton, {
+    return /* @__PURE__ */ import_react132.default.createElement(CloseButton, {
       ref,
       __css: styles2.closeButton,
       className: _className,
-      onClick: callAllHandlers3(onClick, (event) => {
+      onClick: callAllHandlers4(onClick, (event) => {
         event.stopPropagation();
         onClose();
       }),
@@ -49569,12 +50009,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       lockFocusAcrossFrames
     } = useModalContext();
     const [isPresent2, safeToRemove] = usePresence();
-    (0, import_react132.useEffect)(() => {
+    (0, import_react136.useEffect)(() => {
       if (!isPresent2 && safeToRemove) {
         setTimeout(safeToRemove);
       }
     }, [isPresent2, safeToRemove]);
-    return /* @__PURE__ */ import_react128.default.createElement(FocusLock2, {
+    return /* @__PURE__ */ import_react132.default.createElement(FocusLock2, {
       autoFocus,
       isDisabled: !trapFocus,
       initialFocusRef,
@@ -49582,7 +50022,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       restoreFocus: returnFocusOnClose,
       contentRef: dialogRef,
       lockFocusAcrossFrames
-    }, /* @__PURE__ */ import_react128.default.createElement(Combination_default2, {
+    }, /* @__PURE__ */ import_react132.default.createElement(Combination_default2, {
       removeScrollBar: !preserveScrollBarGap,
       allowPinchZoom,
       enabled: blockScrollOnMount,
@@ -49608,9 +50048,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var getMotionProps = (preset) => {
     return transitions[preset || "none"];
   };
-  var ModalTransition = (0, import_react133.forwardRef)((props, ref) => {
+  var ModalTransition = (0, import_react137.forwardRef)((props, ref) => {
     const { preset, motionProps = getMotionProps(preset), ...rest } = props;
-    return /* @__PURE__ */ import_react128.default.createElement(MotionSection, {
+    return /* @__PURE__ */ import_react132.default.createElement(MotionSection, {
       ref,
       ...motionProps,
       ...rest
@@ -49628,7 +50068,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { getDialogProps, getDialogContainerProps } = useModalContext();
     const dialogProps = getDialogProps(rest, ref);
     const containerProps = getDialogContainerProps(rootProps);
-    const _className = cx8("chakra-modal__content", className);
+    const _className = cx9("chakra-modal__content", className);
     const styles2 = useModalStyles();
     const dialogStyles = {
       display: "flex",
@@ -49648,12 +50088,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...styles2.dialogContainer
     };
     const { motionPreset } = useModalContext();
-    return /* @__PURE__ */ import_react128.default.createElement(ModalFocusScope, null, /* @__PURE__ */ import_react128.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react132.default.createElement(ModalFocusScope, null, /* @__PURE__ */ import_react132.default.createElement(chakra.div, {
       ...containerProps,
       className: "chakra-modal__content-container",
       tabIndex: -1,
       __css: dialogContainerStyles
-    }, /* @__PURE__ */ import_react128.default.createElement(ModalTransition, {
+    }, /* @__PURE__ */ import_react132.default.createElement(ModalTransition, {
       preset: motionPreset,
       motionProps,
       className: _className,
@@ -49664,7 +50104,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   ModalContent.displayName = "ModalContent";
   var ModalFooter = forwardRef((props, ref) => {
     const { className, ...rest } = props;
-    const _className = cx8("chakra-modal__footer", className);
+    const _className = cx9("chakra-modal__footer", className);
     const styles2 = useModalStyles();
     const footerStyles = {
       display: "flex",
@@ -49672,7 +50112,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       justifyContent: "flex-end",
       ...styles2.footer
     };
-    return /* @__PURE__ */ import_react128.default.createElement(chakra.footer, {
+    return /* @__PURE__ */ import_react132.default.createElement(chakra.footer, {
       ref,
       ...rest,
       __css: footerStyles,
@@ -49683,17 +50123,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var ModalHeader = forwardRef((props, ref) => {
     const { className, ...rest } = props;
     const { headerId, setHeaderMounted } = useModalContext();
-    (0, import_react134.useEffect)(() => {
+    (0, import_react138.useEffect)(() => {
       setHeaderMounted(true);
       return () => setHeaderMounted(false);
     }, [setHeaderMounted]);
-    const _className = cx8("chakra-modal__header", className);
+    const _className = cx9("chakra-modal__header", className);
     const styles2 = useModalStyles();
     const headerStyles = {
       flex: 0,
       ...styles2.header
     };
-    return /* @__PURE__ */ import_react128.default.createElement(chakra.header, {
+    return /* @__PURE__ */ import_react132.default.createElement(chakra.header, {
       ref,
       className: _className,
       id: headerId,
@@ -49705,7 +50145,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var MotionDiv = chakra(motion.div);
   var ModalOverlay = forwardRef((props, ref) => {
     const { className, transition: transition3, motionProps: _motionProps, ...rest } = props;
-    const _className = cx8("chakra-modal__overlay", className);
+    const _className = cx9("chakra-modal__overlay", className);
     const styles2 = useModalStyles();
     const overlayStyle = {
       pos: "fixed",
@@ -49718,7 +50158,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { motionPreset } = useModalContext();
     const defaultMotionProps = motionPreset === "none" ? {} : fadeConfig;
     const motionProps = _motionProps || defaultMotionProps;
-    return /* @__PURE__ */ import_react128.default.createElement(MotionDiv, {
+    return /* @__PURE__ */ import_react132.default.createElement(MotionDiv, {
       ...motionProps,
       __css: overlayStyle,
       ref,
@@ -49727,7 +50167,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     });
   });
   ModalOverlay.displayName = "ModalOverlay";
-  var AlertDialogContent = forwardRef((props, ref) => /* @__PURE__ */ import_react128.default.createElement(ModalContent, {
+  var AlertDialogContent = forwardRef((props, ref) => /* @__PURE__ */ import_react132.default.createElement(ModalContent, {
     ref,
     role: "alertdialog",
     ...props
@@ -49745,7 +50185,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { getDialogProps, getDialogContainerProps, isOpen } = useModalContext();
     const dialogProps = getDialogProps(rest, ref);
     const containerProps = getDialogContainerProps(rootProps);
-    const _className = cx8("chakra-modal__content", className);
+    const _className = cx9("chakra-modal__content", className);
     const styles2 = useModalStyles();
     const dialogStyles = {
       display: "flex",
@@ -49765,11 +50205,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...styles2.dialogContainer
     };
     const { placement } = useDrawerContext();
-    return /* @__PURE__ */ import_react128.default.createElement(ModalFocusScope, null, /* @__PURE__ */ import_react128.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react132.default.createElement(ModalFocusScope, null, /* @__PURE__ */ import_react132.default.createElement(chakra.div, {
       ...containerProps,
       className: "chakra-modal__content-container",
       __css: dialogContainerStyles
-    }, /* @__PURE__ */ import_react128.default.createElement(MotionDiv2, {
+    }, /* @__PURE__ */ import_react132.default.createElement(MotionDiv2, {
       motionProps,
       direction: placement,
       in: isOpen,
@@ -49810,8 +50250,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/react-use-size/dist/index.esm.js
-  var import_react135 = __toESM(require_react());
-  var useSafeLayoutEffect4 = Boolean(globalThis == null ? void 0 : globalThis.document) ? import_react135.useLayoutEffect : import_react135.useEffect;
+  var import_react139 = __toESM(require_react());
+  var useSafeLayoutEffect4 = Boolean(globalThis == null ? void 0 : globalThis.document) ? import_react139.useLayoutEffect : import_react139.useEffect;
   function trackMutation(el, cb2) {
     var _a8;
     if (!el || !el.parentElement)
@@ -49829,8 +50269,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     getNodes,
     observeMutation = true
   }) {
-    const [sizes24, setSizes] = (0, import_react135.useState)([]);
-    const [count, setCount] = (0, import_react135.useState)(0);
+    const [sizes24, setSizes] = (0, import_react139.useState)([]);
+    const [count, setCount] = (0, import_react139.useState)(0);
     useSafeLayoutEffect4(() => {
       const elements = getNodes();
       const cleanups = elements.map((element, index) => trackElementSize(element, (size3) => {
@@ -49871,8 +50311,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/table/dist/index.esm.js
-  var import_react136 = __toESM(require_react());
-  var cx9 = (...classNames2) => classNames2.filter(Boolean).join(" ");
+  var import_react140 = __toESM(require_react());
+  var cx10 = (...classNames2) => classNames2.filter(Boolean).join(" ");
   var [TableStylesProvider, useTableStyles] = createContext3({
     name: `TableStylesContext`,
     errorMessage: `useTableStyles returned is 'undefined'. Seems you forgot to wrap the components in "<Table />" `
@@ -49880,21 +50320,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var Table = forwardRef((props, ref) => {
     const styles2 = useMultiStyleConfig("Table", props);
     const { className, ...tableProps } = omitThemingProps(props);
-    return /* @__PURE__ */ import_react136.default.createElement(TableStylesProvider, {
+    return /* @__PURE__ */ import_react140.default.createElement(TableStylesProvider, {
       value: styles2
-    }, /* @__PURE__ */ import_react136.default.createElement(chakra.table, {
+    }, /* @__PURE__ */ import_react140.default.createElement(chakra.table, {
       ref,
       __css: styles2.table,
-      className: cx9("chakra-table", className),
+      className: cx10("chakra-table", className),
       ...tableProps
     }));
   });
   Table.displayName = "Table";
   var TableContainer = forwardRef((props, ref) => {
     const { overflow, overflowX, className, ...rest } = props;
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.div, {
       ref,
-      className: cx9("chakra-table__container", className),
+      className: cx10("chakra-table__container", className),
       ...rest,
       __css: {
         display: "block",
@@ -49909,7 +50349,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var TableCaption = forwardRef((props, ref) => {
     const { placement = "bottom", ...rest } = props;
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.caption, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.caption, {
       ...rest,
       ref,
       __css: {
@@ -49921,7 +50361,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   TableCaption.displayName = "TableCaption";
   var Thead = forwardRef((props, ref) => {
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.thead, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.thead, {
       ...props,
       ref,
       __css: styles2.thead
@@ -49929,7 +50369,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var Tbody = forwardRef((props, ref) => {
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.tbody, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.tbody, {
       ...props,
       ref,
       __css: styles2.tbody
@@ -49937,7 +50377,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var Tfoot = forwardRef((props, ref) => {
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.tfoot, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.tfoot, {
       ...props,
       ref,
       __css: styles2.tfoot
@@ -49945,7 +50385,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var Th = forwardRef(({ isNumeric: isNumeric2, ...rest }, ref) => {
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.th, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.th, {
       ...rest,
       ref,
       __css: styles2.th,
@@ -49954,7 +50394,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var Tr = forwardRef((props, ref) => {
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.tr, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.tr, {
       ...props,
       ref,
       __css: styles2.tr
@@ -49962,7 +50402,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var Td = forwardRef(({ isNumeric: isNumeric2, ...rest }, ref) => {
     const styles2 = useTableStyles();
-    return /* @__PURE__ */ import_react136.default.createElement(chakra.td, {
+    return /* @__PURE__ */ import_react140.default.createElement(chakra.td, {
       ...rest,
       ref,
       __css: styles2.td,
@@ -49971,11 +50411,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
 
   // node_modules/@chakra-ui/tabs/dist/index.esm.js
-  var import_react137 = __toESM(require_react());
-  var import_react138 = __toESM(require_react());
-  var import_react139 = __toESM(require_react());
-  var cx10 = (...classNames2) => classNames2.filter(Boolean).join(" ");
-  function callAllHandlers4(...fns) {
+  var import_react141 = __toESM(require_react());
+  var import_react142 = __toESM(require_react());
+  var import_react143 = __toESM(require_react());
+  var cx11 = (...classNames2) => classNames2.filter(Boolean).join(" ");
+  function callAllHandlers5(...fns) {
     return function func2(event) {
       fns.some((fn2) => {
         fn2 == null ? void 0 : fn2(event);
@@ -50001,19 +50441,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       direction: direction2 = "ltr",
       ...htmlProps
     } = props;
-    const [focusedIndex, setFocusedIndex] = (0, import_react139.useState)(defaultIndex ?? 0);
+    const [focusedIndex, setFocusedIndex] = (0, import_react143.useState)(defaultIndex ?? 0);
     const [selectedIndex, setSelectedIndex] = useControllableState({
       defaultValue: defaultIndex ?? 0,
       value: index,
       onChange
     });
-    (0, import_react139.useEffect)(() => {
+    (0, import_react143.useEffect)(() => {
       if (index != null) {
         setFocusedIndex(index);
       }
     }, [index]);
     const descendants = useTabsDescendants();
-    const uuid = (0, import_react139.useId)();
+    const uuid = (0, import_react143.useId)();
     const uid = props.id ?? uuid;
     const id3 = `tabs-${uid}`;
     return {
@@ -50038,7 +50478,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   function useTabList(props) {
     const { focusedIndex, orientation, direction: direction2 } = useTabsContext();
     const descendants = useTabsDescendantsContext();
-    const onKeyDown = (0, import_react139.useCallback)((event) => {
+    const onKeyDown = (0, import_react143.useCallback)((event) => {
       const nextTab = () => {
         var _a8;
         const next = descendants.nextEnabled(focusedIndex);
@@ -50086,7 +50526,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...props,
       role: "tablist",
       "aria-orientation": orientation,
-      onKeyDown: callAllHandlers4(props.onKeyDown, onKeyDown)
+      onKeyDown: callAllHandlers5(props.onKeyDown, onKeyDown)
     };
   }
   function useTab(props) {
@@ -50112,7 +50552,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ref: mergeRefs(register, props.ref),
       isDisabled: isDisabled2,
       isFocusable: isFocusable2,
-      onClick: callAllHandlers4(props.onClick, onClick)
+      onClick: callAllHandlers5(props.onClick, onClick)
     });
     const type = "button";
     return {
@@ -50123,7 +50563,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       type,
       "aria-selected": isSelected,
       "aria-controls": makeTabPanelId(id3, index),
-      onFocus: isDisabled2 ? void 0 : callAllHandlers4(props.onFocus, onFocus3)
+      onFocus: isDisabled2 ? void 0 : callAllHandlers5(props.onFocus, onFocus3)
     };
   }
   var [TabPanelProvider, useTabPanelContext] = createContext3({});
@@ -50131,7 +50571,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const context = useTabsContext();
     const { id: id3, selectedIndex } = context;
     const validChildren = getValidChildren(props.children);
-    const children = validChildren.map((child, index) => (0, import_react139.createElement)(TabPanelProvider, {
+    const children = validChildren.map((child, index) => (0, import_react143.createElement)(TabPanelProvider, {
       key: index,
       value: {
         isSelected: index === selectedIndex,
@@ -50146,7 +50586,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { children, ...htmlProps } = props;
     const { isLazy, lazyBehavior } = useTabsContext();
     const { isSelected, id: id3, tabId } = useTabPanelContext();
-    const hasBeenSelected = (0, import_react139.useRef)(false);
+    const hasBeenSelected = (0, import_react143.useRef)(false);
     if (isSelected) {
       hasBeenSelected.current = true;
     }
@@ -50172,14 +50612,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const { selectedIndex, orientation } = context;
     const isHorizontal = orientation === "horizontal";
     const isVertical = orientation === "vertical";
-    const [rect, setRect] = (0, import_react139.useState)(() => {
+    const [rect, setRect] = (0, import_react143.useState)(() => {
       if (isHorizontal)
         return { left: 0, width: 0 };
       if (isVertical)
         return { top: 0, height: 0 };
       return void 0;
     });
-    const [hasMeasured, setHasMeasured] = (0, import_react139.useState)(false);
+    const [hasMeasured, setHasMeasured] = (0, import_react143.useState)(false);
     useSafeLayoutEffect(() => {
       if (selectedIndex == null)
         return;
@@ -50223,16 +50663,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const styles2 = useMultiStyleConfig("Tabs", props);
     const { children, className, ...rest } = omitThemingProps(props);
     const { htmlProps, descendants, ...ctx } = useTabs(rest);
-    const context = (0, import_react138.useMemo)(() => ctx, [ctx]);
+    const context = (0, import_react142.useMemo)(() => ctx, [ctx]);
     const { isFitted: _, ...rootProps } = htmlProps;
-    return /* @__PURE__ */ import_react137.default.createElement(TabsDescendantsProvider, {
+    return /* @__PURE__ */ import_react141.default.createElement(TabsDescendantsProvider, {
       value: descendants
-    }, /* @__PURE__ */ import_react137.default.createElement(TabsProvider, {
+    }, /* @__PURE__ */ import_react141.default.createElement(TabsProvider, {
       value: context
-    }, /* @__PURE__ */ import_react137.default.createElement(TabsStylesProvider, {
+    }, /* @__PURE__ */ import_react141.default.createElement(TabsStylesProvider, {
       value: styles2
-    }, /* @__PURE__ */ import_react137.default.createElement(chakra.div, {
-      className: cx10("chakra-tabs", className),
+    }, /* @__PURE__ */ import_react141.default.createElement(chakra.div, {
+      className: cx11("chakra-tabs", className),
       ref,
       ...rootProps,
       __css: styles2.root
@@ -50246,10 +50686,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...indicatorStyle
     };
     const styles2 = useTabsStyles();
-    return /* @__PURE__ */ import_react137.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react141.default.createElement(chakra.div, {
       ref,
       ...props,
-      className: cx10("chakra-tabs__tab-indicator", props.className),
+      className: cx11("chakra-tabs__tab-indicator", props.className),
       style,
       __css: styles2.indicator
     });
@@ -50262,9 +50702,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       display: "flex",
       ...styles2.tablist
     };
-    return /* @__PURE__ */ import_react137.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react141.default.createElement(chakra.div, {
       ...tablistProps,
-      className: cx10("chakra-tabs__tablist", props.className),
+      className: cx11("chakra-tabs__tablist", props.className),
       __css: tablistStyles
     });
   });
@@ -50272,10 +50712,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var TabPanel = forwardRef(function TabPanel2(props, ref) {
     const panelProps = useTabPanel({ ...props, ref });
     const styles2 = useTabsStyles();
-    return /* @__PURE__ */ import_react137.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react141.default.createElement(chakra.div, {
       outline: "0",
       ...panelProps,
-      className: cx10("chakra-tabs__tab-panel", props.className),
+      className: cx11("chakra-tabs__tab-panel", props.className),
       __css: styles2.tabpanel
     });
   });
@@ -50283,11 +50723,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var TabPanels = forwardRef(function TabPanels2(props, ref) {
     const panelsProps = useTabPanels(props);
     const styles2 = useTabsStyles();
-    return /* @__PURE__ */ import_react137.default.createElement(chakra.div, {
+    return /* @__PURE__ */ import_react141.default.createElement(chakra.div, {
       ...panelsProps,
       width: "100%",
       ref,
-      className: cx10("chakra-tabs__tab-panels", props.className),
+      className: cx11("chakra-tabs__tab-panels", props.className),
       __css: styles2.tabpanels
     });
   });
@@ -50302,16 +50742,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       justifyContent: "center",
       ...styles2.tab
     };
-    return /* @__PURE__ */ import_react137.default.createElement(chakra.button, {
+    return /* @__PURE__ */ import_react141.default.createElement(chakra.button, {
       ...tabProps,
-      className: cx10("chakra-tabs__tab", props.className),
+      className: cx11("chakra-tabs__tab", props.className),
       __css: tabStyles
     });
   });
   Tab.displayName = "Tab";
 
   // node_modules/@chakra-ui/tag/dist/index.esm.js
-  var import_react140 = __toESM(require_react());
+  var import_react144 = __toESM(require_react());
   var [TagStylesProvider, useTagStyles] = createContext3({
     name: `TagStylesContext`,
     errorMessage: `useTagStyles returned is 'undefined'. Seems you forgot to wrap the components in "<Tag />" `
@@ -50326,9 +50766,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       maxWidth: "100%",
       ...styles2.container
     };
-    return /* @__PURE__ */ import_react140.default.createElement(TagStylesProvider, {
+    return /* @__PURE__ */ import_react144.default.createElement(TagStylesProvider, {
       value: styles2
-    }, /* @__PURE__ */ import_react140.default.createElement(chakra.span, {
+    }, /* @__PURE__ */ import_react144.default.createElement(chakra.span, {
       ref,
       ...ownProps,
       __css: containerStyles
@@ -50337,7 +50777,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   Tag.displayName = "Tag";
   var TagLabel = forwardRef((props, ref) => {
     const styles2 = useTagStyles();
-    return /* @__PURE__ */ import_react140.default.createElement(chakra.span, {
+    return /* @__PURE__ */ import_react144.default.createElement(chakra.span, {
       ref,
       noOfLines: 1,
       ...props,
@@ -50345,25 +50785,25 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     });
   });
   TagLabel.displayName = "TagLabel";
-  var TagLeftIcon = forwardRef((props, ref) => /* @__PURE__ */ import_react140.default.createElement(Icon, {
+  var TagLeftIcon = forwardRef((props, ref) => /* @__PURE__ */ import_react144.default.createElement(Icon, {
     ref,
     verticalAlign: "top",
     marginEnd: "0.5rem",
     ...props
   }));
   TagLeftIcon.displayName = "TagLeftIcon";
-  var TagRightIcon = forwardRef((props, ref) => /* @__PURE__ */ import_react140.default.createElement(Icon, {
+  var TagRightIcon = forwardRef((props, ref) => /* @__PURE__ */ import_react144.default.createElement(Icon, {
     ref,
     verticalAlign: "top",
     marginStart: "0.5rem",
     ...props
   }));
   TagRightIcon.displayName = "TagRightIcon";
-  var TagCloseIcon = (props) => /* @__PURE__ */ import_react140.default.createElement(Icon, {
+  var TagCloseIcon = (props) => /* @__PURE__ */ import_react144.default.createElement(Icon, {
     verticalAlign: "inherit",
     viewBox: "0 0 512 512",
     ...props
-  }, /* @__PURE__ */ import_react140.default.createElement("path", {
+  }, /* @__PURE__ */ import_react144.default.createElement("path", {
     fill: "currentColor",
     d: "M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"
   }));
@@ -50378,26 +50818,26 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       outline: "0",
       ...styles2.closeButton
     };
-    return /* @__PURE__ */ import_react140.default.createElement(chakra.button, {
+    return /* @__PURE__ */ import_react144.default.createElement(chakra.button, {
       ref,
       "aria-label": "close",
       ...rest,
       type: "button",
       disabled: isDisabled2,
       __css: btnStyles
-    }, children || /* @__PURE__ */ import_react140.default.createElement(TagCloseIcon, null));
+    }, children || /* @__PURE__ */ import_react144.default.createElement(TagCloseIcon, null));
   });
   TagCloseButton.displayName = "TagCloseButton";
 
   // node_modules/@chakra-ui/toast/dist/index.esm.js
-  var import_react142 = __toESM(require_react());
-  var import_react143 = __toESM(require_react());
+  var import_react146 = __toESM(require_react());
+  var import_react147 = __toESM(require_react());
 
   // node_modules/@chakra-ui/react-use-timeout/dist/index.esm.js
-  var import_react141 = __toESM(require_react());
+  var import_react145 = __toESM(require_react());
   function useTimeout(callback, delay2) {
     const fn2 = useCallbackRef(callback);
-    (0, import_react141.useEffect)(() => {
+    (0, import_react145.useEffect)(() => {
       if (delay2 == null)
         return void 0;
       let timeoutId = null;
@@ -50413,8 +50853,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/@chakra-ui/toast/dist/index.esm.js
-  var import_react144 = __toESM(require_react());
-  var import_react145 = __toESM(require_react());
+  var import_react148 = __toESM(require_react());
+  var import_react149 = __toESM(require_react());
   function runIfFn4(valueOrFn, ...args) {
     return isFunction5(valueOrFn) ? valueOrFn(...args) : valueOrFn;
   }
@@ -50604,7 +51044,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       title: `toast-${id3}-title`,
       description: `toast-${id3}-description`
     } : void 0;
-    return /* @__PURE__ */ import_react142.default.createElement(Alert, {
+    return /* @__PURE__ */ import_react146.default.createElement(Alert, {
       addRole: false,
       status,
       variant,
@@ -50615,15 +51055,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       paddingEnd: 8,
       textAlign: "start",
       width: "auto"
-    }, /* @__PURE__ */ import_react142.default.createElement(AlertIcon, null, icon), /* @__PURE__ */ import_react142.default.createElement(chakra.div, {
+    }, /* @__PURE__ */ import_react146.default.createElement(AlertIcon, null, icon), /* @__PURE__ */ import_react146.default.createElement(chakra.div, {
       flex: "1",
       maxWidth: "100%"
-    }, title && /* @__PURE__ */ import_react142.default.createElement(AlertTitle, {
+    }, title && /* @__PURE__ */ import_react146.default.createElement(AlertTitle, {
       id: ids == null ? void 0 : ids.title
-    }, title), description && /* @__PURE__ */ import_react142.default.createElement(AlertDescription, {
+    }, title), description && /* @__PURE__ */ import_react146.default.createElement(AlertDescription, {
       id: ids == null ? void 0 : ids.description,
       display: "block"
-    }, description)), isClosable && /* @__PURE__ */ import_react142.default.createElement(CloseButton, {
+    }, description)), isClosable && /* @__PURE__ */ import_react146.default.createElement(CloseButton, {
       size: "sm",
       onClick: onClose,
       position: "absolute",
@@ -50637,7 +51077,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       if (typeof render === "function") {
         return render({ ...props, ...options });
       }
-      return /* @__PURE__ */ import_react142.default.createElement(ToastComponent2, {
+      return /* @__PURE__ */ import_react146.default.createElement(ToastComponent2, {
         ...props,
         ...options
       });
@@ -50675,7 +51115,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
     }
   };
-  var ToastComponent = (0, import_react144.memo)((props) => {
+  var ToastComponent = (0, import_react148.memo)((props) => {
     const {
       id: id3,
       message,
@@ -50688,7 +51128,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       motionVariants = toastMotionVariants,
       toastSpacing = "0.5rem"
     } = props;
-    const [delay2, setDelay] = (0, import_react144.useState)(duration);
+    const [delay2, setDelay] = (0, import_react148.useState)(duration);
     const isPresent2 = useIsPresent();
     useUpdateEffect(() => {
       if (!isPresent2) {
@@ -50704,21 +51144,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       if (isPresent2)
         onRequestRemove();
     };
-    (0, import_react144.useEffect)(() => {
+    (0, import_react148.useEffect)(() => {
       if (isPresent2 && requestClose) {
         onRequestRemove();
       }
     }, [isPresent2, requestClose, onRequestRemove]);
     useTimeout(close, delay2);
-    const containerStyles = (0, import_react144.useMemo)(() => ({
+    const containerStyles = (0, import_react148.useMemo)(() => ({
       pointerEvents: "auto",
       maxWidth: 560,
       minWidth: 300,
       margin: toastSpacing,
       ...containerStyle
     }), [containerStyle, toastSpacing]);
-    const toastStyle = (0, import_react144.useMemo)(() => getToastStyle(position2), [position2]);
-    return /* @__PURE__ */ import_react142.default.createElement(motion.li, {
+    const toastStyle = (0, import_react148.useMemo)(() => getToastStyle(position2), [position2]);
+    return /* @__PURE__ */ import_react146.default.createElement(motion.li, {
       layout: true,
       className: "chakra-toast",
       variants: motionVariants,
@@ -50729,7 +51169,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       onHoverEnd: onMouseLeave,
       custom: { position: position2 },
       style: toastStyle
-    }, /* @__PURE__ */ import_react142.default.createElement(chakra.div, {
+    }, /* @__PURE__ */ import_react146.default.createElement(chakra.div, {
       role: "status",
       "aria-atomic": "true",
       className: "chakra-toast__inner",
@@ -50738,7 +51178,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   ToastComponent.displayName = "ToastComponent";
   var ToastProvider = (props) => {
-    const state2 = (0, import_react145.useSyncExternalStore)(toastStore.subscribe, toastStore.getState, toastStore.getState);
+    const state2 = (0, import_react149.useSyncExternalStore)(toastStore.subscribe, toastStore.getState, toastStore.getState);
     const {
       children,
       motionVariants,
@@ -50748,29 +51188,29 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const stateKeys = Object.keys(state2);
     const toastList = stateKeys.map((position2) => {
       const toasts = state2[position2];
-      return /* @__PURE__ */ import_react142.default.createElement("ul", {
+      return /* @__PURE__ */ import_react146.default.createElement("ul", {
         role: "region",
         "aria-live": "polite",
         key: position2,
         id: `chakra-toast-manager-${position2}`,
         style: getToastListStyle(position2)
-      }, /* @__PURE__ */ import_react142.default.createElement(AnimatePresence, {
+      }, /* @__PURE__ */ import_react146.default.createElement(AnimatePresence, {
         initial: false
-      }, toasts.map((toast) => /* @__PURE__ */ import_react142.default.createElement(Component3, {
+      }, toasts.map((toast) => /* @__PURE__ */ import_react146.default.createElement(Component3, {
         key: toast.id,
         motionVariants,
         ...toast
       }))));
     });
-    return /* @__PURE__ */ import_react142.default.createElement(import_react142.default.Fragment, null, children, /* @__PURE__ */ import_react142.default.createElement(Portal, {
+    return /* @__PURE__ */ import_react146.default.createElement(import_react146.default.Fragment, null, children, /* @__PURE__ */ import_react146.default.createElement(Portal, {
       ...portalProps
     }, toastList));
   };
 
   // node_modules/@chakra-ui/tooltip/dist/index.esm.js
-  var import_react146 = __toESM(require_react());
-  var import_react147 = __toESM(require_react());
-  var import_react148 = __toESM(require_react());
+  var import_react150 = __toESM(require_react());
+  var import_react151 = __toESM(require_react());
+  var import_react152 = __toESM(require_react());
   function omit4(object2, keysToOmit = []) {
     const clone = Object.assign({}, object2);
     for (const key of keysToOmit) {
@@ -50806,7 +51246,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
     }
   };
-  function callAllHandlers5(...fns) {
+  function callAllHandlers6(...fns) {
     return function func2(event) {
       fns.some((fn2) => {
         fn2 == null ? void 0 : fn2(event);
@@ -50862,52 +51302,52 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       offset: offset2,
       direction: direction2
     });
-    const uuid = (0, import_react148.useId)();
+    const uuid = (0, import_react152.useId)();
     const uid = id3 ?? uuid;
     const tooltipId = `tooltip-${uid}`;
-    const ref = (0, import_react148.useRef)(null);
-    const enterTimeout = (0, import_react148.useRef)();
-    const clearEnterTimeout = (0, import_react148.useCallback)(() => {
+    const ref = (0, import_react152.useRef)(null);
+    const enterTimeout = (0, import_react152.useRef)();
+    const clearEnterTimeout = (0, import_react152.useCallback)(() => {
       if (enterTimeout.current) {
         clearTimeout(enterTimeout.current);
         enterTimeout.current = void 0;
       }
     }, []);
-    const exitTimeout = (0, import_react148.useRef)();
-    const clearExitTimeout = (0, import_react148.useCallback)(() => {
+    const exitTimeout = (0, import_react152.useRef)();
+    const clearExitTimeout = (0, import_react152.useCallback)(() => {
       if (exitTimeout.current) {
         clearTimeout(exitTimeout.current);
         exitTimeout.current = void 0;
       }
     }, []);
-    const closeNow = (0, import_react148.useCallback)(() => {
+    const closeNow = (0, import_react152.useCallback)(() => {
       clearExitTimeout();
       onClose();
     }, [onClose, clearExitTimeout]);
     const dispatchCloseEvent = useCloseEvent(ref, closeNow);
-    const openWithDelay = (0, import_react148.useCallback)(() => {
+    const openWithDelay = (0, import_react152.useCallback)(() => {
       if (!isDisabled2 && !enterTimeout.current) {
         dispatchCloseEvent();
         const win2 = getWin(ref);
         enterTimeout.current = win2.setTimeout(onOpen, openDelay);
       }
     }, [dispatchCloseEvent, isDisabled2, onOpen, openDelay]);
-    const closeWithDelay = (0, import_react148.useCallback)(() => {
+    const closeWithDelay = (0, import_react152.useCallback)(() => {
       clearEnterTimeout();
       const win2 = getWin(ref);
       exitTimeout.current = win2.setTimeout(closeNow, closeDelay);
     }, [closeDelay, closeNow, clearEnterTimeout]);
-    const onClick = (0, import_react148.useCallback)(() => {
+    const onClick = (0, import_react152.useCallback)(() => {
       if (isOpen && closeOnClick) {
         closeWithDelay();
       }
     }, [closeOnClick, closeWithDelay, isOpen]);
-    const onPointerDown = (0, import_react148.useCallback)(() => {
+    const onPointerDown = (0, import_react152.useCallback)(() => {
       if (isOpen && closeOnPointerDown) {
         closeWithDelay();
       }
     }, [closeOnPointerDown, closeWithDelay, isOpen]);
-    const onKeyDown = (0, import_react148.useCallback)((event) => {
+    const onKeyDown = (0, import_react152.useCallback)((event) => {
       if (isOpen && event.key === "Escape") {
         closeWithDelay();
       }
@@ -50918,31 +51358,31 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         closeNow();
       }
     });
-    (0, import_react148.useEffect)(() => {
+    (0, import_react152.useEffect)(() => {
       if (!isDisabled2)
         return;
       clearEnterTimeout();
       if (isOpen)
         onClose();
     }, [isDisabled2, isOpen, onClose, clearEnterTimeout]);
-    (0, import_react148.useEffect)(() => () => {
+    (0, import_react152.useEffect)(() => () => {
       clearEnterTimeout();
       clearExitTimeout();
     }, [clearEnterTimeout, clearExitTimeout]);
     useEventListener(() => ref.current, "pointerleave", closeWithDelay);
-    const getTriggerProps = (0, import_react148.useCallback)((props2 = {}, _ref2 = null) => {
+    const getTriggerProps = (0, import_react152.useCallback)((props2 = {}, _ref2 = null) => {
       const triggerProps = {
         ...props2,
         ref: mergeRefs(ref, _ref2, referenceRef),
-        onPointerEnter: callAllHandlers5(props2.onPointerEnter, (e) => {
+        onPointerEnter: callAllHandlers6(props2.onPointerEnter, (e) => {
           if (e.pointerType === "touch")
             return;
           openWithDelay();
         }),
-        onClick: callAllHandlers5(props2.onClick, onClick),
-        onPointerDown: callAllHandlers5(props2.onPointerDown, onPointerDown),
-        onFocus: callAllHandlers5(props2.onFocus, openWithDelay),
-        onBlur: callAllHandlers5(props2.onBlur, closeWithDelay),
+        onClick: callAllHandlers6(props2.onClick, onClick),
+        onPointerDown: callAllHandlers6(props2.onPointerDown, onPointerDown),
+        onFocus: callAllHandlers6(props2.onFocus, openWithDelay),
+        onBlur: callAllHandlers6(props2.onBlur, closeWithDelay),
         "aria-describedby": isOpen ? tooltipId : void 0
       };
       return triggerProps;
@@ -50955,7 +51395,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       onClick,
       referenceRef
     ]);
-    const getTooltipPositionerProps = (0, import_react148.useCallback)((props2 = {}, forwardedRef = null) => getPopperProps({
+    const getTooltipPositionerProps = (0, import_react152.useCallback)((props2 = {}, forwardedRef = null) => getPopperProps({
       ...props2,
       style: {
         ...props2.style,
@@ -50963,7 +51403,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         [cssVars.arrowShadowColor.var]: arrowShadowColor
       }
     }, forwardedRef), [getPopperProps, arrowSize, arrowShadowColor]);
-    const getTooltipProps = (0, import_react148.useCallback)((props2 = {}, ref2 = null) => {
+    const getTooltipProps = (0, import_react152.useCallback)((props2 = {}, ref2 = null) => {
       const styles2 = {
         ...props2.style,
         position: "relative",
@@ -50991,7 +51431,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
   var closeEventName = "chakra-ui:close-tooltip";
   function useCloseEvent(ref, close) {
-    (0, import_react148.useEffect)(() => {
+    (0, import_react152.useEffect)(() => {
       const doc2 = getDoc(ref);
       doc2.addEventListener(closeEventName, close);
       return () => doc2.removeEventListener(closeEventName, close);
@@ -51031,31 +51471,31 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     const shouldWrap = typeof children === "string" || shouldWrapChildren;
     let trigger;
     if (shouldWrap) {
-      trigger = /* @__PURE__ */ import_react146.default.createElement(chakra.span, {
+      trigger = /* @__PURE__ */ import_react150.default.createElement(chakra.span, {
         display: "inline-block",
         tabIndex: 0,
         ...tooltip.getTriggerProps()
       }, children);
     } else {
-      const child = import_react147.Children.only(children);
-      trigger = (0, import_react147.cloneElement)(child, tooltip.getTriggerProps(child.props, child.ref));
+      const child = import_react151.Children.only(children);
+      trigger = (0, import_react151.cloneElement)(child, tooltip.getTriggerProps(child.props, child.ref));
     }
     const hasAriaLabel = !!ariaLabel;
     const _tooltipProps = tooltip.getTooltipProps({}, ref);
     const tooltipProps = hasAriaLabel ? omit4(_tooltipProps, ["role", "id"]) : _tooltipProps;
     const srOnlyProps = pick2(_tooltipProps, ["role", "id"]);
     if (!label) {
-      return /* @__PURE__ */ import_react146.default.createElement(import_react146.default.Fragment, null, children);
+      return /* @__PURE__ */ import_react150.default.createElement(import_react150.default.Fragment, null, children);
     }
-    return /* @__PURE__ */ import_react146.default.createElement(import_react146.default.Fragment, null, trigger, /* @__PURE__ */ import_react146.default.createElement(AnimatePresence, null, tooltip.isOpen && /* @__PURE__ */ import_react146.default.createElement(Portal, {
+    return /* @__PURE__ */ import_react150.default.createElement(import_react150.default.Fragment, null, trigger, /* @__PURE__ */ import_react150.default.createElement(AnimatePresence, null, tooltip.isOpen && /* @__PURE__ */ import_react150.default.createElement(Portal, {
       ...portalProps
-    }, /* @__PURE__ */ import_react146.default.createElement(chakra.div, {
+    }, /* @__PURE__ */ import_react150.default.createElement(chakra.div, {
       ...tooltip.getTooltipPositionerProps(),
       __css: {
         zIndex: styles2.zIndex,
         pointerEvents: "none"
       }
-    }, /* @__PURE__ */ import_react146.default.createElement(MotionDiv3, {
+    }, /* @__PURE__ */ import_react150.default.createElement(MotionDiv3, {
       variants: scale2,
       initial: "exit",
       animate: "enter",
@@ -51063,13 +51503,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       ...motionProps,
       ...tooltipProps,
       __css: styles2
-    }, label, hasAriaLabel && /* @__PURE__ */ import_react146.default.createElement(chakra.span, {
+    }, label, hasAriaLabel && /* @__PURE__ */ import_react150.default.createElement(chakra.span, {
       srOnly: true,
       ...srOnlyProps
-    }, ariaLabel), hasArrow && /* @__PURE__ */ import_react146.default.createElement(chakra.div, {
+    }, ariaLabel), hasArrow && /* @__PURE__ */ import_react150.default.createElement(chakra.div, {
       "data-popper-arrow": true,
       className: "chakra-tooltip__arrow-wrapper"
-    }, /* @__PURE__ */ import_react146.default.createElement(chakra.div, {
+    }, /* @__PURE__ */ import_react150.default.createElement(chakra.div, {
       "data-popper-arrow-inner": true,
       className: "chakra-tooltip__arrow",
       __css: { bg: styles2.bg }
@@ -51078,7 +51518,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   Tooltip.displayName = "Tooltip";
 
   // node_modules/@chakra-ui/provider/dist/index.esm.js
-  var import_react149 = __toESM(require_react());
+  var import_react153 = __toESM(require_react());
   var ChakraProvider = (props) => {
     const {
       children,
@@ -51089,16 +51529,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       environment,
       cssVarsRoot
     } = props;
-    const _children = /* @__PURE__ */ import_react149.default.createElement(EnvironmentProvider, {
+    const _children = /* @__PURE__ */ import_react153.default.createElement(EnvironmentProvider, {
       environment
     }, children);
-    return /* @__PURE__ */ import_react149.default.createElement(ThemeProvider, {
+    return /* @__PURE__ */ import_react153.default.createElement(ThemeProvider, {
       theme: theme3,
       cssVarsRoot
-    }, /* @__PURE__ */ import_react149.default.createElement(ColorModeProvider, {
+    }, /* @__PURE__ */ import_react153.default.createElement(ColorModeProvider, {
       colorModeManager,
       options: theme3.config
-    }, resetCSS ? /* @__PURE__ */ import_react149.default.createElement(CSSReset, null) : /* @__PURE__ */ import_react149.default.createElement(CSSPolyfill, null), /* @__PURE__ */ import_react149.default.createElement(GlobalStyle, null), portalZIndex ? /* @__PURE__ */ import_react149.default.createElement(PortalManager, {
+    }, resetCSS ? /* @__PURE__ */ import_react153.default.createElement(CSSReset, null) : /* @__PURE__ */ import_react153.default.createElement(CSSPolyfill, null), /* @__PURE__ */ import_react153.default.createElement(GlobalStyle, null), portalZIndex ? /* @__PURE__ */ import_react153.default.createElement(PortalManager, {
       zIndex: portalZIndex
     }, _children) : _children));
   };
@@ -51110,16 +51550,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     toastOptions,
     ...restProps
   }) {
-    return /* @__PURE__ */ import_react150.default.createElement(ChakraProvider, {
+    return /* @__PURE__ */ import_react154.default.createElement(ChakraProvider, {
       theme: theme3,
       ...restProps
-    }, children, /* @__PURE__ */ import_react150.default.createElement(ToastProvider, {
+    }, children, /* @__PURE__ */ import_react154.default.createElement(ToastProvider, {
       ...toastOptions
     }));
   }
 
   // node_modules/react-router-dom/dist/index.js
-  var React42 = __toESM(require_react());
+  var React44 = __toESM(require_react());
 
   // node_modules/@remix-run/router/dist/router.js
   function _extends2() {
@@ -53031,7 +53471,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // node_modules/react-router/dist/index.js
-  var React41 = __toESM(require_react());
+  var React43 = __toESM(require_react());
   function _extends3() {
     _extends3 = Object.assign ? Object.assign.bind() : function(target) {
       for (var i = 1; i < arguments.length; i++) {
@@ -53051,17 +53491,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
   var is = typeof Object.is === "function" ? Object.is : isPolyfill;
   var {
-    useState: useState24,
+    useState: useState25,
     useEffect: useEffect39,
     useLayoutEffect: useLayoutEffect7,
     useDebugValue
-  } = React41;
+  } = React43;
   var didWarnOld18Alpha = false;
   var didWarnUncachedGetSnapshot = false;
   function useSyncExternalStore$2(subscribe, getSnapshot, getServerSnapshot) {
     if (true) {
       if (!didWarnOld18Alpha) {
-        if ("startTransition" in React41) {
+        if ("startTransition" in React43) {
           didWarnOld18Alpha = true;
           console.error("You are using an outdated, pre-release alpha of React 18 that does not support useSyncExternalStore. The use-sync-external-store shim will not work correctly. Upgrade to a newer pre-release.");
         }
@@ -53079,7 +53519,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }
     const [{
       inst
-    }, forceUpdate] = useState24({
+    }, forceUpdate] = useState25({
       inst: {
         value,
         getSnapshot
@@ -53128,39 +53568,39 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var canUseDOM2 = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
   var isServerEnvironment = !canUseDOM2;
   var shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore$2;
-  var useSyncExternalStore2 = "useSyncExternalStore" in React41 ? ((module) => module.useSyncExternalStore)(React41) : shim;
-  var DataStaticRouterContext = /* @__PURE__ */ React41.createContext(null);
+  var useSyncExternalStore2 = "useSyncExternalStore" in React43 ? ((module) => module.useSyncExternalStore)(React43) : shim;
+  var DataStaticRouterContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     DataStaticRouterContext.displayName = "DataStaticRouterContext";
   }
-  var DataRouterContext = /* @__PURE__ */ React41.createContext(null);
+  var DataRouterContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     DataRouterContext.displayName = "DataRouter";
   }
-  var DataRouterStateContext = /* @__PURE__ */ React41.createContext(null);
+  var DataRouterStateContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     DataRouterStateContext.displayName = "DataRouterState";
   }
-  var AwaitContext = /* @__PURE__ */ React41.createContext(null);
+  var AwaitContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     AwaitContext.displayName = "Await";
   }
-  var NavigationContext = /* @__PURE__ */ React41.createContext(null);
+  var NavigationContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     NavigationContext.displayName = "Navigation";
   }
-  var LocationContext = /* @__PURE__ */ React41.createContext(null);
+  var LocationContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     LocationContext.displayName = "Location";
   }
-  var RouteContext = /* @__PURE__ */ React41.createContext({
+  var RouteContext = /* @__PURE__ */ React43.createContext({
     outlet: null,
     matches: []
   });
   if (true) {
     RouteContext.displayName = "Route";
   }
-  var RouteErrorContext = /* @__PURE__ */ React41.createContext(null);
+  var RouteErrorContext = /* @__PURE__ */ React43.createContext(null);
   if (true) {
     RouteErrorContext.displayName = "RouteError";
   }
@@ -53175,7 +53615,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     let {
       basename,
       navigator: navigator2
-    } = React41.useContext(NavigationContext);
+    } = React43.useContext(NavigationContext);
     let {
       hash: hash3,
       pathname,
@@ -53194,14 +53634,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     });
   }
   function useInRouterContext() {
-    return React41.useContext(LocationContext) != null;
+    return React43.useContext(LocationContext) != null;
   }
   function useLocation() {
     !useInRouterContext() ? true ? invariant2(
       false,
       "useLocation() may be used only in the context of a <Router> component."
     ) : invariant2(false) : void 0;
-    return React41.useContext(LocationContext).location;
+    return React43.useContext(LocationContext).location;
   }
   function useNavigate() {
     !useInRouterContext() ? true ? invariant2(
@@ -53211,19 +53651,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     let {
       basename,
       navigator: navigator2
-    } = React41.useContext(NavigationContext);
+    } = React43.useContext(NavigationContext);
     let {
       matches
-    } = React41.useContext(RouteContext);
+    } = React43.useContext(RouteContext);
     let {
       pathname: locationPathname
     } = useLocation();
     let routePathnamesJson = JSON.stringify(getPathContributingMatches(matches).map((match) => match.pathnameBase));
-    let activeRef = React41.useRef(false);
-    React41.useEffect(() => {
+    let activeRef = React43.useRef(false);
+    React43.useEffect(() => {
       activeRef.current = true;
     });
-    let navigate = React41.useCallback(function(to, options) {
+    let navigate = React43.useCallback(function(to, options) {
       if (options === void 0) {
         options = {};
       }
@@ -53242,11 +53682,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }, [basename, navigator2, routePathnamesJson, locationPathname]);
     return navigate;
   }
-  var OutletContext = /* @__PURE__ */ React41.createContext(null);
+  var OutletContext = /* @__PURE__ */ React43.createContext(null);
   function useOutlet(context) {
-    let outlet = React41.useContext(RouteContext).outlet;
+    let outlet = React43.useContext(RouteContext).outlet;
     if (outlet) {
-      return /* @__PURE__ */ React41.createElement(OutletContext.Provider, {
+      return /* @__PURE__ */ React43.createElement(OutletContext.Provider, {
         value: context
       }, outlet);
     }
@@ -53258,22 +53698,22 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     } = _temp2 === void 0 ? {} : _temp2;
     let {
       matches
-    } = React41.useContext(RouteContext);
+    } = React43.useContext(RouteContext);
     let {
       pathname: locationPathname
     } = useLocation();
     let routePathnamesJson = JSON.stringify(getPathContributingMatches(matches).map((match) => match.pathnameBase));
-    return React41.useMemo(() => resolveTo(to, JSON.parse(routePathnamesJson), locationPathname, relative === "path"), [to, routePathnamesJson, locationPathname, relative]);
+    return React43.useMemo(() => resolveTo(to, JSON.parse(routePathnamesJson), locationPathname, relative === "path"), [to, routePathnamesJson, locationPathname, relative]);
   }
   function useRoutes(routes, locationArg) {
     !useInRouterContext() ? true ? invariant2(
       false,
       "useRoutes() may be used only in the context of a <Router> component."
     ) : invariant2(false) : void 0;
-    let dataRouterStateContext = React41.useContext(DataRouterStateContext);
+    let dataRouterStateContext = React43.useContext(DataRouterStateContext);
     let {
       matches: parentMatches
-    } = React41.useContext(RouteContext);
+    } = React43.useContext(RouteContext);
     let routeMatch = parentMatches[parentMatches.length - 1];
     let parentParams = routeMatch ? routeMatch.params : {};
     let parentPathname = routeMatch ? routeMatch.pathname : "/";
@@ -53310,7 +53750,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : joinPaths([parentPathnameBase, match.pathnameBase])
     })), parentMatches, dataRouterStateContext || void 0);
     if (locationArg && renderedMatches) {
-      return /* @__PURE__ */ React41.createElement(LocationContext.Provider, {
+      return /* @__PURE__ */ React43.createElement(LocationContext.Provider, {
         value: {
           location: _extends3({
             pathname: "/",
@@ -53338,19 +53778,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       padding: "2px 4px",
       backgroundColor: lightgrey
     };
-    return /* @__PURE__ */ React41.createElement(React41.Fragment, null, /* @__PURE__ */ React41.createElement("h2", null, "Unhandled Thrown Error!"), /* @__PURE__ */ React41.createElement("h3", {
+    return /* @__PURE__ */ React43.createElement(React43.Fragment, null, /* @__PURE__ */ React43.createElement("h2", null, "Unhandled Thrown Error!"), /* @__PURE__ */ React43.createElement("h3", {
       style: {
         fontStyle: "italic"
       }
-    }, message), stack ? /* @__PURE__ */ React41.createElement("pre", {
+    }, message), stack ? /* @__PURE__ */ React43.createElement("pre", {
       style: preStyles
-    }, stack) : null, /* @__PURE__ */ React41.createElement("p", null, "\u{1F4BF} Hey developer \u{1F44B}"), /* @__PURE__ */ React41.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own\xA0", /* @__PURE__ */ React41.createElement("code", {
+    }, stack) : null, /* @__PURE__ */ React43.createElement("p", null, "\u{1F4BF} Hey developer \u{1F44B}"), /* @__PURE__ */ React43.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own\xA0", /* @__PURE__ */ React43.createElement("code", {
       style: codeStyles
-    }, "errorElement"), " props on\xA0", /* @__PURE__ */ React41.createElement("code", {
+    }, "errorElement"), " props on\xA0", /* @__PURE__ */ React43.createElement("code", {
       style: codeStyles
     }, "<Route>")));
   }
-  var RenderErrorBoundary = class extends React41.Component {
+  var RenderErrorBoundary = class extends React43.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -53379,7 +53819,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       console.error("React Router caught the following error during render", error, errorInfo);
     }
     render() {
-      return this.state.error ? /* @__PURE__ */ React41.createElement(RouteErrorContext.Provider, {
+      return this.state.error ? /* @__PURE__ */ React43.createElement(RouteErrorContext.Provider, {
         value: this.state.error,
         children: this.props.component
       }) : this.props.children;
@@ -53391,11 +53831,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       match,
       children
     } = _ref2;
-    let dataStaticRouterContext = React41.useContext(DataStaticRouterContext);
+    let dataStaticRouterContext = React43.useContext(DataStaticRouterContext);
     if (dataStaticRouterContext && match.route.errorElement) {
       dataStaticRouterContext._deepestRenderedBoundaryId = match.route.id;
     }
-    return /* @__PURE__ */ React41.createElement(RouteContext.Provider, {
+    return /* @__PURE__ */ React43.createElement(RouteContext.Provider, {
       value: routeContext
     }, children);
   }
@@ -53419,15 +53859,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }
     return renderedMatches.reduceRight((outlet, match, index) => {
       let error = match.route.id ? errors == null ? void 0 : errors[match.route.id] : null;
-      let errorElement = dataRouterState ? match.route.errorElement || /* @__PURE__ */ React41.createElement(DefaultErrorElement, null) : null;
-      let getChildren = () => /* @__PURE__ */ React41.createElement(RenderedRoute, {
+      let errorElement = dataRouterState ? match.route.errorElement || /* @__PURE__ */ React43.createElement(DefaultErrorElement, null) : null;
+      let getChildren = () => /* @__PURE__ */ React43.createElement(RenderedRoute, {
         match,
         routeContext: {
           outlet,
           matches: parentMatches.concat(renderedMatches.slice(0, index + 1))
         }
       }, error ? errorElement : match.route.element !== void 0 ? match.route.element : outlet);
-      return dataRouterState && (match.route.errorElement || index === 0) ? /* @__PURE__ */ React41.createElement(RenderErrorBoundary, {
+      return dataRouterState && (match.route.errorElement || index === 0) ? /* @__PURE__ */ React43.createElement(RenderErrorBoundary, {
         location: dataRouterState.location,
         component: errorElement,
         error,
@@ -53453,7 +53893,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     return hookName + " must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.";
   }
   function useDataRouterState(hookName) {
-    let state2 = React41.useContext(DataRouterStateContext);
+    let state2 = React43.useContext(DataRouterStateContext);
     !state2 ? true ? invariant2(false, getDataRouterConsoleError(hookName)) : invariant2(false) : void 0;
     return state2;
   }
@@ -53466,7 +53906,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       matches,
       loaderData
     } = useDataRouterState(DataRouterStateHook.UseMatches);
-    return React41.useMemo(() => matches.map((match) => {
+    return React43.useMemo(() => matches.map((match) => {
       let {
         pathname,
         params
@@ -53482,7 +53922,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
   function useLoaderData() {
     let state2 = useDataRouterState(DataRouterStateHook.UseLoaderData);
-    let route = React41.useContext(RouteContext);
+    let route = React43.useContext(RouteContext);
     !route ? true ? invariant2(false, "useLoaderData must be used inside a RouteContext") : invariant2(false) : void 0;
     let thisRoute = route.matches[route.matches.length - 1];
     !thisRoute.route.id ? true ? invariant2(false, 'useLoaderData can only be used on routes that contain a unique "id"') : invariant2(false) : void 0;
@@ -53490,9 +53930,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
   function useRouteError() {
     var _state$errors;
-    let error = React41.useContext(RouteErrorContext);
+    let error = React43.useContext(RouteErrorContext);
     let state2 = useDataRouterState(DataRouterStateHook.UseRouteError);
-    let route = React41.useContext(RouteContext);
+    let route = React43.useContext(RouteContext);
     let thisRoute = route.matches[route.matches.length - 1];
     if (error) {
       return error;
@@ -53518,7 +53958,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       () => router2.state,
       () => router2.state
     );
-    let navigator2 = React41.useMemo(() => {
+    let navigator2 = React43.useMemo(() => {
       return {
         createHref: router2.createHref,
         go: (n) => router2.navigate(n),
@@ -53534,21 +53974,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       };
     }, [router2]);
     let basename = router2.basename || "/";
-    return /* @__PURE__ */ React41.createElement(DataRouterContext.Provider, {
+    return /* @__PURE__ */ React43.createElement(DataRouterContext.Provider, {
       value: {
         router: router2,
         navigator: navigator2,
         static: false,
         basename
       }
-    }, /* @__PURE__ */ React41.createElement(DataRouterStateContext.Provider, {
+    }, /* @__PURE__ */ React43.createElement(DataRouterStateContext.Provider, {
       value: state2
-    }, /* @__PURE__ */ React41.createElement(Router, {
+    }, /* @__PURE__ */ React43.createElement(Router, {
       basename: router2.basename,
       location: router2.state.location,
       navigationType: router2.state.historyAction,
       navigator: navigator2
-    }, router2.state.initialized ? /* @__PURE__ */ React41.createElement(Routes, null) : fallbackElement)));
+    }, router2.state.initialized ? /* @__PURE__ */ React43.createElement(Routes, null) : fallbackElement)));
   }
   function Outlet(props) {
     return useOutlet(props.context);
@@ -53567,7 +54007,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     } = _ref4;
     !!useInRouterContext() ? true ? invariant2(false, "You cannot render a <Router> inside another <Router>. You should never have more than one in your app.") : invariant2(false) : void 0;
     let basename = basenameProp.replace(/^\/*/, "/");
-    let navigationContext = React41.useMemo(() => ({
+    let navigationContext = React43.useMemo(() => ({
       basename,
       navigator: navigator2,
       static: staticProp
@@ -53582,7 +54022,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       state: state2 = null,
       key = "default"
     } = locationProp;
-    let location = React41.useMemo(() => {
+    let location = React43.useMemo(() => {
       let trailingPathname = stripBasename(pathname, basename);
       if (trailingPathname == null) {
         return null;
@@ -53599,9 +54039,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     if (location == null) {
       return null;
     }
-    return /* @__PURE__ */ React41.createElement(NavigationContext.Provider, {
+    return /* @__PURE__ */ React43.createElement(NavigationContext.Provider, {
       value: navigationContext
-    }, /* @__PURE__ */ React41.createElement(LocationContext.Provider, {
+    }, /* @__PURE__ */ React43.createElement(LocationContext.Provider, {
       children,
       value: {
         location,
@@ -53614,7 +54054,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       children,
       location
     } = _ref5;
-    let dataRouterContext = React41.useContext(DataRouterContext);
+    let dataRouterContext = React43.useContext(DataRouterContext);
     let routes = dataRouterContext && !children ? dataRouterContext.router.routes : createRoutesFromChildren(children);
     return useRoutes(routes, location);
   }
@@ -53631,11 +54071,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       parentPath = [];
     }
     let routes = [];
-    React41.Children.forEach(children, (element, index) => {
-      if (!/* @__PURE__ */ React41.isValidElement(element)) {
+    React43.Children.forEach(children, (element, index) => {
+      if (!/* @__PURE__ */ React43.isValidElement(element)) {
         return;
       }
-      if (element.type === React41.Fragment) {
+      if (element.type === React43.Fragment) {
         routes.push.apply(routes, createRoutesFromChildren(element.props.children, parentPath));
         return;
       }
@@ -53724,6 +54164,26 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   function shouldProcessLinkClick(event, target) {
     return event.button === 0 && (!target || target === "_self") && !isModifiedEvent(event);
   }
+  function createSearchParams(init) {
+    if (init === void 0) {
+      init = "";
+    }
+    return new URLSearchParams(typeof init === "string" || Array.isArray(init) || init instanceof URLSearchParams ? init : Object.keys(init).reduce((memo2, key) => {
+      let value = init[key];
+      return memo2.concat(Array.isArray(value) ? value.map((v) => [key, v]) : [[key, value]]);
+    }, []));
+  }
+  function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
+    let searchParams = createSearchParams(locationSearch);
+    for (let key of defaultSearchParams.keys()) {
+      if (!searchParams.has(key)) {
+        defaultSearchParams.getAll(key).forEach((value) => {
+          searchParams.append(key, value);
+        });
+      }
+    }
+    return searchParams;
+  }
   function getFormSubmissionInfo(target, defaultAction, options) {
     let method;
     let action;
@@ -53803,12 +54263,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       children,
       history
     } = _ref3;
-    const [state2, setState] = React42.useState({
+    const [state2, setState] = React44.useState({
       action: history.action,
       location: history.location
     });
-    React42.useLayoutEffect(() => history.listen(setState), [history]);
-    return /* @__PURE__ */ React42.createElement(Router, {
+    React44.useLayoutEffect(() => history.listen(setState), [history]);
+    return /* @__PURE__ */ React44.createElement(Router, {
       basename,
       children,
       location: state2.location,
@@ -53819,7 +54279,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   if (true) {
     HistoryRouter.displayName = "unstable_HistoryRouter";
   }
-  var Link3 = /* @__PURE__ */ React42.forwardRef(function LinkWithRef(_ref4, ref) {
+  var Link3 = /* @__PURE__ */ React44.forwardRef(function LinkWithRef(_ref4, ref) {
     let {
       onClick,
       relative,
@@ -53847,7 +54307,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         internalOnClick(event);
       }
     }
-    return /* @__PURE__ */ React42.createElement("a", _extends4({}, rest, {
+    return /* @__PURE__ */ React44.createElement("a", _extends4({}, rest, {
       href,
       onClick: reloadDocument ? onClick : handleClick,
       ref,
@@ -53857,7 +54317,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   if (true) {
     Link3.displayName = "Link";
   }
-  var NavLink = /* @__PURE__ */ React42.forwardRef(function NavLinkWithRef(_ref5, ref) {
+  var NavLink = /* @__PURE__ */ React44.forwardRef(function NavLinkWithRef(_ref5, ref) {
     let {
       "aria-current": ariaCurrentProp = "page",
       caseSensitive = false,
@@ -53871,7 +54331,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       relative: rest.relative
     });
     let location = useLocation();
-    let routerState = React42.useContext(DataRouterStateContext);
+    let routerState = React44.useContext(DataRouterStateContext);
     let toPathname = path.pathname;
     let locationPathname = location.pathname;
     let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
@@ -53896,7 +54356,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       isActive,
       isPending
     }) : styleProp;
-    return /* @__PURE__ */ React42.createElement(Link3, _extends4({}, rest, {
+    return /* @__PURE__ */ React44.createElement(Link3, _extends4({}, rest, {
       "aria-current": ariaCurrent,
       className,
       ref,
@@ -53910,15 +54370,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   if (true) {
     NavLink.displayName = "NavLink";
   }
-  var Form = /* @__PURE__ */ React42.forwardRef((props, ref) => {
-    return /* @__PURE__ */ React42.createElement(FormImpl, _extends4({}, props, {
+  var Form = /* @__PURE__ */ React44.forwardRef((props, ref) => {
+    return /* @__PURE__ */ React44.createElement(FormImpl, _extends4({}, props, {
       ref
     }));
   });
   if (true) {
     Form.displayName = "Form";
   }
-  var FormImpl = /* @__PURE__ */ React42.forwardRef((_ref6, forwardedRef) => {
+  var FormImpl = /* @__PURE__ */ React44.forwardRef((_ref6, forwardedRef) => {
     let {
       reloadDocument,
       replace,
@@ -53946,7 +54406,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         relative
       });
     };
-    return /* @__PURE__ */ React42.createElement("form", _extends4({
+    return /* @__PURE__ */ React44.createElement("form", _extends4({
       ref: forwardedRef,
       method: formMethod,
       action: formAction,
@@ -53985,12 +54445,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     return hookName + " must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.";
   }
   function useDataRouterContext(hookName) {
-    let ctx = React42.useContext(DataRouterContext);
+    let ctx = React44.useContext(DataRouterContext);
     !ctx ? true ? invariant2(false, getDataRouterConsoleError2(hookName)) : invariant2(false) : void 0;
     return ctx;
   }
   function useDataRouterState2(hookName) {
-    let state2 = React42.useContext(DataRouterStateContext);
+    let state2 = React44.useContext(DataRouterStateContext);
     !state2 ? true ? invariant2(false, getDataRouterConsoleError2(hookName)) : invariant2(false) : void 0;
     return state2;
   }
@@ -54007,7 +54467,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     let path = useResolvedPath(to, {
       relative
     });
-    return React42.useCallback((event) => {
+    return React44.useCallback((event) => {
       if (shouldProcessLinkClick(event, target)) {
         event.preventDefault();
         let replace = replaceProp !== void 0 ? replaceProp : createPath(location) === createPath(path);
@@ -54020,12 +54480,24 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       }
     }, [location, navigate, path, replaceProp, state2, target, to, preventScrollReset, relative]);
   }
+  function useSearchParams(defaultInit) {
+    true ? warning3(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params\n\nIf you're unsure how to load polyfills, we recommend you check out https://polyfill.io/v3/ which provides some recommendations about how to load polyfills only for users that need them, instead of for every user.") : void 0;
+    let defaultSearchParamsRef = React44.useRef(createSearchParams(defaultInit));
+    let location = useLocation();
+    let searchParams = React44.useMemo(() => getSearchParamsForLocation(location.search, defaultSearchParamsRef.current), [location.search]);
+    let navigate = useNavigate();
+    let setSearchParams = React44.useCallback((nextInit, navigateOptions) => {
+      const newSearchParams = createSearchParams(typeof nextInit === "function" ? nextInit(searchParams) : nextInit);
+      navigate("?" + newSearchParams, navigateOptions);
+    }, [navigate, searchParams]);
+    return [searchParams, setSearchParams];
+  }
   function useSubmitImpl(fetcherKey, routeId) {
     let {
       router: router2
     } = useDataRouterContext(DataRouterHook2.UseSubmitImpl);
     let defaultAction = useFormAction();
-    return React42.useCallback(function(target, options) {
+    return React44.useCallback(function(target, options) {
       if (options === void 0) {
         options = {};
       }
@@ -54059,8 +54531,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     } = _temp2 === void 0 ? {} : _temp2;
     let {
       basename
-    } = React42.useContext(NavigationContext);
-    let routeContext = React42.useContext(RouteContext);
+    } = React44.useContext(NavigationContext);
+    let routeContext = React44.useContext(RouteContext);
     !routeContext ? true ? invariant2(false, "useFormAction must be used inside a RouteContext") : invariant2(false) : void 0;
     let [match] = routeContext.matches.slice(-1);
     let resolvedAction = action != null ? action : ".";
@@ -54102,13 +54574,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     let location = useLocation();
     let matches = useMatches();
     let navigation = useNavigation();
-    React42.useEffect(() => {
+    React44.useEffect(() => {
       window.history.scrollRestoration = "manual";
       return () => {
         window.history.scrollRestoration = "auto";
       };
     }, []);
-    useBeforeUnload(React42.useCallback(() => {
+    useBeforeUnload(React44.useCallback(() => {
       if (navigation.state === "idle") {
         let key = (getKey ? getKey(location, matches) : null) || location.key;
         savedScrollPositions[key] = window.scrollY;
@@ -54116,7 +54588,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       sessionStorage.setItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY, JSON.stringify(savedScrollPositions));
       window.history.scrollRestoration = "auto";
     }, [storageKey, getKey, navigation.state, location, matches]));
-    React42.useLayoutEffect(() => {
+    React44.useLayoutEffect(() => {
       try {
         let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
         if (sessionPositions) {
@@ -54125,11 +54597,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       } catch (e) {
       }
     }, [storageKey]);
-    React42.useLayoutEffect(() => {
+    React44.useLayoutEffect(() => {
       let disableScrollRestoration = router2 == null ? void 0 : router2.enableScrollRestoration(savedScrollPositions, () => window.scrollY, getKey);
       return () => disableScrollRestoration && disableScrollRestoration();
     }, [router2, getKey]);
-    React42.useLayoutEffect(() => {
+    React44.useLayoutEffect(() => {
       if (restoreScrollPosition === false) {
         return;
       }
@@ -54151,22 +54623,32 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     }, [location, restoreScrollPosition, preventScrollReset]);
   }
   function useBeforeUnload(callback) {
-    React42.useEffect(() => {
+    React44.useEffect(() => {
       window.addEventListener("beforeunload", callback);
       return () => {
         window.removeEventListener("beforeunload", callback);
       };
     }, [callback]);
   }
+  function warning3(cond, message) {
+    if (!cond) {
+      if (typeof console !== "undefined")
+        console.warn(message);
+      try {
+        throw new Error(message);
+      } catch (e) {
+      }
+    }
+  }
 
   // app/routes/main-view.tsx
-  var import_react164 = __toESM(require_react());
+  var import_react171 = __toESM(require_react());
 
   // app/components/sidebar-view/sidebar.tsx
-  var import_react160 = __toESM(require_react());
+  var import_react166 = __toESM(require_react());
 
   // app/components/sidebar-view/trace-list.tsx
-  var import_react155 = __toESM(require_react());
+  var import_react159 = __toESM(require_react());
 
   // node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
   function _assertThisInitialized(self2) {
@@ -54227,7 +54709,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var memoize_one_esm_default = memoizeOne;
 
   // node_modules/react-window/dist/index.esm.js
-  var import_react151 = __toESM(require_react());
+  var import_react155 = __toESM(require_react());
   var hasNativePerformanceNow = typeof performance === "object" && typeof performance.now === "function";
   var now = hasNativePerformanceNow ? function() {
     return performance.now();
@@ -54544,7 +55026,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         var items = [];
         if (itemCount > 0) {
           for (var _index = startIndex; _index <= stopIndex; _index++) {
-            items.push((0, import_react151.createElement)(children, {
+            items.push((0, import_react155.createElement)(children, {
               data: itemData,
               key: itemKey(_index, itemData),
               index: _index,
@@ -54554,7 +55036,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           }
         }
         var estimatedTotalSize = getEstimatedTotalSize2(this.props, this._instanceProps);
-        return (0, import_react151.createElement)(outerElementType || outerTagName || "div", {
+        return (0, import_react155.createElement)(outerElementType || outerTagName || "div", {
           className,
           onScroll,
           ref: this._outerRefSetter,
@@ -54567,7 +55049,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
             willChange: "transform",
             direction: direction2
           }, style)
-        }, (0, import_react151.createElement)(innerElementType || innerTagName || "div", {
+        }, (0, import_react155.createElement)(innerElementType || innerTagName || "div", {
           children: items,
           ref: innerRef,
           style: {
@@ -54603,7 +55085,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         return [Math.max(0, startIndex - overscanBackward), Math.max(0, Math.min(itemCount - 1, stopIndex + overscanForward)), startIndex, stopIndex];
       };
       return List3;
-    }(import_react151.PureComponent), _class.defaultProps = {
+    }(import_react155.PureComponent), _class.defaultProps = {
       direction: "ltr",
       itemData: void 0,
       layout: "vertical",
@@ -54735,10 +55217,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
 
   // app/utils/use-key-press.ts
-  var import_react152 = __toESM(require_react());
+  var import_react156 = __toESM(require_react());
   var useKeyPress = (targetKeys) => {
-    let [keyPressed, setKeyPressed] = (0, import_react152.useState)(false);
-    (0, import_react152.useEffect)(
+    let [keyPressed, setKeyPressed] = (0, import_react156.useState)(false);
+    (0, import_react156.useEffect)(
       () => {
         const downHandler = (event) => {
           if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) {
@@ -54766,8 +55248,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     return keyPressed;
   };
   var useKeyCombo = (modifierKeys, targetKeys) => {
-    let [comboPressed, setComboPressed] = (0, import_react152.useState)(false);
-    (0, import_react152.useEffect)(() => {
+    let [comboPressed, setComboPressed] = (0, import_react156.useState)(false);
+    (0, import_react156.useEffect)(() => {
       const downHandler = (event) => {
         let modifiersPressed = modifierKeys.map((modKey) => {
           switch (modKey) {
@@ -54806,39 +55288,39 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   };
 
   // app/components/modals/keyboard-help.tsx
-  var import_react153 = __toESM(require_react());
+  var import_react157 = __toESM(require_react());
   function KeyboardHelp(props) {
     let { isOpen, onClose } = props;
-    return /* @__PURE__ */ import_react153.default.createElement(Modal, {
+    return /* @__PURE__ */ import_react157.default.createElement(Modal, {
       onClose,
       isOpen,
       size: "2xl",
       isCentered: true
-    }, /* @__PURE__ */ import_react153.default.createElement(ModalOverlay, null), /* @__PURE__ */ import_react153.default.createElement(ModalContent, null, /* @__PURE__ */ import_react153.default.createElement(ModalHeader, null, "Keyboard Help"), /* @__PURE__ */ import_react153.default.createElement(ModalCloseButton, null), /* @__PURE__ */ import_react153.default.createElement(ModalBody, {
+    }, /* @__PURE__ */ import_react157.default.createElement(ModalOverlay, null), /* @__PURE__ */ import_react157.default.createElement(ModalContent, null, /* @__PURE__ */ import_react157.default.createElement(ModalHeader, null, "Keyboard Help"), /* @__PURE__ */ import_react157.default.createElement(ModalCloseButton, null), /* @__PURE__ */ import_react157.default.createElement(ModalBody, {
       paddingBottom: "16px"
-    }, /* @__PURE__ */ import_react153.default.createElement(Flex, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Flex, {
       flexDirection: "row"
-    }, /* @__PURE__ */ import_react153.default.createElement(TableContainer, null, /* @__PURE__ */ import_react153.default.createElement(Table, {
+    }, /* @__PURE__ */ import_react157.default.createElement(TableContainer, null, /* @__PURE__ */ import_react157.default.createElement(Table, {
       variant: "simple",
       size: "sm"
-    }, /* @__PURE__ */ import_react153.default.createElement(Thead, null, /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Th, null, "Navigation"))), /* @__PURE__ */ import_react153.default.createElement(Tbody, null, /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Move up the trace summary list"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Thead, null, /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Th, null, "Navigation"))), /* @__PURE__ */ import_react157.default.createElement(Tbody, null, /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Move up the trace summary list"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "\u2190"), " or ", /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "h"))), /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Move down the trace summary list"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "\u2190"), " or ", /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "h"))), /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Move down the trace summary list"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "\u2192"), " or ", /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "l"))), /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Move up the span list"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "\u2192"), " or ", /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "l"))), /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Move up the span list"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "\u2191"), " or ", /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "k"))), /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Move up the trace summary list"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "\u2191"), " or ", /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "k"))), /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Move up the trace summary list"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "\u2193"), " or ", /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "j")))))), /* @__PURE__ */ import_react153.default.createElement(TableContainer, null, /* @__PURE__ */ import_react153.default.createElement(Table, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "\u2193"), " or ", /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "j")))))), /* @__PURE__ */ import_react157.default.createElement(TableContainer, null, /* @__PURE__ */ import_react157.default.createElement(Table, {
       variant: "simple",
       size: "sm"
-    }, /* @__PURE__ */ import_react153.default.createElement(Thead, null, /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Th, null, "Shortcuts"))), /* @__PURE__ */ import_react153.default.createElement(Tbody, null, /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Clear all traces"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Thead, null, /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Th, null, "Shortcuts"))), /* @__PURE__ */ import_react157.default.createElement(Tbody, null, /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Clear all traces"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "ctrl"), " + ", /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "l"))), /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Refresh the page"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "ctrl"), " + ", /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "l"))), /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Refresh the page"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "r"))), /* @__PURE__ */ import_react153.default.createElement(Tr, null, /* @__PURE__ */ import_react153.default.createElement(Td, null, "Bring up this help dialog"), /* @__PURE__ */ import_react153.default.createElement(Td, {
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "r"))), /* @__PURE__ */ import_react157.default.createElement(Tr, null, /* @__PURE__ */ import_react157.default.createElement(Td, null, "Bring up this help dialog"), /* @__PURE__ */ import_react157.default.createElement(Td, {
       isNumeric: true
-    }, /* @__PURE__ */ import_react153.default.createElement(Kbd, null, "?"))))))))));
+    }, /* @__PURE__ */ import_react157.default.createElement(Kbd, null, "?"))))))))));
   }
 
   // app/components/sidebar-view/trace-list.tsx
@@ -54854,61 +55336,61 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     if (traceSummary.hasRootSpan) {
       let rootNameLabel = traceSummary.rootName.replaceAll("/", "/\u200B").replaceAll("-", "-\u200B").replaceAll(".", ".\u200B");
       let rootServiceNameLabel = traceSummary.rootServiceName.replaceAll("/", "/\u200B").replaceAll("-", "-\u200B").replaceAll(".", ".\u200B");
-      return /* @__PURE__ */ import_react155.default.createElement("div", {
+      return /* @__PURE__ */ import_react159.default.createElement("div", {
         style
-      }, /* @__PURE__ */ import_react155.default.createElement(Divider, {
+      }, /* @__PURE__ */ import_react159.default.createElement(Divider, {
         height: dividerHeight,
         borderColor: dividerColour
-      }), /* @__PURE__ */ import_react155.default.createElement(LinkBox, {
+      }), /* @__PURE__ */ import_react159.default.createElement(LinkBox, {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         bgColor: backgroundColour,
         height: `${sidebarSummaryHeight}px`,
         paddingX: "20px"
-      }, /* @__PURE__ */ import_react155.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react159.default.createElement(Text, {
         fontSize: "xs",
         noOfLines: 1
-      }, "Root Service Name: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, rootServiceNameLabel)), /* @__PURE__ */ import_react155.default.createElement(Text, {
+      }, "Root Service Name: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, rootServiceNameLabel)), /* @__PURE__ */ import_react159.default.createElement(Text, {
         fontSize: "xs",
         noOfLines: 2
-      }, "Root Name: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, rootNameLabel)), /* @__PURE__ */ import_react155.default.createElement(Text, {
+      }, "Root Name: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, rootNameLabel)), /* @__PURE__ */ import_react159.default.createElement(Text, {
         fontSize: "xs"
-      }, "Root Duration: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, traceSummary.rootDurationString)), /* @__PURE__ */ import_react155.default.createElement(Text, {
+      }, "Root Duration: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, traceSummary.rootDurationString)), /* @__PURE__ */ import_react159.default.createElement(Text, {
         fontSize: "xs"
-      }, "Number of Spans: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, traceSummary.spanCount)), /* @__PURE__ */ import_react155.default.createElement(LinkOverlay, {
+      }, "Number of Spans: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, traceSummary.spanCount)), /* @__PURE__ */ import_react159.default.createElement(LinkOverlay, {
         as: NavLink,
         to: `traces/${traceSummary.traceID}`
-      }, /* @__PURE__ */ import_react155.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react159.default.createElement(Text, {
         fontSize: "xs"
-      }, "Trace ID: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, traceSummary.traceID)))));
+      }, "Trace ID: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, traceSummary.traceID)))));
     }
-    return /* @__PURE__ */ import_react155.default.createElement("div", {
+    return /* @__PURE__ */ import_react159.default.createElement("div", {
       style
-    }, /* @__PURE__ */ import_react155.default.createElement(Divider, {
+    }, /* @__PURE__ */ import_react159.default.createElement(Divider, {
       height: dividerHeight,
       borderColor: dividerColour
-    }), /* @__PURE__ */ import_react155.default.createElement(LinkBox, {
+    }), /* @__PURE__ */ import_react159.default.createElement(LinkBox, {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
       bgColor: backgroundColour,
       height: `${sidebarSummaryHeight}px`,
       paddingX: "20px"
-    }, /* @__PURE__ */ import_react155.default.createElement(Text, {
+    }, /* @__PURE__ */ import_react159.default.createElement(Text, {
       fontSize: "xs"
-    }, "Incomplete Trace: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, "missing a root span")), /* @__PURE__ */ import_react155.default.createElement(Text, {
+    }, "Incomplete Trace: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, "missing a root span")), /* @__PURE__ */ import_react159.default.createElement(Text, {
       fontSize: "xs"
-    }, "Number of Spans: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, traceSummary.spanCount)), /* @__PURE__ */ import_react155.default.createElement(LinkOverlay, {
+    }, "Number of Spans: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, traceSummary.spanCount)), /* @__PURE__ */ import_react159.default.createElement(LinkOverlay, {
       as: NavLink,
       to: `traces/${traceSummary.traceID}`
-    }, /* @__PURE__ */ import_react155.default.createElement(Text, {
+    }, /* @__PURE__ */ import_react159.default.createElement(Text, {
       fontSize: "xs"
-    }, "Trace ID: ", /* @__PURE__ */ import_react155.default.createElement("strong", null, traceSummary.traceID)))));
+    }, "Trace ID: ", /* @__PURE__ */ import_react159.default.createElement("strong", null, traceSummary.traceID)))));
   }
   function TraceList(props) {
-    let containerRef = (0, import_react155.useRef)(null);
-    let summaryListRef = import_react155.default.createRef();
+    let containerRef = (0, import_react159.useRef)(null);
+    let summaryListRef = import_react159.default.createRef();
     let size3 = useSize(containerRef);
     let location = useLocation();
     let navigate = useNavigate();
@@ -54925,7 +55407,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       selectedTraceID = traceSummaries[selectedIndex].traceID;
       window.location.href = `/traces/${selectedTraceID}`;
     }
-    (0, import_react155.useEffect)(() => {
+    (0, import_react159.useEffect)(() => {
       summaryListRef.current?.scrollToItem(selectedIndex, "start");
     }, []);
     let prevTraceKeyPressed = useKeyPress(["ArrowLeft", "h"]);
@@ -54933,7 +55415,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     let reloadKeyPressed = useKeyPress(["r"]);
     let navHelpComboPressed = useKeyCombo(["Shift"], ["?"]);
     let clearTracesComboPressed = useKeyCombo(["Control"], ["l"]);
-    (0, import_react155.useEffect)(() => {
+    (0, import_react159.useEffect)(() => {
       if (prevTraceKeyPressed) {
         selectedIndex = selectedIndex > 0 ? selectedIndex - 1 : 0;
         summaryListRef.current?.scrollToItem(selectedIndex);
@@ -54941,7 +55423,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         navigate(`/traces/${selectedTraceID}`);
       }
     }, [prevTraceKeyPressed]);
-    (0, import_react155.useEffect)(() => {
+    (0, import_react159.useEffect)(() => {
       if (nextTraceKeyPressed) {
         selectedIndex = selectedIndex < traceSummaries.length - 1 ? selectedIndex + 1 : traceSummaries.length - 1;
         summaryListRef.current?.scrollToItem(selectedIndex);
@@ -54949,17 +55431,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         navigate(`/traces/${selectedTraceID}`);
       }
     }, [nextTraceKeyPressed]);
-    (0, import_react155.useEffect)(() => {
+    (0, import_react159.useEffect)(() => {
       if (reloadKeyPressed) {
         window.location.reload();
       }
     }, [reloadKeyPressed]);
-    (0, import_react155.useEffect)(() => {
+    (0, import_react159.useEffect)(() => {
       if (navHelpComboPressed) {
         onOpen();
       }
     }, [navHelpComboPressed]);
-    (0, import_react155.useEffect)(() => {
+    (0, import_react159.useEffect)(() => {
       if (clearTracesComboPressed) {
         clearTraceData();
       }
@@ -54969,17 +55451,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       traceSummaries
     };
     let itemHeight = sidebarSummaryHeight + dividerHeight;
-    return /* @__PURE__ */ import_react155.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react159.default.createElement(Flex, {
       ref: containerRef,
       height: "100%"
-    }, /* @__PURE__ */ import_react155.default.createElement(FixedSizeList, {
+    }, /* @__PURE__ */ import_react159.default.createElement(FixedSizeList, {
       height: size3 ? size3.height : 0,
       itemData,
       itemCount: props.traceSummaries.length,
       itemSize: itemHeight,
       width: "100%",
       ref: summaryListRef
-    }, SidebarRow), /* @__PURE__ */ import_react155.default.createElement(KeyboardHelp, {
+    }, SidebarRow), /* @__PURE__ */ import_react159.default.createElement(KeyboardHelp, {
       isOpen,
       onClose
     }));
@@ -54994,10 +55476,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   }
 
   // app/components/sidebar-view/sidebar-header.tsx
-  var import_react158 = __toESM(require_react());
+  var import_react164 = __toESM(require_react());
 
   // node_modules/@chakra-ui/icons/dist/index.esm.js
-  var import_react157 = __toESM(require_react());
+  var import_react161 = __toESM(require_react());
   var CopyIcon = createIcon({
     d: "M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z",
     displayName: "CopyIcon"
@@ -55016,31 +55498,31 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var SunIcon = createIcon({
     displayName: "SunIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       strokeLinejoin: "round",
       strokeLinecap: "round",
       strokeWidth: "2",
       fill: "none",
       stroke: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("circle", {
+    }, /* @__PURE__ */ import_react161.default.createElement("circle", {
       cx: "12",
       cy: "12",
       r: "5"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M12 1v2"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M12 21v2"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M4.22 4.22l1.42 1.42"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M18.36 18.36l1.42 1.42"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M1 12h2"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M21 12h2"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M4.22 19.78l1.42-1.42"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M18.36 5.64l1.42-1.42"
     }))
   });
@@ -55051,7 +55533,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var SmallAddIcon = createIcon({
     displayName: "SmallAddIcon",
     viewBox: "0 0 20 20",
-    path: /* @__PURE__ */ import_react157.default.createElement("path", {
+    path: /* @__PURE__ */ import_react161.default.createElement("path", {
       fill: "currentColor",
       d: "M14 9h-3V6c0-.55-.45-1-1-1s-1 .45-1 1v3H6c-.55 0-1 .45-1 1s.45 1 1 1h3v3c0 .55.45 1 1 1s1-.45 1-1v-3h3c.55 0 1-.45 1-1s-.45-1-1-1z",
       fillRule: "evenodd"
@@ -55076,11 +55558,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var ViewIcon = createIcon({
     displayName: "ViewIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M23.432,10.524C20.787,7.614,16.4,4.538,12,4.6,7.6,4.537,3.213,7.615.568,10.524a2.211,2.211,0,0,0,0,2.948C3.182,16.351,7.507,19.4,11.839,19.4h.308c4.347,0,8.671-3.049,11.288-5.929A2.21,2.21,0,0,0,23.432,10.524ZM7.4,12A4.6,4.6,0,1,1,12,16.6,4.6,4.6,0,0,1,7.4,12Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("circle", {
+    }), /* @__PURE__ */ import_react161.default.createElement("circle", {
       cx: "12",
       cy: "12",
       r: "2"
@@ -55088,11 +55570,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var ViewOffIcon = createIcon({
     displayName: "ViewOffIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M23.2,10.549a20.954,20.954,0,0,0-4.3-3.6l4-3.995a1,1,0,1,0-1.414-1.414l-.018.018a.737.737,0,0,1-.173.291l-19.5,19.5c-.008.007-.018.009-.026.017a1,1,0,0,0,1.631,1.088l4.146-4.146a11.26,11.26,0,0,0,4.31.939h.3c4.256,0,8.489-2.984,11.051-5.8A2.171,2.171,0,0,0,23.2,10.549ZM16.313,13.27a4.581,4.581,0,0,1-3,3.028,4.3,4.3,0,0,1-3.1-.19.253.253,0,0,1-.068-.407l5.56-5.559a.252.252,0,0,1,.407.067A4.3,4.3,0,0,1,16.313,13.27Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M7.615,13.4a.244.244,0,0,0,.061-.24A4.315,4.315,0,0,1,7.5,12,4.5,4.5,0,0,1,12,7.5a4.276,4.276,0,0,1,1.16.173.244.244,0,0,0,.24-.062l1.941-1.942a.254.254,0,0,0-.1-.421A10.413,10.413,0,0,0,12,4.75C7.7,4.692,3.4,7.7.813,10.549a2.15,2.15,0,0,0-.007,2.9,21.209,21.209,0,0,0,3.438,3.03.256.256,0,0,0,.326-.029Z"
     }))
   });
@@ -55103,42 +55585,42 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var DeleteIcon = createIcon({
     displayName: "DeleteIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M19.452 7.5H4.547a.5.5 0 00-.5.545l1.287 14.136A2 2 0 007.326 24h9.347a2 2 0 001.992-1.819L19.95 8.045a.5.5 0 00-.129-.382.5.5 0 00-.369-.163zm-9.2 13a.75.75 0 01-1.5 0v-9a.75.75 0 011.5 0zm5 0a.75.75 0 01-1.5 0v-9a.75.75 0 011.5 0zM22 4h-4.75a.25.25 0 01-.25-.25V2.5A2.5 2.5 0 0014.5 0h-5A2.5 2.5 0 007 2.5v1.25a.25.25 0 01-.25.25H2a1 1 0 000 2h20a1 1 0 000-2zM9 3.75V2.5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v1.25a.25.25 0 01-.25.25h-5.5A.25.25 0 019 3.75z"
     }))
   });
   var RepeatIcon = createIcon({
     displayName: "RepeatIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M10.319,4.936a7.239,7.239,0,0,1,7.1,2.252,1.25,1.25,0,1,0,1.872-1.657A9.737,9.737,0,0,0,9.743,2.5,10.269,10.269,0,0,0,2.378,9.61a.249.249,0,0,1-.271.178l-1.033-.13A.491.491,0,0,0,.6,9.877a.5.5,0,0,0-.019.526l2.476,4.342a.5.5,0,0,0,.373.248.43.43,0,0,0,.062,0,.5.5,0,0,0,.359-.152l3.477-3.593a.5.5,0,0,0-.3-.844L5.15,10.172a.25.25,0,0,1-.2-.333A7.7,7.7,0,0,1,10.319,4.936Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M23.406,14.1a.5.5,0,0,0,.015-.526l-2.5-4.329A.5.5,0,0,0,20.546,9a.489.489,0,0,0-.421.151l-3.456,3.614a.5.5,0,0,0,.3.842l1.848.221a.249.249,0,0,1,.183.117.253.253,0,0,1,.023.216,7.688,7.688,0,0,1-5.369,4.9,7.243,7.243,0,0,1-7.1-2.253,1.25,1.25,0,1,0-1.872,1.656,9.74,9.74,0,0,0,9.549,3.03,10.261,10.261,0,0,0,7.369-7.12.251.251,0,0,1,.27-.179l1.058.127a.422.422,0,0,0,.06,0A.5.5,0,0,0,23.406,14.1Z"
     }))
   });
   var RepeatClockIcon = createIcon({
     displayName: "RepeatClockIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M12.965,6a1,1,0,0,0-1,1v5.5a1,1,0,0,0,1,1h5a1,1,0,0,0,0-2h-3.75a.25.25,0,0,1-.25-.25V7A1,1,0,0,0,12.965,6Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M12.567,1.258A10.822,10.822,0,0,0,2.818,8.4a.25.25,0,0,1-.271.163L.858,8.309a.514.514,0,0,0-.485.213.5.5,0,0,0-.021.53l2.679,4.7a.5.5,0,0,0,.786.107l3.77-3.746a.5.5,0,0,0-.279-.85L5.593,9.007a.25.25,0,0,1-.192-.35,8.259,8.259,0,1,1,7.866,11.59,1.25,1.25,0,0,0,.045,2.5h.047a10.751,10.751,0,1,0-.792-21.487Z"
     }))
   });
   var EditIcon = createIcon({
     displayName: "EditIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "none",
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeWidth: "2"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
     }))
   });
@@ -55181,46 +55663,46 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var ExternalLinkIcon = createIcon({
     displayName: "ExternalLinkIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "none",
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeWidth: "2"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M15 3h6v6"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M10 14L21 3"
     }))
   });
   var LinkIcon = createIcon({
     displayName: "LinkIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M10.458,18.374,7.721,21.11a2.853,2.853,0,0,1-3.942,0l-.892-.891a2.787,2.787,0,0,1,0-3.941l5.8-5.8a2.789,2.789,0,0,1,3.942,0l.893.892A1,1,0,0,0,14.94,9.952l-.893-.892a4.791,4.791,0,0,0-6.771,0l-5.8,5.8a4.787,4.787,0,0,0,0,6.77l.892.891a4.785,4.785,0,0,0,6.771,0l2.736-2.735a1,1,0,1,0-1.414-1.415Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M22.526,2.363l-.892-.892a4.8,4.8,0,0,0-6.77,0l-2.905,2.9a1,1,0,0,0,1.414,1.414l2.9-2.9a2.79,2.79,0,0,1,3.941,0l.893.893a2.786,2.786,0,0,1,0,3.942l-5.8,5.8a2.769,2.769,0,0,1-1.971.817h0a2.766,2.766,0,0,1-1.969-.816,1,1,0,1,0-1.415,1.412,4.751,4.751,0,0,0,3.384,1.4h0a4.752,4.752,0,0,0,3.385-1.4l5.8-5.8a4.786,4.786,0,0,0,0-6.771Z"
     }))
   });
   var PlusSquareIcon = createIcon({
     displayName: "PlusSquareIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "none",
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeWidth: "2"
-    }, /* @__PURE__ */ import_react157.default.createElement("rect", {
+    }, /* @__PURE__ */ import_react161.default.createElement("rect", {
       height: "18",
       width: "18",
       rx: "2",
       ry: "2",
       x: "3",
       y: "3"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M12 8v8"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M8 12h8"
     }))
   });
@@ -55236,31 +55718,31 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var TimeIcon = createIcon({
     displayName: "TimeIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10.011,10.011,0,0,1,12,22Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M17.134,15.81,12.5,11.561V6.5a1,1,0,0,0-2,0V12a1,1,0,0,0,.324.738l4.959,4.545a1.01,1.01,0,0,0,1.413-.061A1,1,0,0,0,17.134,15.81Z"
     }))
   });
   var ArrowRightIcon = createIcon({
     displayName: "ArrowRightIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M13.584,12a2.643,2.643,0,0,1-.775,1.875L3.268,23.416a1.768,1.768,0,0,1-2.5-2.5l8.739-8.739a.25.25,0,0,0,0-.354L.768,3.084a1.768,1.768,0,0,1,2.5-2.5l9.541,9.541A2.643,2.643,0,0,1,13.584,12Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M23.75,12a2.643,2.643,0,0,1-.775,1.875l-9.541,9.541a1.768,1.768,0,0,1-2.5-2.5l8.739-8.739a.25.25,0,0,0,0-.354L10.934,3.084a1.768,1.768,0,0,1,2.5-2.5l9.541,9.541A2.643,2.643,0,0,1,23.75,12Z"
     }))
   });
   var ArrowLeftIcon = createIcon({
     displayName: "ArrowLeftIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M10.416,12a2.643,2.643,0,0,1,.775-1.875L20.732.584a1.768,1.768,0,0,1,2.5,2.5l-8.739,8.739a.25.25,0,0,0,0,.354l8.739,8.739a1.768,1.768,0,0,1-2.5,2.5l-9.541-9.541A2.643,2.643,0,0,1,10.416,12Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M.25,12a2.643,2.643,0,0,1,.775-1.875L10.566.584a1.768,1.768,0,0,1,2.5,2.5L4.327,11.823a.25.25,0,0,0,0,.354l8.739,8.739a1.768,1.768,0,0,1-2.5,2.5L1.025,13.875A2.643,2.643,0,0,1,.25,12Z"
     }))
   });
@@ -55283,11 +55765,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var EmailIcon = createIcon({
     displayName: "EmailIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M11.114,14.556a1.252,1.252,0,0,0,1.768,0L22.568,4.87a.5.5,0,0,0-.281-.849A1.966,1.966,0,0,0,22,4H2a1.966,1.966,0,0,0-.289.021.5.5,0,0,0-.281.849Z"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M23.888,5.832a.182.182,0,0,0-.2.039l-6.2,6.2a.251.251,0,0,0,0,.354l5.043,5.043a.75.75,0,1,1-1.06,1.061l-5.043-5.043a.25.25,0,0,0-.354,0l-2.129,2.129a2.75,2.75,0,0,1-3.888,0L7.926,13.488a.251.251,0,0,0-.354,0L2.529,18.531a.75.75,0,0,1-1.06-1.061l5.043-5.043a.251.251,0,0,0,0-.354l-6.2-6.2a.18.18,0,0,0-.2-.039A.182.182,0,0,0,0,6V18a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V6A.181.181,0,0,0,23.888,5.832Z"
     }))
   });
@@ -55303,33 +55785,33 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var SpinnerIcon = createIcon({
     displayName: "SpinnerIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement(import_react157.default.Fragment, null, /* @__PURE__ */ import_react157.default.createElement("defs", null, /* @__PURE__ */ import_react157.default.createElement("linearGradient", {
+    path: /* @__PURE__ */ import_react161.default.createElement(import_react161.default.Fragment, null, /* @__PURE__ */ import_react161.default.createElement("defs", null, /* @__PURE__ */ import_react161.default.createElement("linearGradient", {
       x1: "28.154%",
       y1: "63.74%",
       x2: "74.629%",
       y2: "17.783%",
       id: "a"
-    }, /* @__PURE__ */ import_react157.default.createElement("stop", {
+    }, /* @__PURE__ */ import_react161.default.createElement("stop", {
       stopColor: "currentColor",
       offset: "0%"
-    }), /* @__PURE__ */ import_react157.default.createElement("stop", {
+    }), /* @__PURE__ */ import_react161.default.createElement("stop", {
       stopColor: "#fff",
       stopOpacity: "0",
       offset: "100%"
-    }))), /* @__PURE__ */ import_react157.default.createElement("g", {
+    }))), /* @__PURE__ */ import_react161.default.createElement("g", {
       transform: "translate(2)",
       fill: "none"
-    }, /* @__PURE__ */ import_react157.default.createElement("circle", {
+    }, /* @__PURE__ */ import_react161.default.createElement("circle", {
       stroke: "url(#a)",
       strokeWidth: "4",
       cx: "10",
       cy: "12",
       r: "10"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M10 2C4.477 2 0 6.477 0 12",
       stroke: "currentColor",
       strokeWidth: "4"
-    }), /* @__PURE__ */ import_react157.default.createElement("rect", {
+    }), /* @__PURE__ */ import_react161.default.createElement("rect", {
       fill: "currentColor",
       x: "8",
       width: "4",
@@ -55344,7 +55826,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var SmallCloseIcon = createIcon({
     displayName: "SmallCloseIcon",
     viewBox: "0 0 16 16",
-    path: /* @__PURE__ */ import_react157.default.createElement("path", {
+    path: /* @__PURE__ */ import_react161.default.createElement("path", {
       d: "M9.41 8l2.29-2.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71L8 6.59l-2.29-2.3a1.003 1.003 0 0 0-1.42 1.42L6.59 8 4.3 10.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71L8 9.41l2.29 2.29c.18.19.43.3.71.3a1.003 1.003 0 0 0 .71-1.71L9.41 8z",
       fillRule: "evenodd",
       fill: "currentColor"
@@ -55364,24 +55846,24 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var InfoOutlineIcon = createIcon({
     displayName: "InfoOutlineIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor",
       stroke: "currentColor",
       strokeLinecap: "square",
       strokeWidth: "2"
-    }, /* @__PURE__ */ import_react157.default.createElement("circle", {
+    }, /* @__PURE__ */ import_react161.default.createElement("circle", {
       cx: "12",
       cy: "12",
       fill: "none",
       r: "11",
       stroke: "currentColor"
-    }), /* @__PURE__ */ import_react157.default.createElement("line", {
+    }), /* @__PURE__ */ import_react161.default.createElement("line", {
       fill: "none",
       x1: "11.959",
       x2: "11.959",
       y1: "11",
       y2: "17"
-    }), /* @__PURE__ */ import_react157.default.createElement("circle", {
+    }), /* @__PURE__ */ import_react161.default.createElement("circle", {
       cx: "11.959",
       cy: "7",
       r: "1",
@@ -55401,18 +55883,18 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var QuestionOutlineIcon = createIcon({
     displayName: "QuestionOutlineIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       stroke: "currentColor",
       strokeWidth: "1.5"
-    }, /* @__PURE__ */ import_react157.default.createElement("path", {
+    }, /* @__PURE__ */ import_react161.default.createElement("path", {
       strokeLinecap: "round",
       fill: "none",
       d: "M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
-    }), /* @__PURE__ */ import_react157.default.createElement("path", {
+    }), /* @__PURE__ */ import_react161.default.createElement("path", {
       fill: "none",
       strokeLinecap: "round",
       d: "M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
-    }), /* @__PURE__ */ import_react157.default.createElement("circle", {
+    }), /* @__PURE__ */ import_react161.default.createElement("circle", {
       fill: "none",
       strokeMiterlimit: "10",
       cx: "12",
@@ -55430,17 +55912,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   });
   var CheckIcon2 = createIcon({
     viewBox: "0 0 14 14",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("polygon", {
+    }, /* @__PURE__ */ import_react161.default.createElement("polygon", {
       points: "5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
     }))
   });
   var MinusIcon = createIcon({
     displayName: "MinusIcon",
-    path: /* @__PURE__ */ import_react157.default.createElement("g", {
+    path: /* @__PURE__ */ import_react161.default.createElement("g", {
       fill: "currentColor"
-    }, /* @__PURE__ */ import_react157.default.createElement("rect", {
+    }, /* @__PURE__ */ import_react161.default.createElement("rect", {
       height: "4",
       width: "20",
       x: "2",
@@ -55453,34 +55935,50 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     d: "M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
   });
 
+  // app/components/sidebar-view/sidebar-filter.tsx
+  var import_react162 = __toESM(require_react());
+  function SidebarFilter(props) {
+    return /* @__PURE__ */ import_react162.default.createElement(Input, {
+      type: "search",
+      placeholder: "Filter",
+      value: props.value,
+      onChange: (event) => {
+        props.setValue(event.target.value);
+      },
+      onKeyDown: (event) => {
+        event.stopPropagation();
+      }
+    });
+  }
+
   // app/components/sidebar-view/sidebar-header.tsx
   function SidebarHeader(props) {
     let { toggleColorMode } = useColorMode();
-    let colourModeIcon = useColorModeValue(/* @__PURE__ */ import_react158.default.createElement(MoonIcon, null), /* @__PURE__ */ import_react158.default.createElement(SunIcon, null));
+    let colourModeIcon = useColorModeValue(/* @__PURE__ */ import_react164.default.createElement(MoonIcon, null), /* @__PURE__ */ import_react164.default.createElement(SunIcon, null));
     let { isFullWidth, isFullWidthDisabled, toggleSidebarWidth, numNewTraces } = props;
     if (isFullWidth) {
-      return /* @__PURE__ */ import_react158.default.createElement(Flex, {
+      return /* @__PURE__ */ import_react164.default.createElement(Flex, {
         direction: "column",
         height: "fit-content",
         justifyContent: "space-evenly"
-      }, /* @__PURE__ */ import_react158.default.createElement(Flex, {
+      }, /* @__PURE__ */ import_react164.default.createElement(Flex, {
         justifyContent: "flex-start",
         alignItems: "center",
         height: "50px"
-      }, /* @__PURE__ */ import_react158.default.createElement(Button, {
+      }, /* @__PURE__ */ import_react164.default.createElement(Button, {
         size: "md",
         "aria-label": "Clear Trace Data",
         variant: "ghost",
         colorScheme: "pink",
         fontWeight: "normal",
-        leftIcon: /* @__PURE__ */ import_react158.default.createElement(DeleteIcon, null),
+        leftIcon: /* @__PURE__ */ import_react164.default.createElement(DeleteIcon, null),
         marginStart: "10px",
         onClick: clearTraceData
-      }, /* @__PURE__ */ import_react158.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react164.default.createElement(Text, {
         fontSize: "sm",
         fontWeight: "bold",
         color: "ButtonText"
-      }, "Clear Traces")), /* @__PURE__ */ import_react158.default.createElement(Spacer, null), /* @__PURE__ */ import_react158.default.createElement(IconButton, {
+      }, "Clear Traces")), /* @__PURE__ */ import_react164.default.createElement(Spacer, null), /* @__PURE__ */ import_react164.default.createElement(IconButton, {
         size: "md",
         "aria-label": "Toggle Colour Mode",
         variant: "ghost",
@@ -55488,48 +55986,56 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         icon: colourModeIcon,
         marginEnd: "2px",
         onClick: toggleColorMode
-      }), /* @__PURE__ */ import_react158.default.createElement(IconButton, {
+      }), /* @__PURE__ */ import_react164.default.createElement(IconButton, {
         size: "md",
         "aria-label": "Collapse Sidebar",
         variant: "ghost",
         colorScheme: "pink",
-        icon: /* @__PURE__ */ import_react158.default.createElement(ArrowLeftIcon, null),
+        icon: /* @__PURE__ */ import_react164.default.createElement(ArrowLeftIcon, null),
         marginEnd: "10px",
         onClick: toggleSidebarWidth
-      })), /* @__PURE__ */ import_react158.default.createElement(Flex, {
+      })), /* @__PURE__ */ import_react164.default.createElement(Flex, {
+        justifyContent: "flex-start",
+        alignItems: "center",
+        height: "50px",
+        padding: "2"
+      }, /* @__PURE__ */ import_react164.default.createElement(SidebarFilter, {
+        value: props.filterValue,
+        setValue: props.setFilterValue
+      })), /* @__PURE__ */ import_react164.default.createElement(Flex, {
         justifyContent: "flex-start",
         alignItems: "center",
         transition: "height 0.2s ease-in-out",
         height: numNewTraces > 0 ? "50px" : 0,
         overflow: "hidden"
-      }, /* @__PURE__ */ import_react158.default.createElement(Button, {
+      }, /* @__PURE__ */ import_react164.default.createElement(Button, {
         size: "md",
         "aria-label": "Refresh",
         variant: "ghost",
         colorScheme: "pink",
         fontWeight: "normal",
-        leftIcon: /* @__PURE__ */ import_react158.default.createElement(RepeatIcon, null),
+        leftIcon: /* @__PURE__ */ import_react164.default.createElement(RepeatIcon, null),
         marginX: "10px",
         justifyContent: "flex-start",
         onClick: () => {
           window.location.reload();
         }
-      }, /* @__PURE__ */ import_react158.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react164.default.createElement(Text, {
         fontSize: "sm",
         fontWeight: "bold",
         color: "ButtonText"
       }, numNewTraces, " New Trace", numNewTraces === 1 ? " " : "s"))));
     }
-    return /* @__PURE__ */ import_react158.default.createElement(import_react158.default.Fragment, null, /* @__PURE__ */ import_react158.default.createElement(IconButton, {
+    return /* @__PURE__ */ import_react164.default.createElement(import_react164.default.Fragment, null, /* @__PURE__ */ import_react164.default.createElement(IconButton, {
       size: "md",
       "aria-label": "Expand Sidebar",
       colorScheme: "pink",
       variant: "ghost",
-      icon: /* @__PURE__ */ import_react158.default.createElement(ArrowRightIcon, null),
+      icon: /* @__PURE__ */ import_react164.default.createElement(ArrowRightIcon, null),
       marginTop: "10px",
       onClick: toggleSidebarWidth,
       isDisabled: isFullWidthDisabled
-    }), /* @__PURE__ */ import_react158.default.createElement(IconButton, {
+    }), /* @__PURE__ */ import_react164.default.createElement(IconButton, {
       size: "md",
       "aria-label": "Toggle Colour Mode",
       colorScheme: "pink",
@@ -55548,38 +56054,42 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     let { isFullWidth, toggleSidebarWidth, traceSummaries, numNewTraces } = props;
     let isFullWidthDisabled = traceSummaries.length === 0;
     if (isFullWidth) {
-      return /* @__PURE__ */ import_react160.default.createElement(Flex, {
+      return /* @__PURE__ */ import_react166.default.createElement(Flex, {
         backgroundColor: sidebarColour,
         flexShrink: "0",
         direction: "column",
         transition: "width 0.2s ease-in-out",
         width: sidebarFullWidth
-      }, /* @__PURE__ */ import_react160.default.createElement(SidebarHeader, {
+      }, /* @__PURE__ */ import_react166.default.createElement(SidebarHeader, {
         isFullWidth,
         toggleSidebarWidth,
         isFullWidthDisabled: false,
-        numNewTraces
-      }), /* @__PURE__ */ import_react160.default.createElement(TraceList, {
+        numNewTraces,
+        filterValue: props.filterValue,
+        setFilterValue: props.setFilterValue
+      }), /* @__PURE__ */ import_react166.default.createElement(TraceList, {
         traceSummaries
       }));
     }
-    return /* @__PURE__ */ import_react160.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react166.default.createElement(Flex, {
       alignItems: "center",
       backgroundColor: sidebarColour,
       flexShrink: "0",
       direction: "column",
       transition: "width 0.2s ease-in-out",
       width: sidebarCollapsedWidth
-    }, /* @__PURE__ */ import_react160.default.createElement(SidebarHeader, {
+    }, /* @__PURE__ */ import_react166.default.createElement(SidebarHeader, {
       isFullWidth,
       isFullWidthDisabled,
       toggleSidebarWidth,
-      numNewTraces: 0
+      numNewTraces: 0,
+      filterValue: props.filterValue,
+      setFilterValue: props.setFilterValue
     }));
   }
 
   // app/components/empty-state-view/empty-state-view.tsx
-  var import_react162 = __toESM(require_react());
+  var import_react168 = __toESM(require_react());
   async function loadSampleData() {
     let response = await fetch("/api/sampleData");
     if (!response.ok) {
@@ -55591,7 +56101,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   function SampleDataButton() {
     let [isLoading, setIsLoading] = useBoolean(false);
     if (isLoading) {
-      return /* @__PURE__ */ import_react162.default.createElement(Button, {
+      return /* @__PURE__ */ import_react168.default.createElement(Button, {
         isLoading: true,
         colorScheme: "pink",
         loadingText: "Loading",
@@ -55599,7 +56109,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
         width: "fit-content"
       });
     }
-    return /* @__PURE__ */ import_react162.default.createElement(Button, {
+    return /* @__PURE__ */ import_react168.default.createElement(Button, {
       colorScheme: "pink",
       width: "fit-content",
       onClick: () => {
@@ -55628,13 +56138,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       "blackAlpha.500"
     );
     useInterval(pollTraceCount, 500);
-    return /* @__PURE__ */ import_react162.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react168.default.createElement(Flex, {
       flexDirection: "column",
       align: "center",
       justifyItems: "center",
       width: "100%",
       overflowY: "scroll"
-    }, /* @__PURE__ */ import_react162.default.createElement(Card, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Card, {
       align: "center",
       backgroundColor: cardBackgroundColour,
       marginY: "64px",
@@ -55642,81 +56152,81 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
       padding: "30px",
       variant: "filled",
       width: "60%"
-    }, /* @__PURE__ */ import_react162.default.createElement(CardHeader, {
+    }, /* @__PURE__ */ import_react168.default.createElement(CardHeader, {
       borderRadius: "lg",
       paddingY: "0"
-    }, /* @__PURE__ */ import_react162.default.createElement(Flex, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Flex, {
       width: "100%"
-    }, /* @__PURE__ */ import_react162.default.createElement(Image2, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Image2, {
       src: "assets/images/lulu.png",
       alt: "A pink axolotl is striking a heroic pose while gazing at a field of stars through a telescope. Her name is Lulu Axol'Otel the First, valiant adventurer and observability queen.",
       maxHeight: "400px",
       maxWidth: "400px",
       borderRadius: "lg"
-    }), /* @__PURE__ */ import_react162.default.createElement(Flex, {
+    }), /* @__PURE__ */ import_react168.default.createElement(Flex, {
       marginLeft: "24px",
       justifyContent: "flex-end",
       direction: "column"
-    }, /* @__PURE__ */ import_react162.default.createElement(Stack, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Stack, {
       spacing: 3
-    }, /* @__PURE__ */ import_react162.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Heading, {
       size: "lg"
-    }, "Welcome to the OpenTelemetry Desktop Viewer."), /* @__PURE__ */ import_react162.default.createElement(Divider, null), /* @__PURE__ */ import_react162.default.createElement(Text, null, "This CLI tool allows you to receive OpenTelemetry traces while working on your local machine, helping you visualize and explore your trace data without needing to send it on to a telemetry vendor.")), /* @__PURE__ */ import_react162.default.createElement(Stack, {
+    }, "Welcome to the OpenTelemetry Desktop Viewer."), /* @__PURE__ */ import_react168.default.createElement(Divider, null), /* @__PURE__ */ import_react168.default.createElement(Text, null, "This CLI tool allows you to receive OpenTelemetry traces while working on your local machine, helping you visualize and explore your trace data without needing to send it on to a telemetry vendor.")), /* @__PURE__ */ import_react168.default.createElement(Stack, {
       spacing: 3,
       marginTop: "24px"
-    }, /* @__PURE__ */ import_react162.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Heading, {
       size: "md"
-    }, "Explore with Sample Data"), /* @__PURE__ */ import_react162.default.createElement(Divider, null), /* @__PURE__ */ import_react162.default.createElement(Text, null, "If you would like to explore the application without sending it anything, you can do so by loading some sample data."), /* @__PURE__ */ import_react162.default.createElement(SampleDataButton, null))))), /* @__PURE__ */ import_react162.default.createElement(CardBody, null, /* @__PURE__ */ import_react162.default.createElement(Stack, {
+    }, "Explore with Sample Data"), /* @__PURE__ */ import_react168.default.createElement(Divider, null), /* @__PURE__ */ import_react168.default.createElement(Text, null, "If you would like to explore the application without sending it anything, you can do so by loading some sample data."), /* @__PURE__ */ import_react168.default.createElement(SampleDataButton, null))))), /* @__PURE__ */ import_react168.default.createElement(CardBody, null, /* @__PURE__ */ import_react168.default.createElement(Stack, {
       spacing: 3
-    }, /* @__PURE__ */ import_react162.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Heading, {
       size: "md"
-    }, "Configuring your OpenTelemetry SDK"), /* @__PURE__ */ import_react162.default.createElement(Divider, null), /* @__PURE__ */ import_react162.default.createElement(Text, null, "To send telemetry to OpenTelemetry Desktop Viewer from your application, you need to configure an OTLP exporter to send via grpc to", " ", /* @__PURE__ */ import_react162.default.createElement(Code, {
+    }, "Configuring your OpenTelemetry SDK"), /* @__PURE__ */ import_react168.default.createElement(Divider, null), /* @__PURE__ */ import_react168.default.createElement(Text, null, "To send telemetry to OpenTelemetry Desktop Viewer from your application, you need to configure an OTLP exporter to send via grpc to", " ", /* @__PURE__ */ import_react168.default.createElement(Code, {
       backgroundColor: codeBackgroundColour
-    }, "http://localhost:4317"), " ", "or via http to", " ", /* @__PURE__ */ import_react162.default.createElement(Code, {
+    }, "http://localhost:4317"), " ", "or via http to", " ", /* @__PURE__ */ import_react168.default.createElement(Code, {
       backgroundColor: codeBackgroundColour
-    }, "http://localhost:4318"), "."), /* @__PURE__ */ import_react162.default.createElement(Text, null, "If your OpenTelemetry SDK OTLP exporter supports", " ", /* @__PURE__ */ import_react162.default.createElement(Link, {
+    }, "http://localhost:4318"), "."), /* @__PURE__ */ import_react168.default.createElement(Text, null, "If your OpenTelemetry SDK OTLP exporter supports", " ", /* @__PURE__ */ import_react168.default.createElement(Link, {
       color: "teal.500",
       href: "https://opentelemetry.io/docs/concepts/sdk-configuration/otlp-exporter-configuration/",
       isExternal: true
-    }, "configuration via environment variables", " "), " ", "then you should be able to send to", " ", /* @__PURE__ */ import_react162.default.createElement(Code, {
+    }, "configuration via environment variables", " "), " ", "then you should be able to send to", " ", /* @__PURE__ */ import_react168.default.createElement(Code, {
       backgroundColor: codeBackgroundColour
-    }, "otel-desktop-viewer"), " ", "with the following environment variables set."), /* @__PURE__ */ import_react162.default.createElement(Heading, {
+    }, "otel-desktop-viewer"), " ", "with the following environment variables set."), /* @__PURE__ */ import_react168.default.createElement(Heading, {
       size: "sm"
-    }, "For HTTP:"), /* @__PURE__ */ import_react162.default.createElement(Flex, {
+    }, "For HTTP:"), /* @__PURE__ */ import_react168.default.createElement(Flex, {
       backgroundColor: codeBackgroundColour,
       padding: 2
-    }, /* @__PURE__ */ import_react162.default.createElement(Code, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Code, {
       backgroundColor: "transparent",
       display: "block",
       whiteSpace: "pre",
       children: `export OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4318"
 export OTEL_TRACES_EXPORTER="otlp"
 export OTEL_EXPORTER_OTLP_PROTOCOL="http/protobuf"`
-    })), /* @__PURE__ */ import_react162.default.createElement(Heading, {
+    })), /* @__PURE__ */ import_react168.default.createElement(Heading, {
       size: "sm"
-    }, "For GRPC:"), /* @__PURE__ */ import_react162.default.createElement(Flex, {
+    }, "For GRPC:"), /* @__PURE__ */ import_react168.default.createElement(Flex, {
       backgroundColor: codeBackgroundColour,
       padding: 2
-    }, /* @__PURE__ */ import_react162.default.createElement(Code, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Code, {
       backgroundColor: "transparent",
       display: "block",
       whiteSpace: "pre",
       children: `export OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317"
 export OTEL_TRACES_EXPORTER="otlp"
 export OTEL_EXPORTER_OTLP_PROTOCOL="grpc"`
-    }))), /* @__PURE__ */ import_react162.default.createElement(Stack, {
+    }))), /* @__PURE__ */ import_react168.default.createElement(Stack, {
       spacing: 3,
       marginTop: "30px"
-    }, /* @__PURE__ */ import_react162.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Heading, {
       size: "md"
-    }, "Example with otel-cli"), /* @__PURE__ */ import_react162.default.createElement(Divider, null), /* @__PURE__ */ import_react162.default.createElement(Text, null, "If you have", " ", /* @__PURE__ */ import_react162.default.createElement(Link, {
+    }, "Example with otel-cli"), /* @__PURE__ */ import_react168.default.createElement(Divider, null), /* @__PURE__ */ import_react168.default.createElement(Text, null, "If you have", " ", /* @__PURE__ */ import_react168.default.createElement(Link, {
       color: "teal.400",
       href: "https://github.com/equinix-labs/otel-cli",
       isExternal: true
-    }, "otel-cli"), " ", "installed, you can send some example data with the following script."), /* @__PURE__ */ import_react162.default.createElement(Flex, {
+    }, "otel-cli"), " ", "installed, you can send some example data with the following script."), /* @__PURE__ */ import_react168.default.createElement(Flex, {
       backgroundColor: codeBackgroundColour,
       padding: 2
-    }, /* @__PURE__ */ import_react162.default.createElement(Code, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Code, {
       backgroundColor: "transparent",
       display: "block",
       whiteSpace: "pre",
@@ -55729,18 +56239,18 @@ export OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
 # use otel-cli to generate spans!
 otel-cli exec --service my-service --name "curl google" curl https://google.com
 `
-    })))), /* @__PURE__ */ import_react162.default.createElement(CardFooter, {
+    })))), /* @__PURE__ */ import_react168.default.createElement(CardFooter, {
       alignItems: "center"
-    }, /* @__PURE__ */ import_react162.default.createElement(Text, null, "Made with", " ", /* @__PURE__ */ import_react162.default.createElement(Image2, {
+    }, /* @__PURE__ */ import_react168.default.createElement(Text, null, "Made with", " ", /* @__PURE__ */ import_react168.default.createElement(Image2, {
       src: "assets/images/axolotl.svg",
       alt: "axolotl emoji",
       display: "inline",
       width: "30px"
-    }), " ", "by", " ", /* @__PURE__ */ import_react162.default.createElement(Link, {
+    }), " ", "by", " ", /* @__PURE__ */ import_react168.default.createElement(Link, {
       color: "teal.500",
       href: "https://github.com/CtrlSpice",
       isExternal: true
-    }, "Mila Ardath"), ", with Artwork by", " ", /* @__PURE__ */ import_react162.default.createElement(Link, {
+    }, "Mila Ardath"), ", with Artwork by", " ", /* @__PURE__ */ import_react168.default.createElement(Link, {
       color: "teal.500",
       href: "https://cbatesonart.artstation.com/",
       isExternal: true
@@ -55799,17 +56309,33 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     return `${durationNs} ns`;
   }
 
+  // app/utils/use-filter.tsx
+  var import_react170 = __toESM(require_react());
+  var FILTER_PARAM = "filter";
+  var useFilter = () => {
+    let [params, setParams] = useSearchParams();
+    let [filter3, setValue] = (0, import_react170.useState)(params.get(FILTER_PARAM));
+    let setFilter = (value) => {
+      setParams({ [FILTER_PARAM]: value });
+      setValue(value);
+    };
+    return [filter3, setFilter];
+  };
+
   // app/routes/main-view.tsx
-  async function mainLoader() {
+  var mainLoader = async () => {
     const response = await fetch("/api/traces");
     const traceSummaries = await response.json();
     return traceSummaries;
-  }
+  };
   function MainView() {
+    let [filter3, setFilter] = useFilter();
     let { traceSummaries } = useLoaderData();
-    let [isFullWidth, setFullWidth] = useBoolean(traceSummaries.length > 0);
-    let [sidebarData, setSidebarData] = (0, import_react164.useState)(initSidebarData(traceSummaries));
-    (0, import_react164.useEffect)(() => {
+    let [isFullWidth, setFullWidth] = useBoolean(
+      traceSummaries.length > 0 || filter3 !== null
+    );
+    let [sidebarData, setSidebarData] = (0, import_react171.useState)(initSidebarData(traceSummaries));
+    (0, import_react171.useEffect)(() => {
       async function checkForNewData() {
         let response = await fetch("/api/traces");
         if (response.ok) {
@@ -55822,23 +56348,32 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       return () => clearInterval(interval);
     }, []);
     if (!traceSummaries.length) {
-      return /* @__PURE__ */ import_react164.default.createElement(Flex, {
+      return /* @__PURE__ */ import_react171.default.createElement(Flex, {
         height: "100vh"
-      }, /* @__PURE__ */ import_react164.default.createElement(Sidebar, {
+      }, /* @__PURE__ */ import_react171.default.createElement(Sidebar, {
         isFullWidth,
         toggleSidebarWidth: setFullWidth.toggle,
         traceSummaries: [],
-        numNewTraces: 0
-      }), /* @__PURE__ */ import_react164.default.createElement(EmptyStateView, null));
+        numNewTraces: 0,
+        filterValue: filter3 ?? "",
+        setFilterValue: setFilter
+      }), /* @__PURE__ */ import_react171.default.createElement(EmptyStateView, null));
     }
-    return /* @__PURE__ */ import_react164.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react171.default.createElement(Flex, {
       height: "100vh"
-    }, /* @__PURE__ */ import_react164.default.createElement(Sidebar, {
+    }, /* @__PURE__ */ import_react171.default.createElement(Sidebar, {
       isFullWidth,
       toggleSidebarWidth: setFullWidth.toggle,
-      traceSummaries: sidebarData.summaries,
-      numNewTraces: sidebarData.numNewTraces
-    }), /* @__PURE__ */ import_react164.default.createElement(Outlet, null));
+      traceSummaries: filter3 !== null ? applyFilter(sidebarData.summaries, filter3) : sidebarData.summaries,
+      numNewTraces: sidebarData.numNewTraces,
+      filterValue: filter3 ?? "",
+      setFilterValue: setFilter
+    }), /* @__PURE__ */ import_react171.default.createElement(Outlet, null));
+  }
+  function applyFilter(data, filter3) {
+    return filter3 !== null ? data.filter(
+      (value) => value.hasRootSpan && value.rootName.includes(filter3 ?? "")
+    ) : data;
   }
   function initSidebarData(traceSummaries) {
     return {
@@ -55899,29 +56434,29 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   }
 
   // app/routes/trace-view.tsx
-  var import_react190 = __toESM(require_react());
+  var import_react197 = __toESM(require_react());
 
   // app/components/header-view/header.tsx
-  var import_react166 = __toESM(require_react());
+  var import_react173 = __toESM(require_react());
   function Header(props) {
-    return /* @__PURE__ */ import_react166.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react173.default.createElement(Flex, {
       align: "center",
       height: "100px",
       paddingX: "24px"
-    }, /* @__PURE__ */ import_react166.default.createElement(Text, {
+    }, /* @__PURE__ */ import_react173.default.createElement(Text, {
       fontSize: "lg",
       noOfLines: 1
-    }, "Trace ID: ", /* @__PURE__ */ import_react166.default.createElement("strong", null, props.traceID)));
+    }, "Trace ID: ", /* @__PURE__ */ import_react173.default.createElement("strong", null, props.traceID)));
   }
 
   // app/components/detail-view/detail-view.tsx
-  var import_react180 = __toESM(require_react());
+  var import_react187 = __toESM(require_react());
 
   // app/components/detail-view/fields-panel.tsx
-  var import_react170 = __toESM(require_react());
+  var import_react177 = __toESM(require_react());
 
   // app/components/detail-view/span-field.tsx
-  var import_react168 = __toESM(require_react());
+  var import_react175 = __toESM(require_react());
   function SpanField(props) {
     let { fieldName, fieldValue, hidden } = props;
     let fieldNameColour = useColorModeValue("gray.600", "gray.400");
@@ -55946,20 +56481,20 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
         fieldValue = '""';
         break;
     }
-    return /* @__PURE__ */ import_react168.default.createElement(Box, {
+    return /* @__PURE__ */ import_react175.default.createElement(Box, {
       paddingTop: 2
-    }, /* @__PURE__ */ import_react168.default.createElement("dt", null, /* @__PURE__ */ import_react168.default.createElement(Flex, {
+    }, /* @__PURE__ */ import_react175.default.createElement("dt", null, /* @__PURE__ */ import_react175.default.createElement(Flex, {
       experimental_spaceX: 2
-    }, /* @__PURE__ */ import_react168.default.createElement(Tag, {
+    }, /* @__PURE__ */ import_react175.default.createElement(Tag, {
       size: "sm",
       variant: "outline",
       colorScheme: "cyan"
-    }, /* @__PURE__ */ import_react168.default.createElement(TagLabel, {
+    }, /* @__PURE__ */ import_react175.default.createElement(TagLabel, {
       fontSize: "xs"
-    }, typeOfFieldValue)), /* @__PURE__ */ import_react168.default.createElement(Text, {
+    }, typeOfFieldValue)), /* @__PURE__ */ import_react175.default.createElement(Text, {
       textColor: fieldNameColour,
       fontSize: "sm"
-    }, fieldName))), /* @__PURE__ */ import_react168.default.createElement("dd", null, /* @__PURE__ */ import_react168.default.createElement(Text, {
+    }, fieldName))), /* @__PURE__ */ import_react175.default.createElement("dd", null, /* @__PURE__ */ import_react175.default.createElement(Text, {
       fontSize: "md",
       paddingY: 2
     }, fieldValue)));
@@ -55969,10 +56504,10 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   function FieldsPanel(props) {
     let { span } = props;
     if (!span) {
-      return /* @__PURE__ */ import_react170.default.createElement(TabPanel, null, /* @__PURE__ */ import_react170.default.createElement("p", null, "Nothing here yet."));
+      return /* @__PURE__ */ import_react177.default.createElement(TabPanel, null, /* @__PURE__ */ import_react177.default.createElement("p", null, "Nothing here yet."));
     }
     let isRoot = span.parentSpanID.length ? false : true;
-    let rootTag = isRoot ? /* @__PURE__ */ import_react170.default.createElement(Tag, {
+    let rootTag = isRoot ? /* @__PURE__ */ import_react177.default.createElement(Tag, {
       marginStart: 2,
       colorScheme: "cyan",
       variant: "subtle"
@@ -55980,104 +56515,104 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     let durationString = getDurationString(
       getDurationNs(span.startTime, span.endTime)
     );
-    let spanAttributes = Object.entries(span.attributes).map(([key, value]) => /* @__PURE__ */ import_react170.default.createElement("li", {
+    let spanAttributes = Object.entries(span.attributes).map(([key, value]) => /* @__PURE__ */ import_react177.default.createElement("li", {
       key
-    }, /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }, /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: key,
       fieldValue: value
     })));
     let resourceAttributes = Object.entries(span.resource.attributes).map(
-      ([key, value]) => /* @__PURE__ */ import_react170.default.createElement("li", {
+      ([key, value]) => /* @__PURE__ */ import_react177.default.createElement("li", {
         key
-      }, /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+      }, /* @__PURE__ */ import_react177.default.createElement(SpanField, {
         fieldName: key,
         fieldValue: value
       }))
     );
     let scopeAttributes = Object.entries(span.scope.attributes).map(
-      ([key, value]) => /* @__PURE__ */ import_react170.default.createElement("li", {
+      ([key, value]) => /* @__PURE__ */ import_react177.default.createElement("li", {
         key
-      }, /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+      }, /* @__PURE__ */ import_react177.default.createElement(SpanField, {
         fieldName: key,
         fieldValue: value
       }))
     );
-    return /* @__PURE__ */ import_react170.default.createElement(TabPanel, {
+    return /* @__PURE__ */ import_react177.default.createElement(TabPanel, {
       paddingX: "0px"
-    }, /* @__PURE__ */ import_react170.default.createElement(Accordion, {
+    }, /* @__PURE__ */ import_react177.default.createElement(Accordion, {
       defaultIndex: [0],
       allowMultiple: true
-    }, /* @__PURE__ */ import_react170.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react170.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react170.default.createElement(Box, {
+    }, /* @__PURE__ */ import_react177.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react177.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react177.default.createElement(Box, {
       flex: "1",
       textAlign: "left"
-    }, /* @__PURE__ */ import_react170.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react177.default.createElement(Heading, {
       lineHeight: "revert",
       size: "sm"
-    }, "Span Data", rootTag)), /* @__PURE__ */ import_react170.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react170.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }, "Span Data", rootTag)), /* @__PURE__ */ import_react177.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react177.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "name",
       fieldValue: span.name
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "kind",
       fieldValue: span.kind
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "start time",
       fieldValue: span.startTime
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "end time",
       fieldValue: span.endTime
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "duration",
       fieldValue: durationString
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "status code",
       fieldValue: span.statusCode
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "status message",
       fieldValue: span.statusMessage,
       hidden: span.statusCode === "Unset" || span.statusCode === "Ok"
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "trace id",
       fieldValue: span.traceID
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "parent span id",
       fieldValue: span.parentSpanID,
       hidden: isRoot
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "span id",
       fieldValue: span.spanID
-    }), /* @__PURE__ */ import_react170.default.createElement(List, null, spanAttributes), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(List, null, spanAttributes), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "dropped attributes count",
       fieldValue: span.droppedAttributesCount,
       hidden: span.droppedAttributesCount === 0
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "dropped events count",
       fieldValue: span.droppedEventsCount,
       hidden: span.droppedEventsCount === 0
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "dropped links count",
       fieldValue: span.droppedLinksCount,
       hidden: span.droppedLinksCount === 0
-    }))), /* @__PURE__ */ import_react170.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react170.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react170.default.createElement(Box, {
+    }))), /* @__PURE__ */ import_react177.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react177.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react177.default.createElement(Box, {
       flex: "1",
       textAlign: "left"
-    }, /* @__PURE__ */ import_react170.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react177.default.createElement(Heading, {
       size: "sm"
-    }, "Resource Data")), /* @__PURE__ */ import_react170.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react170.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react170.default.createElement(List, null, resourceAttributes), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }, "Resource Data")), /* @__PURE__ */ import_react177.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react177.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react177.default.createElement(List, null, resourceAttributes), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "dropped attributes count",
       fieldValue: span.resource.droppedAttributesCount,
       hidden: span.resource.droppedAttributesCount === 0
-    }))), /* @__PURE__ */ import_react170.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react170.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react170.default.createElement(Box, {
+    }))), /* @__PURE__ */ import_react177.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react177.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react177.default.createElement(Box, {
       flex: "1",
       textAlign: "left"
-    }, /* @__PURE__ */ import_react170.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react177.default.createElement(Heading, {
       size: "sm"
-    }, "Scope Data")), /* @__PURE__ */ import_react170.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react170.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }, "Scope Data")), /* @__PURE__ */ import_react177.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react177.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "scope name",
       fieldValue: span.scope.name
-    }), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "scope version",
       fieldValue: span.scope.version
-    }), /* @__PURE__ */ import_react170.default.createElement(List, null, scopeAttributes), /* @__PURE__ */ import_react170.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react177.default.createElement(List, null, scopeAttributes), /* @__PURE__ */ import_react177.default.createElement(SpanField, {
       fieldName: "dropped attributes count",
       fieldValue: span.scope.droppedAttributesCount,
       hidden: span.scope.droppedAttributesCount === 0
@@ -56085,28 +56620,28 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   }
 
   // app/components/detail-view/events-panel.tsx
-  var import_react172 = __toESM(require_react());
+  var import_react179 = __toESM(require_react());
   function EventItem(props) {
     let { event, spanStartTime } = props;
     let timeSinceSpanStart = getDurationNs(spanStartTime, event.timestamp);
     let durationString = getDurationString(timeSinceSpanStart);
-    let eventAttributes = Object.entries(event.attributes).map(([key, value]) => /* @__PURE__ */ import_react172.default.createElement("li", {
+    let eventAttributes = Object.entries(event.attributes).map(([key, value]) => /* @__PURE__ */ import_react179.default.createElement("li", {
       key: key + value?.toString()
-    }, /* @__PURE__ */ import_react172.default.createElement(SpanField, {
+    }, /* @__PURE__ */ import_react179.default.createElement(SpanField, {
       fieldName: key,
       fieldValue: value
     })));
-    return /* @__PURE__ */ import_react172.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react172.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react172.default.createElement(Box, {
+    return /* @__PURE__ */ import_react179.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react179.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react179.default.createElement(Box, {
       flex: "1",
       textAlign: "left"
-    }, /* @__PURE__ */ import_react172.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react179.default.createElement(Heading, {
       size: "sm"
-    }, event.name), /* @__PURE__ */ import_react172.default.createElement(Text, {
+    }, event.name), /* @__PURE__ */ import_react179.default.createElement(Text, {
       fontSize: "xs"
-    }, durationString, " since span start")), /* @__PURE__ */ import_react172.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react172.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react172.default.createElement(SpanField, {
+    }, durationString, " since span start")), /* @__PURE__ */ import_react179.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react179.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react179.default.createElement(SpanField, {
       fieldName: "timestamp",
       fieldValue: event.timestamp
-    }), /* @__PURE__ */ import_react172.default.createElement(List, null, eventAttributes), /* @__PURE__ */ import_react172.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react179.default.createElement(List, null, eventAttributes), /* @__PURE__ */ import_react179.default.createElement(SpanField, {
       fieldName: "dropped attributes count",
       fieldValue: event.droppedAttributesCount,
       hidden: !event.droppedAttributesCount
@@ -56117,30 +56652,30 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     if (!events) {
       return null;
     }
-    let eventItemList = events.map((event) => /* @__PURE__ */ import_react172.default.createElement("li", {
+    let eventItemList = events.map((event) => /* @__PURE__ */ import_react179.default.createElement("li", {
       key: event.name + event.timestamp
-    }, /* @__PURE__ */ import_react172.default.createElement(EventItem, {
+    }, /* @__PURE__ */ import_react179.default.createElement(EventItem, {
       event,
       spanStartTime
     })));
-    return /* @__PURE__ */ import_react172.default.createElement(TabPanel, {
+    return /* @__PURE__ */ import_react179.default.createElement(TabPanel, {
       paddingX: "0px"
-    }, /* @__PURE__ */ import_react172.default.createElement(Accordion, {
+    }, /* @__PURE__ */ import_react179.default.createElement(Accordion, {
       allowMultiple: true
-    }, /* @__PURE__ */ import_react172.default.createElement(List, null, eventItemList)));
+    }, /* @__PURE__ */ import_react179.default.createElement(List, null, eventItemList)));
   }
 
   // app/components/detail-view/links-panel.tsx
-  var import_react178 = __toESM(require_react());
+  var import_react185 = __toESM(require_react());
 
   // app/components/alerts/under-construction.tsx
-  var import_react176 = __toESM(require_react());
+  var import_react183 = __toESM(require_react());
 
   // node_modules/react-icons/lib/esm/iconBase.js
-  var import_react175 = __toESM(require_react());
+  var import_react182 = __toESM(require_react());
 
   // node_modules/react-icons/lib/esm/iconContext.js
-  var import_react174 = __toESM(require_react());
+  var import_react181 = __toESM(require_react());
   var DefaultContext = {
     color: void 0,
     size: void 0,
@@ -56148,7 +56683,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     style: void 0,
     attr: void 0
   };
-  var IconContext = import_react174.default.createContext && import_react174.default.createContext(DefaultContext);
+  var IconContext = import_react181.default.createContext && import_react181.default.createContext(DefaultContext);
 
   // node_modules/react-icons/lib/esm/iconBase.js
   var __assign3 = function() {
@@ -56177,14 +56712,14 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   };
   function Tree2Element(tree) {
     return tree && tree.map(function(node2, i) {
-      return import_react175.default.createElement(node2.tag, __assign3({
+      return import_react182.default.createElement(node2.tag, __assign3({
         key: i
       }, node2.attr), Tree2Element(node2.child));
     });
   }
   function GenIcon(data) {
     return function(props) {
-      return import_react175.default.createElement(IconBase, __assign3({
+      return import_react182.default.createElement(IconBase, __assign3({
         attr: __assign3({}, data.attr)
       }, props), Tree2Element(data.child));
     };
@@ -56198,7 +56733,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
         className = conf.className;
       if (props.className)
         className = (className ? className + " " : "") + props.className;
-      return import_react175.default.createElement("svg", __assign3({
+      return import_react182.default.createElement("svg", __assign3({
         stroke: "currentColor",
         fill: "currentColor",
         strokeWidth: "0"
@@ -56210,9 +56745,9 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
         height: computedSize,
         width: computedSize,
         xmlns: "http://www.w3.org/2000/svg"
-      }), title && import_react175.default.createElement("title", null, title), props.children);
+      }), title && import_react182.default.createElement("title", null, title), props.children);
     };
-    return IconContext !== void 0 ? import_react175.default.createElement(IconContext.Consumer, null, function(conf) {
+    return IconContext !== void 0 ? import_react182.default.createElement(IconContext.Consumer, null, function(conf) {
       return elem(conf);
     }) : elem(DefaultContext);
   }
@@ -56224,39 +56759,39 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
 
   // app/components/alerts/under-construction.tsx
   function UnderConstructionAlert() {
-    return /* @__PURE__ */ import_react176.default.createElement(Alert, {
+    return /* @__PURE__ */ import_react183.default.createElement(Alert, {
       status: "warning",
       variant: "subtle",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       textAlign: "center"
-    }, /* @__PURE__ */ import_react176.default.createElement(AlertIcon, {
+    }, /* @__PURE__ */ import_react183.default.createElement(AlertIcon, {
       as: MdConstruction,
       boxSize: "32px"
-    }), /* @__PURE__ */ import_react176.default.createElement(AlertTitle, null, "This section is under construction."), /* @__PURE__ */ import_react176.default.createElement(AlertDescription, null, "More features coming soon!"));
+    }), /* @__PURE__ */ import_react183.default.createElement(AlertTitle, null, "This section is under construction."), /* @__PURE__ */ import_react183.default.createElement(AlertDescription, null, "More features coming soon!"));
   }
 
   // app/components/detail-view/links-panel.tsx
   function LinkItem(props) {
     let { link } = props;
-    let linkAttributes = Object.entries(link.attributes).map(([key, value]) => /* @__PURE__ */ import_react178.default.createElement("li", {
+    let linkAttributes = Object.entries(link.attributes).map(([key, value]) => /* @__PURE__ */ import_react185.default.createElement("li", {
       key: key + value?.toString()
-    }, /* @__PURE__ */ import_react178.default.createElement(SpanField, {
+    }, /* @__PURE__ */ import_react185.default.createElement(SpanField, {
       fieldName: key,
       fieldValue: value
     })));
-    return /* @__PURE__ */ import_react178.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react178.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react178.default.createElement(Box, {
+    return /* @__PURE__ */ import_react185.default.createElement(AccordionItem, null, /* @__PURE__ */ import_react185.default.createElement(AccordionButton, null, /* @__PURE__ */ import_react185.default.createElement(Box, {
       flex: "1",
       textAlign: "left"
-    }, /* @__PURE__ */ import_react178.default.createElement(Text, {
+    }, /* @__PURE__ */ import_react185.default.createElement(Text, {
       fontSize: "sm"
-    }, "Trace ID: ", /* @__PURE__ */ import_react178.default.createElement("strong", null, link.traceID)), /* @__PURE__ */ import_react178.default.createElement(Text, {
+    }, "Trace ID: ", /* @__PURE__ */ import_react185.default.createElement("strong", null, link.traceID)), /* @__PURE__ */ import_react185.default.createElement(Text, {
       fontSize: "sm"
-    }, "Span ID: ", /* @__PURE__ */ import_react178.default.createElement("strong", null, link.spanID))), /* @__PURE__ */ import_react178.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react178.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react178.default.createElement(SpanField, {
+    }, "Span ID: ", /* @__PURE__ */ import_react185.default.createElement("strong", null, link.spanID))), /* @__PURE__ */ import_react185.default.createElement(AccordionIcon, null)), /* @__PURE__ */ import_react185.default.createElement(AccordionPanel, null, /* @__PURE__ */ import_react185.default.createElement(SpanField, {
       fieldName: "trace state",
       fieldValue: link.traceState
-    }), /* @__PURE__ */ import_react178.default.createElement(List, null, linkAttributes), /* @__PURE__ */ import_react178.default.createElement(SpanField, {
+    }), /* @__PURE__ */ import_react185.default.createElement(List, null, linkAttributes), /* @__PURE__ */ import_react185.default.createElement(SpanField, {
       fieldName: "dropped attributes count",
       fieldValue: link.droppedAttributesCount
     })));
@@ -56266,61 +56801,61 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     if (!links) {
       return null;
     }
-    let linkItemList = links.map((link) => /* @__PURE__ */ import_react178.default.createElement("li", {
+    let linkItemList = links.map((link) => /* @__PURE__ */ import_react185.default.createElement("li", {
       key: link.spanID
-    }, /* @__PURE__ */ import_react178.default.createElement(LinkItem, {
+    }, /* @__PURE__ */ import_react185.default.createElement(LinkItem, {
       link
     })));
-    return /* @__PURE__ */ import_react178.default.createElement(TabPanel, {
+    return /* @__PURE__ */ import_react185.default.createElement(TabPanel, {
       paddingX: "0px"
-    }, /* @__PURE__ */ import_react178.default.createElement(UnderConstructionAlert, null), /* @__PURE__ */ import_react178.default.createElement(Accordion, {
+    }, /* @__PURE__ */ import_react185.default.createElement(UnderConstructionAlert, null), /* @__PURE__ */ import_react185.default.createElement(Accordion, {
       allowMultiple: true
-    }, /* @__PURE__ */ import_react178.default.createElement(List, null, linkItemList)));
+    }, /* @__PURE__ */ import_react185.default.createElement(List, null, linkItemList)));
   }
 
   // app/components/detail-view/detail-view.tsx
   function DetailView(props) {
     let { span } = props;
     if (!span) {
-      return /* @__PURE__ */ import_react180.default.createElement("div", null);
+      return /* @__PURE__ */ import_react187.default.createElement("div", null);
     }
     let numEvents = span.events.length;
     let numLinks = span.links.length;
-    return /* @__PURE__ */ import_react180.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react187.default.createElement(Flex, {
       grow: "0",
       shrink: "1",
       basis: "350px",
       height: "100vh",
       paddingTop: "30px",
       overflowY: "scroll"
-    }, /* @__PURE__ */ import_react180.default.createElement(Tabs, {
+    }, /* @__PURE__ */ import_react187.default.createElement(Tabs, {
       colorScheme: "pink",
       margin: 3,
       size: "sm",
       variant: "soft-rounded",
       width: "100vw"
-    }, /* @__PURE__ */ import_react180.default.createElement(TabList, null, /* @__PURE__ */ import_react180.default.createElement(Tab, null, "Fields"), /* @__PURE__ */ import_react180.default.createElement(Tab, {
+    }, /* @__PURE__ */ import_react187.default.createElement(TabList, null, /* @__PURE__ */ import_react187.default.createElement(Tab, null, "Fields"), /* @__PURE__ */ import_react187.default.createElement(Tab, {
       isDisabled: numEvents === 0
-    }, "Events(", numEvents, ")"), /* @__PURE__ */ import_react180.default.createElement(Tab, {
+    }, "Events(", numEvents, ")"), /* @__PURE__ */ import_react187.default.createElement(Tab, {
       isDisabled: numLinks === 0
-    }, "Links(", numLinks, ")")), /* @__PURE__ */ import_react180.default.createElement(TabPanels, null, /* @__PURE__ */ import_react180.default.createElement(FieldsPanel, {
+    }, "Links(", numLinks, ")")), /* @__PURE__ */ import_react187.default.createElement(TabPanels, null, /* @__PURE__ */ import_react187.default.createElement(FieldsPanel, {
       span
-    }), /* @__PURE__ */ import_react180.default.createElement(EventsPanel, {
+    }), /* @__PURE__ */ import_react187.default.createElement(EventsPanel, {
       events: span.events,
       spanStartTime: span.startTime
-    }), /* @__PURE__ */ import_react180.default.createElement(LinksPanel, {
+    }), /* @__PURE__ */ import_react187.default.createElement(LinksPanel, {
       links: span.links
     }))));
   }
 
   // app/components/waterfall-view/waterfall-view.tsx
-  var import_react188 = __toESM(require_react());
+  var import_react195 = __toESM(require_react());
 
   // app/components/waterfall-view/waterfall-row.tsx
-  var import_react184 = __toESM(require_react());
+  var import_react191 = __toESM(require_react());
 
   // app/components/waterfall-view/duration-bar.tsx
-  var import_react182 = __toESM(require_react());
+  var import_react189 = __toESM(require_react());
   function EventDotsList(props) {
     let { events, spanStartTimeNs, spanEndTimeNs } = props;
     let eventDotsList = events.map((eventData) => {
@@ -56330,13 +56865,13 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       let eventOffsetPercent = Math.floor(
         (eventTimeNs - spanStartTimeNs) / spanDurationNS * 100
       );
-      return /* @__PURE__ */ import_react182.default.createElement("li", {
+      return /* @__PURE__ */ import_react189.default.createElement("li", {
         key: `${eventName}-${eventData.timestamp}`
-      }, /* @__PURE__ */ import_react182.default.createElement(Tooltip, {
+      }, /* @__PURE__ */ import_react189.default.createElement(Tooltip, {
         hasArrow: true,
         label: eventName,
         placement: "top"
-      }, /* @__PURE__ */ import_react182.default.createElement(Circle, {
+      }, /* @__PURE__ */ import_react189.default.createElement(Circle, {
         size: "18px",
         bg: "whiteAlpha.400",
         border: "solid 1px",
@@ -56347,10 +56882,10 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
         transform: "translate(-50%)"
       })));
     });
-    return /* @__PURE__ */ import_react182.default.createElement(List, null, eventDotsList);
+    return /* @__PURE__ */ import_react189.default.createElement(List, null, eventDotsList);
   }
   function DurationBar(props) {
-    const ref = (0, import_react182.useRef)(null);
+    const ref = (0, import_react189.useRef)(null);
     const size3 = useSize(ref);
     const labelWidth = 80;
     let durationBarColour = useColorModeValue("cyan.800", "cyan.700");
@@ -56374,12 +56909,12 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       labelOffset = `${Math.floor(-labelWidth)}px`;
     }
     let label = getDurationString(spanEndTimeNs - spanStartTimeNs);
-    return /* @__PURE__ */ import_react182.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react189.default.createElement(Flex, {
       border: "0",
       marginX: 2,
       marginY: "16px",
       width: "100%"
-    }, /* @__PURE__ */ import_react182.default.createElement(Box, {
+    }, /* @__PURE__ */ import_react189.default.createElement(Box, {
       bgColor: durationBarColour,
       borderRadius: "md",
       overflow: "visible",
@@ -56388,18 +56923,18 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       width: `${barWidthPercent}%`,
       minWidth: "2px",
       ref
-    }, /* @__PURE__ */ import_react182.default.createElement(Flex, {
+    }, /* @__PURE__ */ import_react189.default.createElement(Flex, {
       position: "absolute",
       width: `${labelWidth}px`,
       left: labelOffset,
       justifyContent: "center"
-    }, /* @__PURE__ */ import_react182.default.createElement(Text, {
+    }, /* @__PURE__ */ import_react189.default.createElement(Text, {
       fontSize: "xs",
       fontWeight: "700",
       paddingLeft: 2,
       color: labelTextColour,
       whiteSpace: "nowrap"
-    }, label)), /* @__PURE__ */ import_react182.default.createElement(EventDotsList, {
+    }, label)), /* @__PURE__ */ import_react189.default.createElement(EventDotsList, {
       events: props.spanData.events,
       spanStartTimeNs,
       spanEndTimeNs
@@ -56429,52 +56964,52 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       }
       let nameLabel = spanData.name.replaceAll("/", "/\u200B").replaceAll("-", "-\u200B").replaceAll(".", ".\u200B");
       let resourceLabel = spanData.resource.attributes["service.name"];
-      return /* @__PURE__ */ import_react184.default.createElement(Flex, {
+      return /* @__PURE__ */ import_react191.default.createElement(Flex, {
         style,
         bgColor: backgroundColour,
         paddingLeft: `${paddingLeft}px`,
         onClick: () => setSelectedSpanID(spanID)
-      }, /* @__PURE__ */ import_react184.default.createElement(Flex, {
+      }, /* @__PURE__ */ import_react191.default.createElement(Flex, {
         width: spanNameColumnWidth - paddingLeft,
         alignItems: "center",
         flexGrow: "1",
         flexShrink: "0"
-      }, /* @__PURE__ */ import_react184.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react191.default.createElement(Text, {
         paddingX: 2,
         noOfLines: 2,
         fontSize: "sm"
-      }, nameLabel)), /* @__PURE__ */ import_react184.default.createElement(Flex, {
+      }, nameLabel)), /* @__PURE__ */ import_react191.default.createElement(Flex, {
         width: serviceNameColumnWidth,
         alignItems: "center",
         flexGrow: "1",
         flexShrink: "0"
-      }, /* @__PURE__ */ import_react184.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react191.default.createElement(Text, {
         paddingX: 2,
         fontSize: "sm"
-      }, resourceLabel)), /* @__PURE__ */ import_react184.default.createElement(DurationBar, {
+      }, resourceLabel)), /* @__PURE__ */ import_react191.default.createElement(DurationBar, {
         spanData,
         traceTimeAttributes,
         spanStartTimestamp: spanData.startTime,
         spanEndTimestamp: spanData.endTime
       }));
     }
-    return /* @__PURE__ */ import_react184.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react191.default.createElement(Flex, {
       style,
       alignItems: "center",
       bgColor: backgroundColour,
       paddingStart: 2,
       experimental_spaceX: 2
-    }, /* @__PURE__ */ import_react184.default.createElement(WarningTwoIcon, {
+    }, /* @__PURE__ */ import_react191.default.createElement(WarningTwoIcon, {
       color: "orange.500"
-    }), /* @__PURE__ */ import_react184.default.createElement(Text, {
+    }), /* @__PURE__ */ import_react191.default.createElement(Text, {
       fontSize: "sm"
     }, `Missing Span [Span ID:${spanID}]`));
   }
 
   // app/components/waterfall-view/header-row.tsx
-  var import_react186 = __toESM(require_react());
+  var import_react193 = __toESM(require_react());
   function DurationIndicator(props) {
-    let ref = (0, import_react186.useRef)(null);
+    let ref = (0, import_react193.useRef)(null);
     let size3 = useSize(ref);
     let availableWidth = size3 ? size3.width : 0;
     let numSections = 1;
@@ -56503,25 +57038,25 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     let sectionWidth = availableWidth / numSections;
     let durationSections = Array(numSections - 1).fill(null).map((_, i) => {
       let sectionLabel = `${+(sectionDuration * i).toFixed(3)}${timeUnit}`;
-      return /* @__PURE__ */ import_react186.default.createElement(ListItem, {
+      return /* @__PURE__ */ import_react193.default.createElement(ListItem, {
         key: i,
         float: "left"
-      }, /* @__PURE__ */ import_react186.default.createElement(Text, {
+      }, /* @__PURE__ */ import_react193.default.createElement(Text, {
         fontSize: "x-small",
         width: sectionWidth
       }, sectionLabel));
     });
-    let lastDurationLabel = /* @__PURE__ */ import_react186.default.createElement(Text, {
+    let lastDurationLabel = /* @__PURE__ */ import_react193.default.createElement(Text, {
       fontSize: "x-small"
     }, `${+traceDuration.toFixed(3)}${timeUnit}`);
-    return /* @__PURE__ */ import_react186.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react193.default.createElement(Flex, {
       alignItems: "center",
       height: "100%",
       "flex-direction": "row",
       flex: "1 1 auto",
       marginX: 2,
       ref
-    }, /* @__PURE__ */ import_react186.default.createElement(List, null, durationSections), /* @__PURE__ */ import_react186.default.createElement(Spacer, null), lastDurationLabel);
+    }, /* @__PURE__ */ import_react193.default.createElement(List, null, durationSections), /* @__PURE__ */ import_react193.default.createElement(Spacer, null), lastDurationLabel);
   }
   function HeaderRow(props) {
     let {
@@ -56530,29 +57065,29 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       serviceNameColumnWidth,
       traceDuration
     } = props;
-    return /* @__PURE__ */ import_react186.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react193.default.createElement(Flex, {
       height: `${headerRowHeight}px`
-    }, /* @__PURE__ */ import_react186.default.createElement(Flex, {
+    }, /* @__PURE__ */ import_react193.default.createElement(Flex, {
       width: spanNameColumnWidth,
       alignItems: "center"
-    }, /* @__PURE__ */ import_react186.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react193.default.createElement(Heading, {
       paddingX: 2,
       size: "sm"
-    }, "name")), /* @__PURE__ */ import_react186.default.createElement(Flex, {
+    }, "name")), /* @__PURE__ */ import_react193.default.createElement(Flex, {
       width: serviceNameColumnWidth,
       alignItems: "center"
-    }, /* @__PURE__ */ import_react186.default.createElement(Heading, {
+    }, /* @__PURE__ */ import_react193.default.createElement(Heading, {
       paddingX: 1,
       size: "sm"
-    }, "service.name")), /* @__PURE__ */ import_react186.default.createElement(DurationIndicator, {
+    }, "service.name")), /* @__PURE__ */ import_react193.default.createElement(DurationIndicator, {
       traceDuration
     }));
   }
 
   // app/components/waterfall-view/waterfall-view.tsx
   function WaterfallView(props) {
-    let containerRef = (0, import_react188.useRef)(null);
-    let spanListRef = import_react188.default.createRef();
+    let containerRef = (0, import_react195.useRef)(null);
+    let spanListRef = import_react195.default.createRef();
     const size3 = useSize(containerRef);
     const waterfallItemHeight = 50;
     const headerRowHeight = 30;
@@ -56567,7 +57102,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     let firstSelectableIndex = orderedSpans.findIndex(
       (span) => span.status === "present" /* present */
     );
-    (0, import_react188.useEffect)(() => {
+    (0, import_react195.useEffect)(() => {
       if (prevSpanKeyPressed) {
         if (selectedIndex > firstSelectableIndex) {
           do {
@@ -56578,7 +57113,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
         }
       }
     }, [prevSpanKeyPressed]);
-    (0, import_react188.useEffect)(() => {
+    (0, import_react195.useEffect)(() => {
       if (nextSpanKeyPressed) {
         if (selectedIndex < orderedSpans.length - 1) {
           do {
@@ -56597,17 +57132,17 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       selectedSpanID,
       setSelectedSpanID
     };
-    return /* @__PURE__ */ import_react188.default.createElement(Flex, {
+    return /* @__PURE__ */ import_react195.default.createElement(Flex, {
       direction: "column",
       ref: containerRef,
       height: "100%",
       onCopy: stripZeroWidthSpacesOnCopyCallback
-    }, /* @__PURE__ */ import_react188.default.createElement(HeaderRow, {
+    }, /* @__PURE__ */ import_react195.default.createElement(HeaderRow, {
       headerRowHeight,
       spanNameColumnWidth,
       serviceNameColumnWidth,
       traceDuration: traceTimeAttributes.traceDurationNS
-    }), /* @__PURE__ */ import_react188.default.createElement(FixedSizeList, {
+    }), /* @__PURE__ */ import_react195.default.createElement(FixedSizeList, {
       className: "List",
       height: size3 ? size3.height - headerRowHeight : 0,
       itemData: rowData,
@@ -56700,7 +57235,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     let traceTimeAttributes = calculateTraceTiming(traceData.spans);
     let spanTree = arrayToTree(traceData.spans);
     let orderedSpans = orderSpans(spanTree);
-    let [selectedSpanID, setSelectedSpanID] = import_react190.default.useState(() => {
+    let [selectedSpanID, setSelectedSpanID] = import_react197.default.useState(() => {
       if (!orderedSpans.length || orderedSpans[0].status === "missing" /* missing */ && orderedSpans.length < 2) {
         throw new Error("Number of spans cannot be zero");
       }
@@ -56709,7 +57244,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       }
       return orderedSpans[0].metadata.spanID;
     });
-    import_react190.default.useEffect(() => {
+    import_react197.default.useEffect(() => {
       setSelectedSpanID(
         orderedSpans[0].status === "present" /* present */ ? orderedSpans[0].metadata.spanID : orderedSpans[1].metadata.spanID
       );
@@ -56717,7 +57252,7 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
     let selectedSpan = traceData.spans.find(
       (span) => span.spanID === selectedSpanID
     );
-    return /* @__PURE__ */ import_react190.default.createElement(Grid, {
+    return /* @__PURE__ */ import_react197.default.createElement(Grid, {
       templateAreas: `"header detail"
                        "main detail"`,
       gridTemplateColumns: "1fr 350px",
@@ -56725,21 +57260,21 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
       gap: "0",
       height: "100vh",
       width: "100vw"
-    }, /* @__PURE__ */ import_react190.default.createElement(GridItem, {
+    }, /* @__PURE__ */ import_react197.default.createElement(GridItem, {
       area: "header"
-    }, /* @__PURE__ */ import_react190.default.createElement(Header, {
+    }, /* @__PURE__ */ import_react197.default.createElement(Header, {
       traceID: traceData.traceID
-    })), /* @__PURE__ */ import_react190.default.createElement(GridItem, {
+    })), /* @__PURE__ */ import_react197.default.createElement(GridItem, {
       area: "main",
       marginLeft: "20px"
-    }, /* @__PURE__ */ import_react190.default.createElement(WaterfallView, {
+    }, /* @__PURE__ */ import_react197.default.createElement(WaterfallView, {
       orderedSpans,
       traceTimeAttributes,
       selectedSpanID,
       setSelectedSpanID
-    })), /* @__PURE__ */ import_react190.default.createElement(GridItem, {
+    })), /* @__PURE__ */ import_react197.default.createElement(GridItem, {
       area: "detail"
-    }, /* @__PURE__ */ import_react190.default.createElement(DetailView, {
+    }, /* @__PURE__ */ import_react197.default.createElement(DetailView, {
       span: selectedSpan
     })));
   }
@@ -56787,13 +57322,13 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   }
 
   // app/error-page.tsx
-  var import_react192 = __toESM(require_react());
+  var import_react199 = __toESM(require_react());
   function ErrorPage() {
     const error = useRouteError();
     console.error(error);
-    return /* @__PURE__ */ import_react192.default.createElement("div", {
+    return /* @__PURE__ */ import_react199.default.createElement("div", {
       id: "error-page"
-    }, /* @__PURE__ */ import_react192.default.createElement("h1", null, "Oops!"), /* @__PURE__ */ import_react192.default.createElement("p", null, "Sorry, an unexpected error has occurred."), /* @__PURE__ */ import_react192.default.createElement("p", null, /* @__PURE__ */ import_react192.default.createElement("i", null, error.message)));
+    }, /* @__PURE__ */ import_react199.default.createElement("h1", null, "Oops!"), /* @__PURE__ */ import_react199.default.createElement("p", null, "Sorry, an unexpected error has occurred."), /* @__PURE__ */ import_react199.default.createElement("p", null, /* @__PURE__ */ import_react199.default.createElement("i", null, error.message)));
   }
 
   // app/main.tsx
@@ -56805,13 +57340,13 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   var router = createBrowserRouter([
     {
       path: "/",
-      element: /* @__PURE__ */ import_react193.default.createElement(MainView, null),
+      element: /* @__PURE__ */ import_react200.default.createElement(MainView, null),
       loader: mainLoader,
-      errorElement: /* @__PURE__ */ import_react193.default.createElement(ErrorPage, null),
+      errorElement: /* @__PURE__ */ import_react200.default.createElement(ErrorPage, null),
       children: [
         {
           path: "traces/:traceID",
-          element: /* @__PURE__ */ import_react193.default.createElement(TraceView, null),
+          element: /* @__PURE__ */ import_react200.default.createElement(TraceView, null),
           loader: traceLoader
         }
       ]
@@ -56821,9 +57356,9 @@ otel-cli exec --service my-service --name "curl google" curl https://google.com
   if (!!container2) {
     const root = (0, import_client.createRoot)(container2);
     root.render(
-      /* @__PURE__ */ import_react193.default.createElement(import_react193.default.StrictMode, null, /* @__PURE__ */ import_react193.default.createElement(ChakraProvider2, {
+      /* @__PURE__ */ import_react200.default.createElement(import_react200.default.StrictMode, null, /* @__PURE__ */ import_react200.default.createElement(ChakraProvider2, {
         theme: theme2
-      }, /* @__PURE__ */ import_react193.default.createElement(RouterProvider, {
+      }, /* @__PURE__ */ import_react200.default.createElement(RouterProvider, {
         router
       })))
     );

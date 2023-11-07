@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Flex, useBoolean } from "@chakra-ui/react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, LoaderFunction } from "react-router-dom";
 
 import { Sidebar } from "../components/sidebar-view/sidebar";
 import { EmptyStateView } from "../components/empty-state-view/empty-state-view";
 import { TraceSummaries, TraceSummary } from "../types/api-types";
 import { SidebarData, TraceSummaryWithUIData } from "../types/ui-types";
 import { getDurationNs, getDurationString } from "../utils/duration";
+import { useFilter } from "../utils/use-filter";
 
-export async function mainLoader() {
+export const mainLoader: LoaderFunction = async () => {
   const response = await fetch("/api/traces");
   const traceSummaries = await response.json();
   return traceSummaries;
-}
+};
 
 export default function MainView() {
+  let [filter, setFilter] = useFilter();
   let { traceSummaries } = useLoaderData() as TraceSummaries;
-  let [isFullWidth, setFullWidth] = useBoolean(traceSummaries.length > 0);
+  let [isFullWidth, setFullWidth] = useBoolean(
+    traceSummaries.length > 0 || filter !== null,
+  );
 
   // initialize the sidebar summaries at mount time
   let [sidebarData, setSidebarData] = useState(initSidebarData(traceSummaries));
@@ -48,6 +52,8 @@ export default function MainView() {
           toggleSidebarWidth={setFullWidth.toggle}
           traceSummaries={[]}
           numNewTraces={0}
+          filterValue={filter ?? ""}
+          setFilterValue={setFilter}
         />
         <EmptyStateView />
       </Flex>
@@ -59,12 +65,29 @@ export default function MainView() {
       <Sidebar
         isFullWidth={isFullWidth}
         toggleSidebarWidth={setFullWidth.toggle}
-        traceSummaries={sidebarData.summaries}
+        traceSummaries={
+          filter !== null
+            ? applyFilter(sidebarData.summaries, filter)
+            : sidebarData.summaries
+        }
         numNewTraces={sidebarData.numNewTraces}
+        filterValue={filter ?? ""}
+        setFilterValue={setFilter}
       />
       <Outlet />
     </Flex>
   );
+}
+
+function applyFilter(
+  data: TraceSummaryWithUIData[],
+  filter: string,
+): TraceSummaryWithUIData[] {
+  return filter !== null
+    ? data.filter(
+        (value) => value.hasRootSpan && value.rootName.includes(filter ?? ""),
+      )
+    : data;
 }
 
 function initSidebarData(traceSummaries: TraceSummary[]): SidebarData {
